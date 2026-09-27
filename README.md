@@ -22,8 +22,8 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 
 ## What you can click
 
-- **Home** — short fridge-lifestyle strip, then Boards (Chores card shows a board thumb) and Packs.
-- **Chores board** (only board type in this preview): Magnets-style weekly grid, board-only hero (no fridge chrome). Line count 3–7 swaps the hero to that many full-name rows. Day labels are magnetic tiles (`sun`–`sat`), not printed. Size A4 / A5; mount Magnetic / Stick / Nonstick; Add to cart.
+- **Home** — short fridge-lifestyle strip (grey fridge face, no handle), then Boards (Chores card shows an A4-proportion board thumb) and Packs.
+- **Chores board** (only board type in this preview): Magnets-style weekly grid, board-only hero in real A4/A5 portrait proportion (no fridge chrome, no sideways scroll). Line count 3–7 swaps the hero to that many full-name rows. Day labels are magnetic tiles (`sun`–`sat`), not printed. Size A4 / A5; mount Magnetic / Stick / Nonstick; Add to cart.
 - **Chores word pack** — includes day tiles `sun`–`sat` plus chore words.
 - **Custom / names word pack** — you type the words; fewer tiles and a higher price.
 - **Emoji pack** — magnetic.

@@ -136,7 +136,7 @@ a {
   display: flex;
   align-items: center;
   min-height: 96px;
-  padding: 18px 22px 18px 48px;
+  padding: 18px 22px;
   border-radius: 22px;
   background:
     linear-gradient(90deg, #9aa6ae 0%, #c5cdd3 8%, #e8eef1 22%, #d7dfe5 55%, #c2ccd3 88%, #aeb8bf 100%);
@@ -703,22 +703,25 @@ input[type="text"] {
   width: 100%;
   max-width: 100%;
   min-width: 0;
-  padding: 10px 8px 28px;
+  padding: 8px 0 24px;
   display: flex;
-  justify-content: safe center;
+  justify-content: center;
   align-items: flex-start;
-  overflow-x: auto;
-  overflow-y: hidden;
-  overscroll-behavior-x: contain;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
+  overflow: visible;
 }
 
 .ferrous-board {
-  width: min(100%, 680px);
+  --board-width: 22rem;
+  width: min(100%, var(--board-width));
+  aspect-ratio: 210 / 297;
+  container-type: inline-size;
+  container-name: board;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   background: #f7f7f5;
   border-radius: 18px;
-  padding: 14px 14px 12px;
+  padding: 3.4%;
   position: relative;
   box-shadow:
     0 1px 0 rgba(255,255,255,0.9) inset,
@@ -726,17 +729,8 @@ input[type="text"] {
   border: 1px solid rgba(0,0,0,0.06);
 }
 
-.board-stage .ferrous-board {
-  min-width: 40.5rem;
-  flex-shrink: 0;
-}
-
 .ferrous-board.board-a5 {
-  width: min(100%, 520px);
-}
-
-.board-stage .ferrous-board.board-a5 {
-  min-width: 32.5rem;
+  --board-width: 15.5rem;
 }
 
 .ferrous-board.mount-stick {
@@ -756,7 +750,11 @@ input[type="text"] {
 
 .week-grid {
   display: grid;
-  grid-template-columns: minmax(max-content, 1.2fr) repeat(7, minmax(max-content, 1fr));
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  grid-template-columns: minmax(0, 1.12fr) repeat(7, minmax(0, 1fr));
+  grid-template-rows: minmax(1.55rem, 7.5%) repeat(var(--rows, 3), minmax(0, 1fr));
   border: 1.5px solid #111;
   border-radius: 4px;
   overflow: hidden;
@@ -767,11 +765,12 @@ input[type="text"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: min-content;
-  min-height: clamp(44px, calc(46px + (7 - var(--rows, 5)) * 7px), 70px);
-  padding: 6px 4px;
+  min-width: 0;
+  min-height: 0;
+  padding: 1.6cqi 0.7cqi;
   border-right: 1.5px solid #111;
   border-bottom: 1.5px solid #111;
+  overflow: hidden;
 }
 
 .week-cell:nth-child(8n) {
@@ -780,21 +779,19 @@ input[type="text"] {
 
 .week-corner,
 .week-day {
-  min-height: 46px;
   border-bottom: 3px solid #111;
   background: #fff;
 }
 
 .week-name {
   justify-content: flex-start;
-  padding-left: 8px;
+  padding-left: 1.4cqi;
 }
 
 .mag-tile {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   min-height: 28px;
   padding: 4px 8px;
   background: #fff;
@@ -811,6 +808,21 @@ input[type="text"] {
     0 1px 0 rgba(255,255,255,0.95) inset,
     0 1px 1px rgba(0,0,0,0.16),
     0 3px 5px rgba(0,0,0,0.1);
+}
+
+.week-grid .mag-tile {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  height: auto;
+  font-size: clamp(0.36rem, 2.55cqi, 0.62rem);
+  padding: 0.18em 0.32em;
+  letter-spacing: -0.04em;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.95) inset,
+    0 1px 1px rgba(0,0,0,0.14),
+    0 2px 3px rgba(0,0,0,0.08);
 }
 
 .mag-tile.tile-name {
@@ -836,6 +848,21 @@ input[type="text"] {
   border: 1px solid rgba(0,0,0,0.12);
 }
 
+.week-grid .mag-tile.tile-name {
+  min-width: 0;
+  font-size: clamp(0.38rem, 2.75cqi, 0.66rem);
+}
+
+.week-grid .mag-tile.tile-day {
+  min-width: 0;
+}
+
+.week-grid .mag-tile.is-empty {
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+}
+
 .pack-label {
   margin: 10px 0 6px;
   font-size: 0.72rem;
@@ -850,39 +877,19 @@ input[type="text"] {
 }
 
 .thumb-board {
-  height: 188px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 0;
+  padding: 16px 14px;
   background: #e4e0d6;
 }
 
 .thumb-ferrous {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 560px;
-  min-width: 560px;
-  padding: 10px;
-  transform: translate(-50%, -50%) scale(0.86);
-  transform-origin: center center;
-  box-shadow:
-    0 1px 0 rgba(255,255,255,0.9) inset,
-    0 10px 22px rgba(20, 30, 40, 0.2);
-}
-
-.thumb-ferrous .week-cell {
-  min-height: 38px;
-  padding: 4px 3px;
-}
-
-.thumb-ferrous .mag-tile {
-  font-size: 0.64rem;
-  padding: 3px 6px;
-  min-height: 22px;
-}
-
-.thumb-ferrous .mag-tile.tile-name {
-  min-width: 64px;
-  font-size: 0.68rem;
+  --board-width: 15rem;
+  position: static;
+  transform: none;
 }
 
 .week-cell:nth-last-child(-n + 8) {
@@ -897,24 +904,10 @@ input[type="text"] {
   .nav { margin-left: 0; }
   .hero-stage { min-height: 420px; }
   .lifestyle-fridge {
-    padding: 16px 16px 16px 42px;
+    padding: 16px;
     min-height: 84px;
   }
-  .board-stage {
-    justify-content: flex-start;
-  }
-  .board-stage .ferrous-board.board-a5,
-  .board-stage .ferrous-board {
-    width: 40.5rem;
-    max-width: none;
-    flex-shrink: 0;
-  }
-  .week-cell { min-height: 44px; padding: 6px 5px; }
-  .mag-tile { font-size: 0.75rem; padding: 4px 8px; }
-  .mag-tile.tile-name { min-width: 76px; font-size: 0.82rem; }
-  .mag-tile.tile-day { min-width: 42px; }
-  .thumb-board { height: 152px; }
-  .thumb-ferrous {
-    transform: translate(-50%, -50%) scale(0.52);
+  .ferrous-board {
+    border-radius: 14px;
   }
 }

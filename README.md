@@ -8,12 +8,7 @@ Clickable product UX so the catalogue is easy to visualise. **Not production pay
 
 [https://boihrle.github.io/familyboard/](https://boihrle.github.io/familyboard/)
 
-The shop lives at the root of `main` (`index.html`). GitHub Pages is free for this public repo. A GitHub App cannot turn Pages on; the repo owner does that once:
-
-1. Open [Settings → Pages](https://github.com/boihrle/familyboard/settings/pages)
-2. **Build and deployment → Source:** Deploy from a branch
-3. **Branch:** `main` · **Folder:** `/ (root)`
-4. Save. The site is usually up within a minute.
+GitHub Pages serves this public repo for free from `main` at `/` (root). To confirm or change that: [Settings → Pages](https://github.com/boihrle/familyboard/settings/pages) → **Deploy from a branch** → `main` · `/ (root)`.
 
 ## Local preview
 

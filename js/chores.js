@@ -1,16 +1,8 @@
 (function () {
   var FB = window.FamilyBoard;
-  var DAYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
-  var SAMPLE_NAMES = ["Georgia", "Caleb", "Isaac", "Ella", "Noah", "Harper", "Theo"];
-  var SAMPLE_GRID = [
-    ["dishes", "dinner", "vacuum", "washing", "rubbish", "tidy", "bed"],
-    ["vacuum", "dinner", "dishes", "vacuum", "dinner", "dishes", "vacuum"],
-    ["dishes", "vacuum", "dinner", "dishes", "vacuum", "dinner", ""],
-    ["laundry", "dishes", "vacuum", "", "dinner", "tidy", "bed"],
-    ["dinner", "", "dishes", "vacuum", "rubbish", "dinner", ""],
-    ["", "tidy", "dishes", "", "vacuum", "bed", "dinner"],
-    ["dishes", "vacuum", "", "dinner", "", "tidy", ""]
-  ];
+  var PHOTO_SRC = "images/chores-hero-photo.png";
+  var PHOTO_ALT =
+    "White ferrous weekly chores board on light wood. Magnetic day tiles sun through sat; name tiles Georgia, Caleb, and Isaac; chore tiles in the grid. No fridge.";
 
   var state = {
     lines: 3,
@@ -39,35 +31,6 @@
       .join("");
   }
 
-  function tile(label, extraClass) {
-    if (!label) {
-      return '<span class="mag-tile is-empty" aria-hidden="true"></span>';
-    }
-    return (
-      '<span class="mag-tile' +
-      (extraClass ? " " + extraClass : "") +
-      '">' +
-      label +
-      "</span>"
-    );
-  }
-
-  function renderWeekBoard() {
-    var html = '<div class="week-grid" style="--rows:' + state.lines + '">';
-    html += '<div class="week-cell week-corner"></div>';
-    DAYS.forEach(function (day) {
-      html += '<div class="week-cell week-day">' + tile(day, "tile-day") + "</div>";
-    });
-    for (var r = 0; r < state.lines; r += 1) {
-      html += '<div class="week-cell week-name">' + tile(SAMPLE_NAMES[r], "tile-name") + "</div>";
-      SAMPLE_GRID[r].forEach(function (word) {
-        html += '<div class="week-cell week-chore">' + tile(word) + "</div>";
-      });
-    }
-    html += "</div>";
-    return html;
-  }
-
   function renderBoard() {
     var stage = document.getElementById("hero-stage");
     var board = document.getElementById("board-hero");
@@ -75,18 +38,24 @@
     if (!board) return;
 
     board.className =
-      "ferrous-board board-" + state.size.toLowerCase() + " mount-" + state.mount;
+      "hero-photo-frame board-" + state.size.toLowerCase() + " mount-" + state.mount;
     board.setAttribute("data-lines", String(state.lines));
     board.setAttribute(
       "aria-label",
       "Chores weekly board with " +
         state.lines +
-        " name rows, magnetic day tiles sun to sat"
+        " name rows. Primary look is the 3-name Magnets photo on light wood."
     );
-    board.innerHTML = renderWeekBoard();
+    board.innerHTML =
+      '<img src="' +
+      PHOTO_SRC +
+      '" width="1280" height="720" alt="' +
+      PHOTO_ALT +
+      '">';
 
     if (stage) {
-      stage.className = "board-stage mount-" + state.mount + " size-" + state.size.toLowerCase();
+      stage.className =
+        "board-stage photo-stage mount-" + state.mount + " size-" + state.size.toLowerCase();
     }
     if (caption) {
       caption.textContent =

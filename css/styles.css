@@ -710,6 +710,42 @@ input[type="text"] {
   overflow: visible;
 }
 
+.hero-photo-frame {
+  width: min(100%, 44rem);
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #e6d7c2;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.hero-photo-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-photo-frame.board-a5 {
+  width: min(100%, 31rem);
+}
+
+.hero-photo-frame.mount-stick {
+  outline: 2px dashed #c9ae7a;
+}
+
+.hero-photo-frame.mount-nonstick::after {
+  content: "";
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  bottom: 8px;
+  height: 8px;
+  background: #8b6a3a;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
 .ferrous-board {
   --board-width: 22rem;
   width: min(100%, var(--board-width));
@@ -895,20 +931,20 @@ input[type="text"] {
   width: min(100%, 420px);
 }
 
-.thumb-board {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.thumb.thumb-board {
   height: auto;
-  min-height: 0;
-  padding: 16px 14px;
-  background: #e4e0d6;
+  aspect-ratio: 16 / 9;
+  padding: 0;
+  background: #e6d7c2;
+  overflow: hidden;
 }
 
-.thumb-ferrous {
-  --board-width: 15rem;
-  position: static;
-  transform: none;
+.thumb-board img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .week-cell:nth-last-child(-n + 8) {

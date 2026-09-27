@@ -733,6 +733,25 @@ input[type="text"] {
   --board-width: 15.5rem;
 }
 
+.board-stage .ferrous-board {
+  aspect-ratio: auto;
+  height: auto;
+}
+
+.board-stage .week-grid {
+  flex: none;
+  grid-template-rows: auto repeat(var(--rows, 3), auto);
+}
+
+.board-stage .week-cell {
+  min-height: 2.05rem;
+}
+
+.board-stage .week-corner,
+.board-stage .week-day {
+  min-height: 1.8rem;
+}
+
 .ferrous-board.mount-stick {
   outline: 2px dashed #c9ae7a;
 }

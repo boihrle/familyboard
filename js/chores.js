@@ -86,7 +86,7 @@
     board.innerHTML = renderWeekBoard();
 
     if (stage) {
-      stage.className = "hero-stage fridge-stage mount-" + state.mount + " size-" + state.size.toLowerCase();
+      stage.className = "board-stage mount-" + state.mount + " size-" + state.size.toLowerCase();
     }
     if (caption) {
       caption.textContent =

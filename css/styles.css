@@ -126,13 +126,36 @@ a {
   font-size: 0.75rem;
 }
 
-.hero-home {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 36px;
-  align-items: center;
-  padding: 48px 0 28px;
+.home-intro {
+  padding: 20px 0 4px;
   min-width: 0;
+}
+
+.lifestyle-fridge {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 96px;
+  padding: 18px 22px 18px 48px;
+  border-radius: 22px;
+  background:
+    linear-gradient(90deg, #9aa6ae 0%, #c5cdd3 8%, #e8eef1 22%, #d7dfe5 55%, #c2ccd3 88%, #aeb8bf 100%);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.lifestyle-copy {
+  color: #243038;
+}
+
+.lifestyle-copy .kicker {
+  margin-bottom: 4px;
+}
+
+.lifestyle-copy p:last-child {
+  margin: 0;
+  max-width: 46ch;
+  font-weight: 600;
 }
 
 .kicker {
@@ -212,6 +235,7 @@ h2 { font-size: 1.7rem; }
   flex-direction: column;
   gap: 8px;
   min-height: 220px;
+  min-width: 0;
 }
 
 .card h3 { margin-bottom: 0; }
@@ -243,8 +267,7 @@ h2 { font-size: 1.7rem; }
 }
 
 .product > *,
-.product-chores > *,
-.hero-home > * {
+.product-chores > * {
   min-width: 0;
 }
 
@@ -623,7 +646,7 @@ input[type="text"] {
   transform: translate(-50%, 0);
 }
 
-.section-title { padding-top: 12px; }
+.section-title { padding-top: 20px; }
 
 .product-chores {
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
@@ -676,10 +699,23 @@ input[type="text"] {
 
 .fridge-stage.mount-nonstick .fridge-handle { display: none; }
 
+.board-stage {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 10px 8px 28px;
+  display: flex;
+  justify-content: safe center;
+  align-items: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
 .ferrous-board {
   width: min(100%, 680px);
-  min-width: 40.5rem;
-  flex-shrink: 0;
   background: #f7f7f5;
   border-radius: 18px;
   padding: 14px 14px 12px;
@@ -690,8 +726,16 @@ input[type="text"] {
   border: 1px solid rgba(0,0,0,0.06);
 }
 
+.board-stage .ferrous-board {
+  min-width: 40.5rem;
+  flex-shrink: 0;
+}
+
 .ferrous-board.board-a5 {
   width: min(100%, 520px);
+}
+
+.board-stage .ferrous-board.board-a5 {
   min-width: 32.5rem;
 }
 
@@ -801,16 +845,44 @@ input[type="text"] {
   color: var(--muted);
 }
 
-.hero-home .ferrous-board {
-  width: 100%;
-}
-
-.hero-home .week-cell {
-  min-height: 40px;
-}
-
 .pack-board {
   width: min(100%, 420px);
+}
+
+.thumb-board {
+  height: 188px;
+  position: relative;
+  background: #e4e0d6;
+}
+
+.thumb-ferrous {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 560px;
+  min-width: 560px;
+  padding: 10px;
+  transform: translate(-50%, -50%) scale(0.86);
+  transform-origin: center center;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 10px 22px rgba(20, 30, 40, 0.2);
+}
+
+.thumb-ferrous .week-cell {
+  min-height: 38px;
+  padding: 4px 3px;
+}
+
+.thumb-ferrous .mag-tile {
+  font-size: 0.64rem;
+  padding: 3px 6px;
+  min-height: 22px;
+}
+
+.thumb-ferrous .mag-tile.tile-name {
+  min-width: 64px;
+  font-size: 0.68rem;
 }
 
 .week-cell:nth-last-child(-n + 8) {
@@ -818,20 +890,21 @@ input[type="text"] {
 }
 
 @media (max-width: 860px) {
-  .hero-home,
   .product,
   .product-chores {
     grid-template-columns: 1fr;
   }
   .nav { margin-left: 0; }
   .hero-stage { min-height: 420px; }
-  .fridge-stage {
-    align-items: flex-start;
-    padding: 24px 12px 28px 36px;
+  .lifestyle-fridge {
+    padding: 16px 16px 16px 42px;
+    min-height: 84px;
   }
-  .hero-home .ferrous-board,
-  .ferrous-board.board-a5,
-  .ferrous-board {
+  .board-stage {
+    justify-content: flex-start;
+  }
+  .board-stage .ferrous-board.board-a5,
+  .board-stage .ferrous-board {
     width: 40.5rem;
     max-width: none;
     flex-shrink: 0;
@@ -840,4 +913,8 @@ input[type="text"] {
   .mag-tile { font-size: 0.75rem; padding: 4px 8px; }
   .mag-tile.tile-name { min-width: 76px; font-size: 0.82rem; }
   .mag-tile.tile-day { min-width: 42px; }
+  .thumb-board { height: 152px; }
+  .thumb-ferrous {
+    transform: translate(-50%, -50%) scale(0.52);
+  }
 }

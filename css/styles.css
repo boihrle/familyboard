@@ -625,8 +625,8 @@ input[type="text"] {
 .fridge-stage {
   background:
     linear-gradient(90deg, #9aa6ae 0%, #c5cdd3 8%, #e8eef1 22%, #d7dfe5 55%, #c2ccd3 88%, #aeb8bf 100%);
-  min-height: 420px;
-  padding: 36px 28px 40px 52px;
+  min-height: 440px;
+  padding: 28px 22px 32px 48px;
   overflow: visible;
 }
 
@@ -661,7 +661,7 @@ input[type="text"] {
 .fridge-stage.mount-nonstick .fridge-handle { display: none; }
 
 .ferrous-board {
-  width: min(100%, 640px);
+  width: min(100%, 680px);
   background: #f7f7f5;
   border-radius: 18px;
   padding: 14px 14px 12px;
@@ -704,7 +704,7 @@ input[type="text"] {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 52px;
+  min-height: clamp(44px, calc(46px + (7 - var(--rows, 5)) * 7px), 70px);
   padding: 6px 4px;
   border-right: 1.5px solid #111;
   border-bottom: 1.5px solid #111;

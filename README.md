@@ -23,7 +23,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 ## What you can click
 
 - **Home** — short fridge-lifestyle strip (grey fridge face, no handle), then Boards (Chores card thumb is the approved Magnets photo on light wood) and Packs.
-- **Chores board** (only board type in this preview): Magnets-style weekly board **photo** as the hero (light wood, no fridge). Line count 3–7 still updates the configuration; the primary visual is the 3-name photo. Size A4 / A5; mount Magnetic / Stick / Nonstick; Add to cart.
+- **Chores board** (only board type in this preview): Magnets-style weekly board **photos** as the hero (light wood, no fridge). Line count 3–7 swaps matching photos (3 names through 7). Size A4 / A5; mount Magnetic / Stick / Nonstick; Add to cart. Home Chores card stays the 3-line photo.
 - **Chores word pack** — includes day tiles `sun`–`sat` plus chore words.
 - **Custom / names word pack** — you type the words; fewer tiles and a higher price.
 - **Emoji pack** — magnetic.

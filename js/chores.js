@@ -1,8 +1,31 @@
 (function () {
   var FB = window.FamilyBoard;
-  var PHOTO_SRC = "images/chores-hero-photo.png";
-  var PHOTO_ALT =
-    "White ferrous weekly chores board on light wood. Magnetic day tiles sun through sat; name tiles Georgia, Caleb, and Isaac; chore tiles in the grid. No fridge.";
+  var PHOTO_BY_LINES = {
+    3: "images/chores-hero-photo.png",
+    4: "images/chores-hero-photo-4-lines.png",
+    5: "images/chores-hero-photo-5-lines.png",
+    6: "images/chores-hero-photo-6-lines.png",
+    7: "images/chores-hero-photo-7-lines.png"
+  };
+  var NAMES_BY_LINES = {
+    3: "Georgia, Caleb, and Isaac",
+    4: "Georgia, Caleb, Isaac, and Ella",
+    5: "Georgia, Caleb, Isaac, Ella, and Noah",
+    6: "Georgia, Caleb, Isaac, Ella, Noah, and Harper",
+    7: "Georgia, Caleb, Isaac, Ella, Noah, Harper, and Theo"
+  };
+
+  function photoSrc(lines) {
+    return PHOTO_BY_LINES[lines] || PHOTO_BY_LINES[3];
+  }
+
+  function photoAlt(lines) {
+    return (
+      "White ferrous weekly chores board on light wood. Magnetic day tiles sun through sat; name tiles " +
+      (NAMES_BY_LINES[lines] || NAMES_BY_LINES[3]) +
+      "; chore tiles in the grid. No fridge."
+    );
+  }
 
   var state = {
     lines: 3,
@@ -42,15 +65,13 @@
     board.setAttribute("data-lines", String(state.lines));
     board.setAttribute(
       "aria-label",
-      "Chores weekly board with " +
-        state.lines +
-        " name rows. Primary look is the 3-name Magnets photo on light wood."
+      "Chores weekly board with " + state.lines + " name rows on light wood. No fridge."
     );
     board.innerHTML =
       '<img src="' +
-      PHOTO_SRC +
+      photoSrc(state.lines) +
       '" width="1280" height="720" alt="' +
-      PHOTO_ALT +
+      photoAlt(state.lines) +
       '">';
 
     if (stage) {

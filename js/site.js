@@ -71,7 +71,7 @@
       setTimeout(function () {
         el.remove();
       }, 280);
-    }, 1800);
+    }, 2600);
   }
 
   window.FBSite = { renderChrome: renderChrome, toast: toast, currentFile: currentFile };

@@ -8,7 +8,9 @@ Clickable product UX so the catalogue is easy to visualise. **Not production pay
 
 [https://boihrle.github.io/familyboard/](https://boihrle.github.io/familyboard/)
 
-GitHub Pages is served from `main` (site root). First publish can take a minute after the workflow runs.
+GitHub Pages is served from `main` (site root) via `.github/workflows/pages.yml`. First publish can take a minute after the workflow runs.
+
+If the Actions deploy reports that Pages is not enabled, turn it on once (free for public repos): **Settings → Pages → Source: GitHub Actions**. Re-run the **Deploy GitHub Pages** workflow.
 
 ## Local preview
 

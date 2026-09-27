@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom / names word pack — FamilyBoard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="wrap product">
+    <div class="hero-stage mount-magnetic">
+      <div class="board">
+        <div class="board-head">Your words</div>
+        <div class="magnet-tray" id="custom-preview"></div>
+        <div class="board-foot">Same size as chore magnets</div>
+      </div>
+    </div>
+    <aside class="buy-panel">
+      <p class="kicker">Word pack</p>
+      <h1>Custom / names</h1>
+      <p class="muted">You choose the tiles — names, house rules, or extra chores.</p>
+      <p class="note">Fewer tiles than the fixed Chores word pack (8 vs 16) and a higher price, because each set is made to order.</p>
+      <form id="word-form" class="word-form">
+        <input id="word-input" type="text" maxlength="14" placeholder="Add a name or word" autocomplete="off">
+        <button class="btn ghost" id="word-add" type="submit">Add word</button>
+      </form>
+      <ul id="word-list" class="chip-list"></ul>
+      <p id="word-meta" class="muted">0 of 8 tiles</p>
+      <div class="price-row">
+        <span class="muted">Up to 8 tiles · magnetic</span>
+        <strong>$34</strong>
+      </div>
+      <button class="btn" id="add-custom" type="button">Add to cart</button>
+    </aside>
+  </main>
+  <footer id="site-footer" class="wrap"></footer>
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/custom-pack.js"></script>
+</body>
+</html>

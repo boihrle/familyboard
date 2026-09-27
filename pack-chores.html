@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chores word pack — FamilyBoard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="wrap product">
+    <div class="hero-stage mount-magnetic">
+      <div class="board">
+        <div class="board-head">Chores words</div>
+        <div class="magnet-tray" id="chores-words"></div>
+        <div class="board-foot">Fixed pack · 16 magnetic tiles</div>
+      </div>
+    </div>
+    <aside class="buy-panel">
+      <p class="kicker">Word pack</p>
+      <h1>Chores word pack</h1>
+      <p class="muted">A set list of chore tiles. Same magnet size as names on the board. Pair with a Chores board.</p>
+      <div class="price-row">
+        <span class="muted">16 tiles · magnetic</span>
+        <strong>$18</strong>
+      </div>
+      <button class="btn" id="add-pack" type="button">Add to cart</button>
+    </aside>
+  </main>
+  <footer id="site-footer" class="wrap"></footer>
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var tray = document.getElementById("chores-words");
+      tray.innerHTML = FamilyBoard.CHORES_WORDS.map(function (word) {
+        return '<span class="magnet magnet-word">' + word + "</span>";
+      }).join("");
+      document.getElementById("add-pack").addEventListener("click", function () {
+        FamilyBoard.addItem({
+          productId: "pack-chores",
+          name: "Chores word pack",
+          kind: "pack",
+          price: FamilyBoard.PRODUCTS["pack-chores"].price
+        });
+        FBSite.toast("Chores word pack added to cart");
+      });
+    });
+  </script>
+</body>
+</html>

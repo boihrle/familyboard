@@ -850,19 +850,19 @@ input[type="text"] {
 }
 
 .thumb-board {
-  height: 168px;
+  height: 188px;
   position: relative;
-  background: #e7e4db;
+  background: #e4e0d6;
 }
 
 .thumb-ferrous {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 540px;
-  min-width: 540px;
+  width: 560px;
+  min-width: 560px;
   padding: 10px;
-  transform: translate(-50%, -50%) scale(0.46);
+  transform: translate(-50%, -50%) scale(0.86);
   transform-origin: center center;
   box-shadow:
     0 1px 0 rgba(255,255,255,0.9) inset,
@@ -913,7 +913,8 @@ input[type="text"] {
   .mag-tile { font-size: 0.75rem; padding: 4px 8px; }
   .mag-tile.tile-name { min-width: 76px; font-size: 0.82rem; }
   .mag-tile.tile-day { min-width: 42px; }
+  .thumb-board { height: 152px; }
   .thumb-ferrous {
-    transform: translate(-50%, -50%) scale(0.4);
+    transform: translate(-50%, -50%) scale(0.52);
   }
 }

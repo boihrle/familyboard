@@ -627,7 +627,12 @@ input[type="text"] {
     linear-gradient(90deg, #9aa6ae 0%, #c5cdd3 8%, #e8eef1 22%, #d7dfe5 55%, #c2ccd3 88%, #aeb8bf 100%);
   min-height: 440px;
   padding: 28px 22px 32px 48px;
-  overflow: visible;
+  align-items: safe center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 .fridge-stage::before {
@@ -662,6 +667,8 @@ input[type="text"] {
 
 .ferrous-board {
   width: min(100%, 680px);
+  min-width: 40.5rem;
+  flex-shrink: 0;
   background: #f7f7f5;
   border-radius: 18px;
   padding: 14px 14px 12px;
@@ -673,7 +680,8 @@ input[type="text"] {
 }
 
 .ferrous-board.board-a5 {
-  width: min(100%, 460px);
+  width: min(100%, 520px);
+  min-width: 32.5rem;
 }
 
 .ferrous-board.mount-stick {
@@ -693,7 +701,7 @@ input[type="text"] {
 
 .week-grid {
   display: grid;
-  grid-template-columns: minmax(92px, 1.2fr) repeat(7, minmax(0, 1fr));
+  grid-template-columns: minmax(max-content, 1.2fr) repeat(7, minmax(max-content, 1fr));
   border: 1.5px solid #111;
   border-radius: 4px;
   overflow: hidden;
@@ -704,6 +712,7 @@ input[type="text"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: min-content;
   min-height: clamp(44px, calc(46px + (7 - var(--rows, 5)) * 7px), 70px);
   padding: 6px 4px;
   border-right: 1.5px solid #111;
@@ -730,6 +739,7 @@ input[type="text"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   min-height: 28px;
   padding: 4px 8px;
   background: #fff;
@@ -805,13 +815,18 @@ input[type="text"] {
   .nav { margin-left: 0; }
   .hero-stage { min-height: 420px; }
   .fridge-stage {
-    padding: 28px 16px 32px 42px;
+    align-items: flex-start;
+    padding: 24px 12px 28px 36px;
   }
+  .hero-home .ferrous-board,
   .ferrous-board.board-a5,
   .ferrous-board {
-    width: 100%;
+    width: 40.5rem;
+    max-width: none;
+    flex-shrink: 0;
   }
-  .week-cell { min-height: 42px; padding: 4px 2px; }
-  .mag-tile { font-size: 0.68rem; padding: 3px 5px; }
-  .mag-tile.tile-name { min-width: 58px; font-size: 0.72rem; }
+  .week-cell { min-height: 44px; padding: 6px 5px; }
+  .mag-tile { font-size: 0.75rem; padding: 4px 8px; }
+  .mag-tile.tile-name { min-width: 76px; font-size: 0.82rem; }
+  .mag-tile.tile-day { min-width: 42px; }
 }

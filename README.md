@@ -8,9 +8,12 @@ Clickable product UX so the catalogue is easy to visualise. **Not production pay
 
 [https://boihrle.github.io/familyboard/](https://boihrle.github.io/familyboard/)
 
-GitHub Pages is served from `main` (site root) via `.github/workflows/pages.yml`. First publish can take a minute after the workflow runs.
+The shop lives at the root of `main` (`index.html`). GitHub Pages is free for this public repo. A GitHub App cannot turn Pages on; the repo owner does that once:
 
-If the Actions deploy reports that Pages is not enabled, turn it on once (free for public repos): **Settings → Pages → Source: GitHub Actions**. Re-run the **Deploy GitHub Pages** workflow.
+1. Open [Settings → Pages](https://github.com/boihrle/familyboard/settings/pages)
+2. **Build and deployment → Source:** Deploy from a branch
+3. **Branch:** `main` · **Folder:** `/ (root)`
+4. Save. The site is usually up within a minute.
 
 ## Local preview
 

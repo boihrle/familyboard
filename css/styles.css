@@ -43,7 +43,7 @@ a {
 }
 
 .wrap {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
 }
 
@@ -57,7 +57,7 @@ a {
 }
 
 .bar {
-  width: min(1120px, calc(100% - 32px));
+  width: min(1200px, calc(100% - 32px));
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -498,6 +498,10 @@ legend {
   padding: 8px 0 16px;
 }
 
+.magnet-tray .mag-tile {
+  margin: 0;
+}
+
 .word-form {
   display: flex;
   gap: 8px;
@@ -613,11 +617,201 @@ input[type="text"] {
 
 .section-title { padding-top: 12px; }
 
+.product-chores {
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+  align-items: start;
+}
+
+.fridge-stage {
+  background:
+    linear-gradient(90deg, #9aa6ae 0%, #c5cdd3 8%, #e8eef1 22%, #d7dfe5 55%, #c2ccd3 88%, #aeb8bf 100%);
+  min-height: 420px;
+  padding: 36px 28px 40px 52px;
+  overflow: visible;
+}
+
+.fridge-stage::before {
+  display: none;
+}
+
+.fridge-handle {
+  position: absolute;
+  left: 14px;
+  top: 18%;
+  bottom: 18%;
+  width: 14px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #6f7a82 0%, #cfd6db 35%, #f4f7f8 55%, #9aa4ab 100%);
+  box-shadow:
+    inset 2px 0 3px rgba(255,255,255,0.6),
+    inset -2px 0 4px rgba(0,0,0,0.25),
+    4px 0 10px rgba(0,0,0,0.12);
+}
+
+.fridge-stage.mount-stick {
+  background: linear-gradient(180deg, #f4eee3, #e2d3b8);
+}
+
+.fridge-stage.mount-stick .fridge-handle { display: none; }
+
+.fridge-stage.mount-nonstick {
+  background: linear-gradient(180deg, #efe8dc, #d9cbb6);
+}
+
+.fridge-stage.mount-nonstick .fridge-handle { display: none; }
+
+.ferrous-board {
+  width: min(100%, 640px);
+  background: #f7f7f5;
+  border-radius: 18px;
+  padding: 14px 14px 12px;
+  position: relative;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.9) inset,
+    0 18px 36px rgba(20, 30, 40, 0.22);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.ferrous-board.board-a5 {
+  width: min(100%, 460px);
+}
+
+.ferrous-board.mount-stick {
+  outline: 2px dashed #c9ae7a;
+}
+
+.ferrous-board.mount-nonstick::after {
+  content: "";
+  position: absolute;
+  left: 16%;
+  right: 16%;
+  bottom: -12px;
+  height: 10px;
+  background: #8b6a3a;
+  border-radius: 3px;
+}
+
+.week-grid {
+  display: grid;
+  grid-template-columns: minmax(92px, 1.2fr) repeat(7, minmax(0, 1fr));
+  border: 1.5px solid #111;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.week-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 6px 4px;
+  border-right: 1.5px solid #111;
+  border-bottom: 1.5px solid #111;
+}
+
+.week-cell:nth-child(8n) {
+  border-right: 0;
+}
+
+.week-corner,
+.week-day {
+  min-height: 46px;
+  border-bottom: 3px solid #111;
+  background: #fff;
+}
+
+.week-name {
+  justify-content: flex-start;
+  padding-left: 8px;
+}
+
+.mag-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 4px 8px;
+  background: #fff;
+  color: #111;
+  font-family: "DM Sans", "Nunito Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.95) inset,
+    0 1px 1px rgba(0,0,0,0.16),
+    0 3px 5px rgba(0,0,0,0.1);
+}
+
+.mag-tile.tile-name {
+  min-width: 76px;
+  font-size: 0.86rem;
+}
+
+.mag-tile.tile-day {
+  min-width: 38px;
+  text-transform: lowercase;
+}
+
+.mag-tile.is-empty {
+  min-width: 38px;
+  min-height: 28px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.mag-tile.flat {
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+.pack-label {
+  margin: 10px 0 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero-home .ferrous-board {
+  width: 100%;
+}
+
+.hero-home .week-cell {
+  min-height: 40px;
+}
+
+.pack-board {
+  width: min(100%, 420px);
+}
+
+.week-cell:nth-last-child(-n + 8) {
+  border-bottom: 0;
+}
+
 @media (max-width: 860px) {
   .hero-home,
-  .product {
+  .product,
+  .product-chores {
     grid-template-columns: 1fr;
   }
   .nav { margin-left: 0; }
   .hero-stage { min-height: 420px; }
+  .fridge-stage {
+    padding: 28px 16px 32px 42px;
+  }
+  .ferrous-board.board-a5,
+  .ferrous-board {
+    width: 100%;
+  }
+  .week-cell { min-height: 42px; padding: 4px 2px; }
+  .mag-tile { font-size: 0.68rem; padding: 3px 5px; }
+  .mag-tile.tile-name { min-width: 58px; font-size: 0.72rem; }
 }

@@ -1,10 +1,19 @@
 (function () {
   var FB = window.FamilyBoard;
-  var SAMPLE_NAMES = ["Mia", "Leo", "Sam", "Dad", "Mum", "Ava", "Ben"];
-  var SAMPLE_WORDS = ["Dishes", "Laundry", "Bins", "Vacuum", "Pets", "Homework", "Garden"];
+  var DAYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+  var SAMPLE_NAMES = ["Georgia", "Caleb", "Isaac", "Ella", "Noah", "Harper", "Theo"];
+  var SAMPLE_GRID = [
+    ["dishes", "dinner", "vacuum", "washing", "rubbish", "tidy", "bed"],
+    ["vacuum", "dinner", "dishes", "vacuum", "dinner", "dishes", "vacuum"],
+    ["dishes", "vacuum", "dinner", "dishes", "vacuum", "dinner", ""],
+    ["laundry", "dishes", "vacuum", "", "dinner", "tidy", "bed"],
+    ["dinner", "", "dishes", "vacuum", "rubbish", "dinner", ""],
+    ["", "tidy", "dishes", "", "vacuum", "bed", "dinner"],
+    ["dishes", "vacuum", "", "dinner", "", "tidy", ""]
+  ];
 
   var state = {
-    lines: 5,
+    lines: 3,
     size: "A4",
     mount: "magnetic"
   };
@@ -30,91 +39,33 @@
       .join("");
   }
 
-  function magnetSvg(x, y, w, h, fill, label, empty) {
-    var rx = 5;
-    if (empty) {
-      return (
-        '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h +
-        '" rx="' + rx + '" fill="none" stroke="#1b241c" stroke-width="1.2" stroke-dasharray="4 3" opacity="0.35"/>'
-      );
+  function tile(label, extraClass) {
+    if (!label) {
+      return '<span class="mag-tile is-empty" aria-hidden="true"></span>';
     }
     return (
-      '<g>' +
-      '<rect x="' + x + '" y="' + (y + 2) + '" width="' + w + '" height="' + h +
-      '" rx="' + rx + '" fill="rgba(0,0,0,0.12)"/>' +
-      '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h +
-      '" rx="' + rx + '" fill="' + fill + '" stroke="rgba(255,255,255,0.7)"/>' +
-      '<text x="' + (x + w / 2) + '" y="' + (y + h / 2 + 4) +
-      '" text-anchor="middle" font-size="11" font-weight="800" font-family="Nunito Sans, sans-serif" fill="#1b241c">' +
+      '<span class="mag-tile' +
+      (extraClass ? " " + extraClass : "") +
+      '">' +
       label +
-      "</text>" +
-      "</g>"
+      "</span>"
     );
   }
 
-  function renderBoardSvg() {
-    var isA5 = state.size === "A5";
-    var width = isA5 ? 280 : 380;
-    var rowH = 36;
-    var padX = 18;
-    var headH = 42;
-    var height = headH + 16 + state.lines * rowH + 28;
-    var magnetW = (width - padX * 2 - 16 - 8 * 2) / 3;
-    var magnetH = 26;
-    var nameFill = "#ffe7a1";
-    var wordFill = "#d5efd2";
-    var frame =
-      state.mount === "magnetic" ? "#8fa0aa" : state.mount === "stick" ? "#c9ae7a" : "#8b6a3a";
-
-    var rows = "";
-    for (var i = 0; i < state.lines; i += 1) {
-      var y = headH + 8 + i * rowH;
-      var filled = i < Math.max(2, state.lines - 2) || (state.lines <= 3 && i === 0);
-      var name = filled ? SAMPLE_NAMES[i % SAMPLE_NAMES.length] : "";
-      var word = filled && i % 3 !== 2 ? SAMPLE_WORDS[i % SAMPLE_WORDS.length] : "";
-      var extra = filled && i === 1 ? SAMPLE_WORDS[3] : "";
-      var x0 = padX + 16;
-      rows +=
-        '<text x="' + padX + '" y="' + (y + 18) +
-        '" font-size="10" font-weight="800" fill="#5d6758" font-family="Nunito Sans, sans-serif">' +
-        (i + 1) +
-        "</text>" +
-        magnetSvg(x0, y + 4, magnetW, magnetH, nameFill, name, !name) +
-        magnetSvg(x0 + magnetW + 8, y + 4, magnetW, magnetH, wordFill, word, !word) +
-        magnetSvg(x0 + (magnetW + 8) * 2, y + 4, magnetW, magnetH, wordFill, extra, !extra) +
-        '<line x1="' + padX + '" y1="' + (y + rowH - 4) + '" x2="' + (width - padX) +
-        '" y2="' + (y + rowH - 4) + '" stroke="#1b241c" stroke-opacity="0.12" stroke-dasharray="3 4"/>';
+  function renderWeekBoard() {
+    var html = '<div class="week-grid" style="--rows:' + state.lines + '">';
+    html += '<div class="week-cell week-corner"></div>';
+    DAYS.forEach(function (day) {
+      html += '<div class="week-cell week-day">' + tile(day, "tile-day") + "</div>";
+    });
+    for (var r = 0; r < state.lines; r += 1) {
+      html += '<div class="week-cell week-name">' + tile(SAMPLE_NAMES[r], "tile-name") + "</div>";
+      SAMPLE_GRID[r].forEach(function (word) {
+        html += '<div class="week-cell week-chore">' + tile(word) + "</div>";
+      });
     }
-
-    var stand =
-      state.mount === "nonstick"
-        ? '<rect x="' + width * 0.18 + '" y="' + (height + 6) + '" width="' + width * 0.64 +
-          '" height="10" rx="2" fill="#8b6a3a"/>'
-        : "";
-    var tape =
-      state.mount === "stick"
-        ? '<rect x="' + (width - 54) + '" y="18" width="58" height="18" rx="3" fill="#f3d9a0" transform="rotate(8 ' +
-          (width - 20) + ' 27)"/><text x="' + (width - 25) + '" y="31" text-anchor="middle" font-size="8" font-weight="800" fill="#6a4b1a" transform="rotate(8 ' +
-          (width - 20) + ' 27)">PEEL &amp; STICK</text>'
-        : "";
-
-    var svg =
-      '<svg viewBox="0 0 ' + width + " " + (height + (state.mount === "nonstick" ? 18 : 4)) +
-      '" width="' + width + '" role="img" aria-label="Chores board with ' +
-      state.lines + ' name rows, ' + state.size + ", " + FB.mountLabel(state.mount) + '">' +
-      '<rect x="0" y="0" width="' + width + '" height="' + height + '" rx="10" fill="#fffdf8" stroke="' +
-      frame + '" stroke-width="' + (state.mount === "magnetic" ? 7 : 2) + '"/>' +
-      '<text x="' + width / 2 + '" y="30" text-anchor="middle" font-size="22" font-family="Fraunces, Georgia, serif" fill="#1b241c">Chores</text>' +
-      rows +
-      '<text x="' + width / 2 + '" y="' + (height - 10) +
-      '" text-anchor="middle" font-size="10" font-weight="800" letter-spacing="1.2" fill="#5d6758" font-family="Nunito Sans, sans-serif">' +
-      state.lines +
-      " NAME ROWS</text>" +
-      tape +
-      stand +
-      "</svg>";
-
-    return svg;
+    html += "</div>";
+    return html;
   }
 
   function renderBoard() {
@@ -123,20 +74,28 @@
     var caption = document.getElementById("hero-caption");
     if (!board) return;
 
-    board.className = "board-svg-wrap board-" + state.size.toLowerCase();
-    board.innerHTML = renderBoardSvg();
+    board.className =
+      "ferrous-board board-" + state.size.toLowerCase() + " mount-" + state.mount;
+    board.setAttribute("data-lines", String(state.lines));
+    board.setAttribute(
+      "aria-label",
+      "Chores weekly board with " +
+        state.lines +
+        " name rows, magnetic day tiles sun to sat"
+    );
+    board.innerHTML = renderWeekBoard();
 
     if (stage) {
-      stage.className = "hero-stage mount-" + state.mount + " size-" + state.size.toLowerCase();
+      stage.className = "hero-stage fridge-stage mount-" + state.mount + " size-" + state.size.toLowerCase();
     }
     if (caption) {
       caption.textContent =
         state.lines +
-        " lines · " +
+        " name rows · " +
         state.size +
         " · " +
         FB.mountLabel(state.mount) +
-        " — name and word magnets are the same size";
+        " — days, names, and chores are magnetic tiles";
     }
   }
 
@@ -167,7 +126,7 @@
     );
     document.getElementById("price-now").textContent = FB.money(FB.boardPrice(state.size, state.mount));
     document.getElementById("config-now").textContent =
-      state.lines + " lines · " + state.size + " · " + FB.mountLabel(state.mount);
+      state.lines + " name rows · " + state.size + " · " + FB.mountLabel(state.mount);
   }
 
   function bind() {

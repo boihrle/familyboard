@@ -8,24 +8,21 @@
 (function (global) {
   const CART_KEY = "familyboard-cart-v1";
 
-  const CHORES_WORDS = [
-    "Dishes",
-    "Laundry",
-    "Bins",
-    "Vacuum",
-    "Pets",
-    "Homework",
-    "Garden",
-    "Make beds",
-    "Lunchboxes",
-    "Wipe benches",
-    "Recycle",
-    "Tidy rooms",
-    "School bags",
-    "Feed fish",
-    "Water plants",
-    "Set table"
-  ];
+  const DAY_WORDS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+  const CHORES_WORDS = DAY_WORDS.concat([
+    "dishes",
+    "dinner",
+    "vacuum",
+    "washing",
+    "rubbish",
+    "tidy",
+    "bed",
+    "laundry",
+    "bins",
+    "pets",
+    "homework",
+    "garden"
+  ]);
 
   const EMOJIS = ["⭐", "❤️", "🎉", "✅", "🌈", "🐶", "🌞", "🎵", "🏆", "🌸", "⚽", "📚"];
 
@@ -42,7 +39,7 @@
       name: "Chores word pack",
       href: "pack-chores.html",
       price: 18,
-      tileCount: 16,
+      tileCount: 19,
       magnetic: true
     },
     "pack-custom": {
@@ -69,7 +66,7 @@
       name: "Sticker pack",
       href: "pack-sticker.html",
       price: 12,
-      tileCount: 16,
+      tileCount: 19,
       magnetic: false
     }
   };
@@ -178,6 +175,7 @@
 
   global.FamilyBoard = {
     PRODUCTS: PRODUCTS,
+    DAY_WORDS: DAY_WORDS,
     CHORES_WORDS: CHORES_WORDS,
     EMOJIS: EMOJIS,
     LINE_COUNTS: LINE_COUNTS,

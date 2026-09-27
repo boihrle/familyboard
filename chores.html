@@ -5,25 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Chores board — FamilyBoard</title>
-  <meta name="description" content="Configure Chores board line count, size, and mount. Hero mockup updates as you click.">
+  <meta name="description" content="Weekly Chores board: magnetic day tiles, full names, 3–7 rows. Hero mockup updates as you click.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,500&family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div id="site-header"></div>
-  <main class="wrap product">
+  <main class="wrap product product-chores">
     <div>
-      <div id="hero-stage" class="hero-stage mount-magnetic size-a4">
-        <div id="board-hero" class="board-svg-wrap board-a4" data-lines="5"></div>
+      <div id="hero-stage" class="hero-stage fridge-stage mount-magnetic size-a4">
+        <div class="fridge-handle" aria-hidden="true"></div>
+        <div id="board-hero" class="ferrous-board board-a4" data-lines="3"></div>
       </div>
-      <p id="hero-caption">5 lines · A4 · Magnetic</p>
+      <p id="hero-caption">3 name rows · A4 · Magnetic</p>
     </div>
     <aside class="buy-panel">
       <p class="kicker">Board</p>
       <h1>Chores board</h1>
-      <p class="muted">One row per person. Name magnets are the same size as word magnets. Empty lines are fine — leave them for guests or a spare kid.</p>
+      <p class="muted">One row per person on a weekly grid. Day labels are magnetic tiles (sun–sat), not printed. Full first-name tiles sit on the left; chore tiles go in the cells. Empty cells are fine.</p>
 
       <fieldset>
         <legend>Line count</legend>
@@ -39,7 +40,7 @@
       </fieldset>
 
       <div class="price-row">
-        <span id="config-now" class="muted">5 lines · A4 · Magnetic</span>
+        <span id="config-now" class="muted">3 name rows · A4 · Magnetic</span>
         <strong id="price-now">$81</strong>
       </div>
       <button class="btn" id="add-board" type="button">Add to cart</button>

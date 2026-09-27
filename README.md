@@ -22,13 +22,13 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 
 ## What you can click
 
-- **Chores board** (only board type in this preview): line count 3 / 4 / 5 / 6 / 7 swaps the SVG hero so you can count name rows; size A4 / A5; mount Magnetic / Stick / Nonstick; Add to cart.
-- **Chores word pack** — fixed magnetic tiles.
+- **Chores board** (only board type in this preview): Magnets-style weekly grid. Line count 3–7 swaps the hero to that many full-name rows. Day labels are magnetic tiles (`sun`–`sat`), not printed. Size A4 / A5; mount Magnetic / Stick / Nonstick; Add to cart.
+- **Chores word pack** — includes day tiles `sun`–`sat` plus chore words.
 - **Custom / names word pack** — you type the words; fewer tiles and a higher price.
 - **Emoji pack** — magnetic.
 - **Sticker pack** — non-magnetic.
 - **Cart** holds a board plus packs. **Pay** goes to a fake success page.
 
-Name magnets are the same size as word magnets. Empty rows on the mockup are intentional.
+Name tiles match chore and day tiles (white, black text). Empty cells on the mockup are intentional.
 
 Other board types get their own pages later.

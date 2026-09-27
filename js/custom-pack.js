@@ -14,7 +14,7 @@
       .map(function (word, index) {
         return (
           '<li class="chip">' +
-          '<span class="magnet magnet-name">' +
+          '<span class="mag-tile tile-name">' +
           word +
           "</span>" +
           '<button type="button" class="chip-x" data-remove="' +
@@ -30,7 +30,7 @@
     var slots = "";
     for (var i = 0; i < MAX; i += 1) {
       slots +=
-        '<span class="magnet magnet-name' +
+        '<span class="mag-tile tile-name' +
         (words[i] ? "" : " is-empty") +
         '">' +
         (words[i] || "") +

@@ -132,6 +132,7 @@ a {
   gap: 36px;
   align-items: center;
   padding: 48px 0 28px;
+  min-width: 0;
 }
 
 .kicker {
@@ -238,6 +239,13 @@ h2 { font-size: 1.7rem; }
   gap: 32px;
   padding: 36px 0 56px;
   align-items: start;
+  min-width: 0;
+}
+
+.product > *,
+.product-chores > *,
+.hero-home > * {
+  min-width: 0;
 }
 
 .hero-stage {
@@ -626,6 +634,9 @@ input[type="text"] {
   background:
     linear-gradient(90deg, #9aa6ae 0%, #c5cdd3 8%, #e8eef1 22%, #d7dfe5 55%, #c2ccd3 88%, #aeb8bf 100%);
   min-height: 440px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   padding: 28px 22px 32px 48px;
   align-items: safe center;
   overflow-x: auto;

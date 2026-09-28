@@ -23,7 +23,7 @@
     return (
       "White ferrous weekly chores board on light wood. Magnetic day tiles Sun through Sat; name tiles " +
       (NAMES_BY_LINES[lines] || NAMES_BY_LINES[3]) +
-      "; chore tiles in the grid. No fridge."
+      "; chore tiles in the grid."
     );
   }
 
@@ -65,7 +65,7 @@
     board.setAttribute("data-lines", String(state.lines));
     board.setAttribute(
       "aria-label",
-      "Chores weekly board with " + state.lines + " name rows on light wood. No fridge."
+      "Chores weekly board with " + state.lines + " name rows on light wood."
     );
     board.innerHTML =
       '<img src="' +

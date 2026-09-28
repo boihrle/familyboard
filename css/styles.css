@@ -130,21 +130,21 @@ a {
   min-width: 0;
 }
 
-.lifestyle-fridge {
+.lifestyle-lede {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 96px;
   padding: 18px 22px;
   border-radius: 22px;
-  background:
-    linear-gradient(90deg, #9aa6ae 0%, #c5cdd3 8%, #e8eef1 22%, #d7dfe5 55%, #c2ccd3 88%, #aeb8bf 100%);
+  background: var(--cream);
+  border: 1px solid var(--line);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
 
 .lifestyle-copy {
-  color: #243038;
+  color: var(--ink);
 }
 
 .lifestyle-copy .kicker {
@@ -974,7 +974,7 @@ input[type="text"] {
     font-size: 0.88rem;
   }
   .hero-stage { min-height: 420px; }
-  .lifestyle-fridge {
+  .lifestyle-lede {
     padding: 16px;
     min-height: 84px;
   }

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <title>Emoji pack — FamilyBoard</title>
+  <title>Emoji Pack — FamilyBoard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
     </div>
     <aside class="buy-panel">
       <p class="kicker">Pack</p>
-      <h1>Emoji pack</h1>
+      <h1>Emoji Pack</h1>
       <p class="muted">Magnetic emoji tiles for stars, pets, wins, and moods. They snap onto the board like names and chores.</p>
       <div class="price-row">
         <span class="muted">12 tiles · magnetic</span>
@@ -42,11 +42,11 @@
       document.getElementById("add-pack").addEventListener("click", function () {
         FamilyBoard.addItem({
           productId: "pack-emoji",
-          name: "Emoji pack",
+          name: FamilyBoard.PRODUCTS["pack-emoji"].name,
           kind: "pack",
           price: FamilyBoard.PRODUCTS["pack-emoji"].price
         });
-        FBSite.toast("Emoji pack added to cart");
+        FBSite.toast(FamilyBoard.PRODUCTS["pack-emoji"].name + " added to cart");
       });
     });
   </script>

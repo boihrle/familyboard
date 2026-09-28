@@ -5,8 +5,8 @@
     { href: "pack-chores.html", label: "Chores words" },
     { href: "pack-days.html", label: "Day Word Pack" },
     { href: "pack-custom.html", label: "Custom Words" },
-    { href: "pack-emoji.html", label: "Emoji" },
-    { href: "pack-sticker.html", label: "Stickers" },
+    { href: "pack-emoji.html", label: "Emoji Pack" },
+    { href: "pack-sticker.html", label: "Sticker Pack" },
     { href: "pen-holder.html", label: "Pen & Pen Holder" }
   ];
 

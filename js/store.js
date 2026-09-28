@@ -159,7 +159,7 @@
     "pack-emoji": {
       id: "pack-emoji",
       kind: "pack",
-      name: "Emoji pack",
+      name: "Emoji Pack",
       href: "pack-emoji.html",
       price: 15,
       tileCount: 12,
@@ -168,7 +168,7 @@
     "pack-sticker": {
       id: "pack-sticker",
       kind: "pack",
-      name: "Sticker pack",
+      name: "Sticker Pack",
       href: "pack-sticker.html",
       price: 12,
       tileCount: 13,

@@ -101,7 +101,8 @@
       name: "Meal plan",
       href: "meal-plan.html",
       photo: "images/meal-plan-hero.png",
-      people: false
+      people: false,
+      sizes: ["A5"]
     },
     "shopping-list-board": {
       id: "shopping-list-board",
@@ -109,7 +110,8 @@
       name: "Shopping list",
       href: "shopping-list.html",
       photo: "images/shopping-list-hero.png",
-      people: false
+      people: false,
+      sizes: ["A5"]
     },
     "house-rules-board": {
       id: "house-rules-board",
@@ -117,7 +119,8 @@
       name: "House Rules",
       href: "house-rules.html",
       photo: "images/house-rules-hero.png",
-      people: false
+      people: false,
+      sizes: ["A5"]
     },
     "pack-chores": {
       id: "pack-chores",

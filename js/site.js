@@ -7,7 +7,7 @@
     { href: "pack-custom.html", label: "Custom Words" },
     { href: "pack-emoji.html", label: "Emoji" },
     { href: "pack-sticker.html", label: "Stickers" },
-    { href: "pen-holder.html", label: "Pen" }
+    { href: "pen-holder.html", label: "Pen & Pen Holder" }
   ];
 
   function currentFile() {

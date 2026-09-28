@@ -54,6 +54,8 @@ a {
   backdrop-filter: blur(12px);
   background: rgba(243, 238, 228, 0.88);
   border-bottom: 1px solid var(--line);
+  min-width: 0;
+  max-width: 100%;
 }
 
 .bar {
@@ -64,6 +66,8 @@ a {
   align-items: center;
   gap: 10px 16px;
   padding: 12px 0;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .brand {
@@ -91,6 +95,12 @@ a {
   margin-left: auto;
   align-items: center;
   font-size: 0.95rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.nav > * {
+  flex: 0 0 auto;
 }
 
 .nav a[aria-current="page"] {
@@ -965,7 +975,15 @@ input[type="text"] {
   .product-photo {
     grid-template-columns: 1fr;
   }
-  .nav { margin-left: 0; }
+  .nav {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin-left: 0;
+    gap: 6px 10px;
+    font-size: 0.88rem;
+  }
   .hero-stage { min-height: 420px; }
   .lifestyle-fridge {
     padding: 16px;

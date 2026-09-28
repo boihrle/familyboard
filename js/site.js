@@ -3,9 +3,12 @@
 
   var PACK_LINKS = [
     { href: "pack-chores.html", label: "Chores words" },
+    { href: "pack-days.html", label: "Day tiles" },
+    { href: "pack-jobs.html", label: "Jobs" },
     { href: "pack-custom.html", label: "Custom / names" },
     { href: "pack-emoji.html", label: "Emoji" },
-    { href: "pack-sticker.html", label: "Stickers" }
+    { href: "pack-sticker.html", label: "Stickers" },
+    { href: "pen-holder.html", label: "Pen" }
   ];
 
   function currentFile() {
@@ -37,6 +40,7 @@
         '<a class="brand" href="index.html">FamilyBoard</a>' +
         '<span class="preview-pill">Shop preview</span>' +
         '<nav class="nav" aria-label="Primary">' +
+        navLink("index.html#boards", "Boards", file === "index.html" ? "index.html#boards" : file) +
         navLink("chores.html", "Chores board", file) +
         '<span class="nav-split" aria-hidden="true">Packs</span>' +
         PACK_LINKS.map(function (link) {
@@ -51,7 +55,7 @@
       footer.innerHTML =
         '<div class="footer-inner">' +
         "<p>Preview catalogue for deciding board layouts and packs. Payments are simulated — Stripe Checkout replaces the pay step later. No real charges.</p>" +
-        '<p class="fine">Chores is the first board type. More boards come later. Name magnets match word magnets in size; empty rows are expected.</p>' +
+        '<p class="fine">Thin magnetic sheets on light wood. Name magnets match word magnets in size; empty cells are expected.</p>' +
         "</div>";
     }
 

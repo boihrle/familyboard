@@ -9,20 +9,47 @@
   const CART_KEY = "familyboard-cart-v1";
 
   const DAY_WORDS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
-  const CHORES_WORDS = DAY_WORDS.concat([
+  const CHORES_WORDS = [
+    "set table",
+    "dishwasher",
+    "fold washing",
     "dishes",
-    "dinner",
-    "vacuum",
-    "washing",
+    "dry dishes",
+    "sweep floor",
+    "mow lawns",
+    "make dinner",
     "rubbish",
-    "tidy",
-    "bed",
-    "laundry",
-    "bins",
-    "pets",
+    "recycling",
+    "put out bins",
+    "vacuum",
+    "mop floor"
+  ];
+  const JOBS_WORDS = [
+    "tidy room",
     "homework",
-    "garden"
-  ]);
+    "walk dog",
+    "unpack bag",
+    "lunch box",
+    "make bed",
+    "brush hair",
+    "put away washing",
+    "load dishwasher",
+    "set table",
+    "feed pets",
+    "water plants",
+    "sweep floor",
+    "wipe bench",
+    "put away toys",
+    "pack bag",
+    "fold clothes",
+    "hang coat",
+    "recycle",
+    "clean windows",
+    "help cook",
+    "empty bin",
+    "put away groceries",
+    "wash dishes"
+  ];
 
   const EMOJIS = ["⭐", "❤️", "🎉", "✅", "🌈", "🐶", "🌞", "🎵", "🏆", "🌸", "⚽", "📚"];
 
@@ -33,14 +60,95 @@
       name: "Chores board",
       href: "chores.html"
     },
+    "meal-plan-board": {
+      id: "meal-plan-board",
+      kind: "board",
+      name: "Meal plan",
+      href: "meal-plan.html",
+      photo: "images/meal-plan-hero.png",
+      people: false
+    },
+    "shopping-list-board": {
+      id: "shopping-list-board",
+      kind: "board",
+      name: "Shopping list",
+      href: "shopping-list.html",
+      photo: "images/shopping-list-hero.png",
+      people: false
+    },
+    "weekly-board": {
+      id: "weekly-board",
+      kind: "board",
+      name: "Weekly",
+      href: "weekly.html",
+      photo: "images/weekly-hero.png",
+      people: true
+    },
+    "morning-board": {
+      id: "morning-board",
+      kind: "board",
+      name: "Morning",
+      href: "morning.html",
+      photo: "images/morning-hero.png",
+      people: true
+    },
+    "afternoon-board": {
+      id: "afternoon-board",
+      kind: "board",
+      name: "Afternoon",
+      href: "afternoon.html",
+      photo: "images/afternoon-hero.png",
+      people: true
+    },
+    "night-board": {
+      id: "night-board",
+      kind: "board",
+      name: "Night",
+      href: "night.html",
+      photo: "images/night-hero.png",
+      people: true
+    },
+    "house-rules-board": {
+      id: "house-rules-board",
+      kind: "board",
+      name: "House rules",
+      href: "house-rules.html",
+      photo: "images/house-rules-hero.png",
+      people: false
+    },
     "pack-chores": {
       id: "pack-chores",
       kind: "pack",
       name: "Chores word pack",
       href: "pack-chores.html",
       price: 18,
-      tileCount: 19,
+      tileCount: 13,
       magnetic: true
+    },
+    "pack-days": {
+      id: "pack-days",
+      kind: "pack",
+      name: "Day tiles pack",
+      href: "pack-days.html",
+      price: 12,
+      tileCount: 7,
+      magnetic: true
+    },
+    "pack-jobs": {
+      id: "pack-jobs",
+      kind: "pack",
+      name: "Jobs pack",
+      href: "pack-jobs.html",
+      price: 22,
+      tileCount: 24,
+      magnetic: true
+    },
+    "pen-holder": {
+      id: "pen-holder",
+      kind: "extra",
+      name: "Pen holder",
+      href: "pen-holder.html",
+      price: 14
     },
     "pack-custom": {
       id: "pack-custom",
@@ -66,7 +174,7 @@
       name: "Sticker pack",
       href: "pack-sticker.html",
       price: 12,
-      tileCount: 19,
+      tileCount: 13,
       magnetic: false
     }
   };
@@ -74,6 +182,7 @@
   const SIZE_PRICE = { A5: 49, A4: 69 };
   const MOUNT_PRICE = { magnetic: 12, stick: 6, nonstick: 0 };
   const LINE_COUNTS = [3, 4, 5, 6, 7];
+  const PEOPLE_COUNTS = [2, 3, 4, 5];
   const SIZES = ["A4", "A5"];
   const MOUNTS = ["magnetic", "stick", "nonstick"];
 
@@ -150,6 +259,13 @@
     if (item.productId === "chores-board") {
       return "Chores board · " + item.lines + " lines · " + item.size + " · " + mountLabel(item.mount);
     }
+    if (item.kind === "board") {
+      var parts = [item.name];
+      if (item.people) parts.push(item.people + " people");
+      if (item.size) parts.push(item.size);
+      if (item.mount) parts.push(mountLabel(item.mount));
+      return parts.join(" · ");
+    }
     if (item.productId === "pack-custom" && item.words && item.words.length) {
       return item.name + " · " + item.words.join(", ");
     }
@@ -177,8 +293,10 @@
     PRODUCTS: PRODUCTS,
     DAY_WORDS: DAY_WORDS,
     CHORES_WORDS: CHORES_WORDS,
+    JOBS_WORDS: JOBS_WORDS,
     EMOJIS: EMOJIS,
     LINE_COUNTS: LINE_COUNTS,
+    PEOPLE_COUNTS: PEOPLE_COUNTS,
     SIZES: SIZES,
     MOUNTS: MOUNTS,
     boardPrice: boardPrice,

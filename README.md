@@ -24,10 +24,10 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 
 - **Home** — short fridge-lifestyle strip (grey fridge face, no handle), then Boards, Packs, and Extras. Board and pack cards use locked product photos on light wood.
 - **Chores board** — Magnets-style weekly board **photos** as the hero (light wood, no fridge). Line count 3–7 swaps matching photos. Site copy uses Sun–Sat; the line-count photos themselves still show lowercase day tiles (no new Chores photo assets in this pass).
+- **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns.
+- **Weekly** — days as rows, people as columns. Site copy uses Sun–Sat; `weekly-hero.png` still has lowercase days baked in (no new Weekly photo in this pass).
 - **Meal plan** — centered title Meal plan; printed Mon–Sun; blank pen write-in (not lunch/dinner magnets).
 - **Shopping list** — header plus empty write-in lines (like House Rules).
-- **Weekly** — days as rows, people as columns. Site copy uses Sun–Sat; `weekly-hero.png` still has lowercase days baked in (no new Weekly photo in this pass).
-- **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns.
 - **House Rules** — title House Rules (H and R); empty write-in lines only.
 - **Chores word pack** — chore tiles only. Day tiles are a separate pack. (Jobs pack redirects here.)
 - **Day tiles pack** — `Sun`–`Sat`.

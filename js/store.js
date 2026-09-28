@@ -60,30 +60,6 @@
       name: "Chores board",
       href: "chores.html"
     },
-    "meal-plan-board": {
-      id: "meal-plan-board",
-      kind: "board",
-      name: "Meal plan",
-      href: "meal-plan.html",
-      photo: "images/meal-plan-hero.png",
-      people: false
-    },
-    "shopping-list-board": {
-      id: "shopping-list-board",
-      kind: "board",
-      name: "Shopping list",
-      href: "shopping-list.html",
-      photo: "images/shopping-list-hero.png",
-      people: false
-    },
-    "weekly-board": {
-      id: "weekly-board",
-      kind: "board",
-      name: "Weekly",
-      href: "weekly.html",
-      photo: "images/weekly-hero.png",
-      people: true
-    },
     "routines-board": {
       id: "routines-board",
       kind: "board",
@@ -110,6 +86,30 @@
           blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
         }
       }
+    },
+    "weekly-board": {
+      id: "weekly-board",
+      kind: "board",
+      name: "Weekly",
+      href: "weekly.html",
+      photo: "images/weekly-hero.png",
+      people: true
+    },
+    "meal-plan-board": {
+      id: "meal-plan-board",
+      kind: "board",
+      name: "Meal plan",
+      href: "meal-plan.html",
+      photo: "images/meal-plan-hero.png",
+      people: false
+    },
+    "shopping-list-board": {
+      id: "shopping-list-board",
+      kind: "board",
+      name: "Shopping list",
+      href: "shopping-list.html",
+      photo: "images/shopping-list-hero.png",
+      people: false
     },
     "house-rules-board": {
       id: "house-rules-board",

@@ -21,7 +21,7 @@
 
   function photoAlt(lines) {
     return (
-      "White ferrous weekly chores board on light wood. Magnetic day tiles Sun through Sat; name tiles " +
+      "White ferrous weekly chores board on light wood. Magnetic day words Sun through Sat; name tiles " +
       (NAMES_BY_LINES[lines] || NAMES_BY_LINES[3]) +
       "; chore tiles in the grid."
     );

@@ -29,7 +29,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Meal Plan** — A5 only. Centered title Meal Plan; printed Mon–Sun; one write-in column (not a multi-column meal grid).
 - **Shopping list** — A5 only. Header plus empty write-in lines (like House Rules).
 - **House Rules** — A5 only. Title House Rules (H and R); empty write-in lines only.
-- **Chores word pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.)
+- **Chores Word Pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.)
 - **Day Word Pack** — `Sun`–`Sat`.
 - **Custom Words** — you type the words; fewer tiles and a higher price.
 - **Emoji Pack** — magnetic.

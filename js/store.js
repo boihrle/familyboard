@@ -125,7 +125,7 @@
     "pack-chores": {
       id: "pack-chores",
       kind: "pack",
-      name: "Chores word pack",
+      name: "Chores Word Pack",
       href: "pack-chores.html",
       price: 18,
       tileCount: 13,

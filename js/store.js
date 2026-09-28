@@ -57,7 +57,7 @@
     "chores-board": {
       id: "chores-board",
       kind: "board",
-      name: "Chores board",
+      name: "Chores",
       href: "chores.html"
     },
     "routines-board": {
@@ -107,7 +107,7 @@
     "shopping-list-board": {
       id: "shopping-list-board",
       kind: "board",
-      name: "Shopping list",
+      name: "Shopping List",
       href: "shopping-list.html",
       photo: "images/shopping-list-hero.png",
       people: false,
@@ -254,7 +254,7 @@
 
   function itemLabel(item) {
     if (item.productId === "chores-board") {
-      return "Chores board · " + item.lines + " lines · " + item.size + " · " + mountLabel(item.mount);
+      return "Chores · " + item.lines + " lines · " + item.size + " · " + mountLabel(item.mount);
     }
     if (item.kind === "board") {
       var parts = [item.name];

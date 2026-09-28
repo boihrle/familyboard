@@ -65,7 +65,7 @@
     board.setAttribute("data-lines", String(state.lines));
     board.setAttribute(
       "aria-label",
-      "Chores weekly board with " + state.lines + " name rows on light wood."
+      "Chores with " + state.lines + " name rows on light wood."
     );
     board.innerHTML =
       '<img src="' +
@@ -144,14 +144,14 @@
     document.getElementById("add-board").addEventListener("click", function () {
       FB.addItem({
         productId: "chores-board",
-        name: "Chores board",
+        name: FB.PRODUCTS["chores-board"].name,
         kind: "board",
         lines: state.lines,
         size: state.size,
         mount: state.mount,
         price: FB.boardPrice(state.size, state.mount)
       });
-      window.FBSite.toast("Chores board added to cart");
+      window.FBSite.toast(FB.PRODUCTS["chores-board"].name + " added to cart");
     });
   }
 

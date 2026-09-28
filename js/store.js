@@ -98,9 +98,9 @@
     "meal-plan-board": {
       id: "meal-plan-board",
       kind: "board",
-      name: "Meal plan",
+      name: "Meal Plan",
       href: "meal-plan.html",
-      photo: "images/meal-plan-hero.png",
+      photo: "images/meal-plan-hero.svg",
       people: false,
       sizes: ["A5"]
     },

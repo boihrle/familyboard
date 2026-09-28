@@ -26,7 +26,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Chores board** — Magnets-style weekly board **photos** as the hero (light wood, no fridge). Line count 3–7 swaps matching photos. Site copy uses Sun–Sat; the line-count photos themselves still show lowercase day tiles (no new Chores photo assets in this pass).
 - **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns.
 - **Weekly** — days as rows, people as columns. Site copy uses Sun–Sat; `weekly-hero.png` still has lowercase days baked in (no new Weekly photo in this pass).
-- **Meal plan** — A5 only. Centered title Meal plan; printed Mon–Sun; blank pen write-in (not lunch/dinner magnets).
+- **Meal Plan** — A5 only. Centered title Meal Plan; printed Mon–Sun; one write-in column (not a multi-column meal grid).
 - **Shopping list** — A5 only. Header plus empty write-in lines (like House Rules).
 - **House Rules** — A5 only. Title House Rules (H and R); empty write-in lines only.
 - **Chores word pack** — chore tiles only. Day tiles are a separate pack. (Jobs pack redirects here.)

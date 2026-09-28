@@ -32,8 +32,8 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Chores word pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.)
 - **Day Word Pack** — `Sun`–`Sat`.
 - **Custom Words** — you type the words; fewer tiles and a higher price.
-- **Emoji pack** — magnetic.
-- **Sticker pack** — non-magnetic.
+- **Emoji Pack** — magnetic.
+- **Sticker Pack** — non-magnetic.
 - **Pen & Pen Holder** — magnetic holder plus erasable marker.
 - **Cart** holds a board plus packs. **Pay** completes the order.
 

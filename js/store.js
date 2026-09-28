@@ -150,7 +150,7 @@
     "pack-custom": {
       id: "pack-custom",
       kind: "pack",
-      name: "Custom / names word pack",
+      name: "Custom Words",
       href: "pack-custom.html",
       price: 34,
       maxTiles: 8,

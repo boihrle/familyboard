@@ -4,7 +4,7 @@
   var PACK_LINKS = [
     { href: "pack-chores.html", label: "Chores words" },
     { href: "pack-days.html", label: "Day Word Pack" },
-    { href: "pack-custom.html", label: "Custom / names" },
+    { href: "pack-custom.html", label: "Custom Words" },
     { href: "pack-emoji.html", label: "Emoji" },
     { href: "pack-sticker.html", label: "Stickers" },
     { href: "pen-holder.html", label: "Pen" }

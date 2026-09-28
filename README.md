@@ -31,7 +31,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **House Rules** — A5 only. Title House Rules (H and R); empty write-in lines only.
 - **Chores word pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.)
 - **Day Word Pack** — `Sun`–`Sat`.
-- **Custom / names word pack** — you type the words; fewer tiles and a higher price.
+- **Custom Words** — you type the words; fewer tiles and a higher price.
 - **Emoji pack** — magnetic.
 - **Sticker pack** — non-magnetic.
 - **Pen holder** — magnetic holder plus erasable marker.

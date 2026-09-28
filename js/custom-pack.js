@@ -75,12 +75,12 @@
       if (!words.length) return;
       FB.addItem({
         productId: "pack-custom",
-        name: "Custom / names word pack",
+        name: FB.PRODUCTS["pack-custom"].name,
         kind: "pack",
         words: words.slice(),
         price: FB.PRODUCTS["pack-custom"].price
       });
-      window.FBSite.toast("Custom pack added to cart");
+      window.FBSite.toast(FB.PRODUCTS["pack-custom"].name + " added to cart");
     });
   });
 })();

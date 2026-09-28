@@ -34,7 +34,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Custom Words** — you type the words; fewer tiles and a higher price.
 - **Emoji pack** — magnetic.
 - **Sticker pack** — non-magnetic.
-- **Pen holder** — magnetic holder plus erasable marker.
+- **Pen & Pen Holder** — magnetic holder plus erasable marker.
 - **Cart** holds a board plus packs. **Pay** completes the order.
 
 Name tiles match chore and day tiles (white, black text). Empty cells on the mockups are intentional.

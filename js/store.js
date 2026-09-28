@@ -143,7 +143,7 @@
     "pen-holder": {
       id: "pen-holder",
       kind: "extra",
-      name: "Pen holder",
+      name: "Pen & Pen Holder",
       href: "pen-holder.html",
       price: 14
     },

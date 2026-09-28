@@ -1,16 +1,16 @@
 # FamilyBoard
 
-Shop preview for FamilyBoard (thin magnetic boards + packs). Static site for GitHub Pages.
+FamilyBoard shop: thin magnetic boards and packs. Static site on GitHub Pages.
 
-Clickable product UX so the catalogue is easy to visualise. **Not production payments.** Preview prices only. Stripe Checkout can replace the fake Pay step later — do not add Stripe keys here.
+Do not add Stripe keys to this repo.
 
-## Live preview
+## Live site
 
 [https://boihrle.github.io/familyboard/](https://boihrle.github.io/familyboard/)
 
 GitHub Pages serves this public repo for free from `main` at `/` (root). To confirm or change that: [Settings → Pages](https://github.com/boihrle/familyboard/settings/pages) → **Deploy from a branch** → `main` · `/ (root)`.
 
-## Local preview
+## Local site
 
 No build step. From this repo:
 
@@ -35,6 +35,6 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Emoji pack** — magnetic.
 - **Sticker pack** — non-magnetic.
 - **Pen holder** — magnetic holder plus erasable marker.
-- **Cart** holds a board plus packs. **Pay** goes to a fake success page.
+- **Cart** holds a board plus packs. **Pay** completes the order.
 
 Name tiles match chore and day tiles (white, black text). Empty cells on the mockups are intentional.

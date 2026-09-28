@@ -77,17 +77,6 @@ a {
   letter-spacing: -0.03em;
 }
 
-.preview-pill {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  background: #efe2c4;
-  color: #6a4b1a;
-  border-radius: 999px;
-  padding: 4px 9px;
-}
-
 .nav {
   display: flex;
   flex-wrap: wrap;

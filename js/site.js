@@ -2,7 +2,7 @@
   var FB = window.FamilyBoard;
 
   var PACK_LINKS = [
-    { href: "pack-chores.html", label: "Chores words" },
+    { href: "pack-chores.html", label: "Chores Word Pack" },
     { href: "pack-days.html", label: "Day Word Pack" },
     { href: "pack-custom.html", label: "Custom Words" },
     { href: "pack-emoji.html", label: "Emoji Pack" },

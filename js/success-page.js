@@ -5,7 +5,7 @@
     var raw = sessionStorage.getItem("familyboard-last-order");
     var box = document.getElementById("order-box");
     if (!raw) {
-      box.innerHTML = "<p>No preview order in this tab. Add something to the cart first.</p>";
+      box.innerHTML = "<p>No order in this tab. Add something to the cart first.</p>";
       return;
     }
     var order = JSON.parse(raw);
@@ -19,6 +19,6 @@
       "</ul>" +
       "<p><strong>Total " +
       FB.money(order.total) +
-      "</strong> · not charged</p>";
+      "</strong></p>";
   });
 })();

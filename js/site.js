@@ -39,7 +39,7 @@
         '<a class="brand" href="index.html">FamilyBoard</a>' +
         '<nav class="nav" aria-label="Primary">' +
         navLink("index.html#boards", "Boards", file === "index.html" ? "index.html#boards" : file) +
-        navLink("chores.html", "Chores board", file) +
+        navLink("chores.html", "Chores", file) +
         navLink("routines.html", "Routines", file) +
         '<span class="nav-split" aria-hidden="true">Packs</span>' +
         PACK_LINKS.map(function (link) {

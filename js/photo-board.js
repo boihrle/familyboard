@@ -22,6 +22,13 @@
       .join("");
   }
 
+  function queryPart() {
+    var params = new URLSearchParams(window.location.search);
+    var fromQuery = params.get("part");
+    if (fromQuery) return fromQuery;
+    return (window.location.hash || "").replace("#", "");
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var main = document.querySelector("main[data-sku]");
     if (!main) return;
@@ -29,12 +36,16 @@
     var product = FB.PRODUCTS[sku];
     if (!product || product.kind !== "board") return;
 
+    var dayparts = product.dayparts;
+    var requested = queryPart();
     var state = {
+      daypart: dayparts && dayparts[requested] ? requested : dayparts ? "morning" : null,
       people: product.people ? 3 : null,
       size: "A4",
       mount: "magnetic"
     };
 
+    var optDaypart = document.getElementById("opt-daypart");
     var peopleField = document.getElementById("people-field");
     var optPeople = document.getElementById("opt-people");
     var optSize = document.getElementById("opt-size");
@@ -44,9 +55,22 @@
     var caption = document.getElementById("hero-caption");
     var configNow = document.getElementById("config-now");
     var priceNow = document.getElementById("price-now");
+    var titleEl = document.querySelector(".buy-panel h1");
+    var blurbEl = document.querySelector(".buy-panel p.muted");
+
+    function part() {
+      return dayparts && state.daypart ? dayparts[state.daypart] : null;
+    }
+
+    function displayName() {
+      var current = part();
+      return current ? current.title : product.name;
+    }
 
     function configText() {
       var parts = [];
+      var current = part();
+      if (current) parts.push(current.title);
       if (state.people) parts.push(state.people + " people");
       parts.push(state.size);
       parts.push(FB.mountLabel(state.mount));
@@ -58,6 +82,16 @@
       board.className =
         "hero-photo-frame board-" + state.size.toLowerCase() + " mount-" + state.mount;
       if (state.people) board.setAttribute("data-people", String(state.people));
+      if (state.daypart) board.setAttribute("data-daypart", state.daypart);
+      var current = part();
+      var img = board.querySelector("img");
+      if (current && img) {
+        img.src = current.photo;
+        img.alt = current.alt;
+      }
+      if (titleEl) titleEl.textContent = displayName();
+      if (blurbEl && current && current.blurb) blurbEl.textContent = current.blurb;
+      if (current) document.title = current.title + " — FamilyBoard";
       if (stage) {
         stage.className =
           "board-stage photo-stage mount-" + state.mount + " size-" + state.size.toLowerCase();
@@ -66,6 +100,16 @@
     }
 
     function renderOptions() {
+      if (dayparts && optDaypart) {
+        optDaypart.innerHTML = optionButtons(
+          Object.keys(dayparts),
+          state.daypart,
+          function (key) {
+            return dayparts[key].title;
+          },
+          "daypart"
+        );
+      }
       if (product.people && peopleField && optPeople) {
         peopleField.hidden = false;
         optPeople.innerHTML = optionButtons(
@@ -108,6 +152,12 @@
       });
     }
 
+    bindGroup("opt-daypart", "data-daypart", function (value) {
+      state.daypart = value;
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState(null, "", "routines.html?part=" + value);
+      }
+    });
     bindGroup("opt-people", "data-people", function (value) {
       state.people = Number(value);
     });
@@ -123,15 +173,16 @@
       add.addEventListener("click", function () {
         var item = {
           productId: sku,
-          name: product.name,
+          name: displayName(),
           kind: "board",
           size: state.size,
           mount: state.mount,
           price: FB.boardPrice(state.size, state.mount)
         };
         if (state.people) item.people = state.people;
+        if (state.daypart) item.daypart = state.daypart;
         FB.addItem(item);
-        window.FBSite.toast(product.name + " added to cart");
+        window.FBSite.toast(displayName() + " added to cart");
       });
     }
 

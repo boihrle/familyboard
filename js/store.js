@@ -8,7 +8,7 @@
 (function (global) {
   const CART_KEY = "familyboard-cart-v1";
 
-  const DAY_WORDS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+  const DAY_WORDS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const CHORES_WORDS = [
     "set table",
     "dishwasher",
@@ -84,34 +84,37 @@
       photo: "images/weekly-hero.png",
       people: true
     },
-    "morning-board": {
-      id: "morning-board",
+    "routines-board": {
+      id: "routines-board",
       kind: "board",
-      name: "Morning",
-      href: "morning.html",
-      photo: "images/morning-hero.png",
-      people: true
-    },
-    "afternoon-board": {
-      id: "afternoon-board",
-      kind: "board",
-      name: "Afternoon",
-      href: "afternoon.html",
-      photo: "images/afternoon-hero.png",
-      people: true
-    },
-    "night-board": {
-      id: "night-board",
-      kind: "board",
-      name: "Night",
-      href: "night.html",
-      photo: "images/night-hero.png",
-      people: true
+      name: "Routines",
+      href: "routines.html",
+      people: true,
+      dayparts: {
+        morning: {
+          title: "Morning",
+          photo: "images/morning-hero.png",
+          alt: "Thin white magnetic Morning board on light wood. Title Morning at the top; columns for Georgia, Caleb, and Isaac with job tiles. No fridge.",
+          blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
+        },
+        afternoon: {
+          title: "Afternoon",
+          photo: "images/afternoon-hero.png",
+          alt: "Thin white magnetic Afternoon board on light wood. Title Afternoon at the top; columns for Georgia, Caleb, and Isaac with job tiles. No fridge.",
+          blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
+        },
+        night: {
+          title: "Night",
+          photo: "images/night-hero.png",
+          alt: "Thin white magnetic Night board on light wood. Title Night at the top; columns for Georgia, Caleb, and Isaac with job tiles. No fridge.",
+          blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
+        }
+      }
     },
     "house-rules-board": {
       id: "house-rules-board",
       kind: "board",
-      name: "House rules",
+      name: "House Rules",
       href: "house-rules.html",
       photo: "images/house-rules-hero.png",
       people: false
@@ -132,15 +135,6 @@
       href: "pack-days.html",
       price: 12,
       tileCount: 7,
-      magnetic: true
-    },
-    "pack-jobs": {
-      id: "pack-jobs",
-      kind: "pack",
-      name: "Jobs pack",
-      href: "pack-jobs.html",
-      price: 22,
-      tileCount: 24,
       magnetic: true
     },
     "pen-holder": {
@@ -261,6 +255,13 @@
     }
     if (item.kind === "board") {
       var parts = [item.name];
+      if (item.daypart) {
+        var board = PRODUCTS[item.productId];
+        var label =
+          (board && board.dayparts && board.dayparts[item.daypart] && board.dayparts[item.daypart].title) ||
+          item.daypart;
+        if (parts[0] !== label) parts.push(label);
+      }
       if (item.people) parts.push(item.people + " people");
       if (item.size) parts.push(item.size);
       if (item.mount) parts.push(mountLabel(item.mount));

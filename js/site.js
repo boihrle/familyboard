@@ -4,7 +4,6 @@
   var PACK_LINKS = [
     { href: "pack-chores.html", label: "Chores words" },
     { href: "pack-days.html", label: "Day tiles" },
-    { href: "pack-jobs.html", label: "Jobs" },
     { href: "pack-custom.html", label: "Custom / names" },
     { href: "pack-emoji.html", label: "Emoji" },
     { href: "pack-sticker.html", label: "Stickers" },
@@ -42,6 +41,7 @@
         '<nav class="nav" aria-label="Primary">' +
         navLink("index.html#boards", "Boards", file === "index.html" ? "index.html#boards" : file) +
         navLink("chores.html", "Chores board", file) +
+        navLink("routines.html", "Routines", file) +
         '<span class="nav-split" aria-hidden="true">Packs</span>' +
         PACK_LINKS.map(function (link) {
           return navLink(link.href, link.label, file);

@@ -38,10 +38,11 @@
 
     var dayparts = product.dayparts;
     var requested = queryPart();
+    var sizes = product.sizes && product.sizes.length ? product.sizes : FB.SIZES;
     var state = {
       daypart: dayparts && dayparts[requested] ? requested : dayparts ? "morning" : null,
       people: product.people ? 3 : null,
-      size: "A4",
+      size: sizes.length === 1 ? sizes[0] : sizes.indexOf("A4") >= 0 ? "A4" : sizes[0],
       mount: "magnetic"
     };
 
@@ -121,8 +122,12 @@
           "people"
         );
       }
-      if (optSize) {
-        optSize.innerHTML = optionButtons(FB.SIZES, state.size, function (s) {
+      var sizeField = optSize && optSize.closest("fieldset");
+      if (sizes.length < 2) {
+        if (sizeField) sizeField.hidden = true;
+      } else if (optSize) {
+        if (sizeField) sizeField.hidden = false;
+        optSize.innerHTML = optionButtons(sizes, state.size, function (s) {
           return s;
         }, "size");
       }

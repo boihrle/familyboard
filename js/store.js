@@ -70,19 +70,19 @@
         morning: {
           title: "Morning",
           photo: "images/morning-hero.png",
-          alt: "Thin white magnetic Morning board on light wood. Title Morning at the top; columns for Georgia, Caleb, and Isaac with job tiles. No fridge.",
+          alt: "Thin white magnetic Morning board on light wood. Title Morning at the top; columns for Georgia, Caleb, and Isaac with job tiles.",
           blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
           title: "Afternoon",
           photo: "images/afternoon-hero.png",
-          alt: "Thin white magnetic Afternoon board on light wood. Title Afternoon at the top; columns for Georgia, Caleb, and Isaac with job tiles. No fridge.",
+          alt: "Thin white magnetic Afternoon board on light wood. Title Afternoon at the top; columns for Georgia, Caleb, and Isaac with job tiles.",
           blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
         },
         night: {
           title: "Night",
           photo: "images/night-hero.png",
-          alt: "Thin white magnetic Night board on light wood. Title Night at the top; columns for Georgia, Caleb, and Isaac with job tiles. No fridge.",
+          alt: "Thin white magnetic Night board on light wood. Title Night at the top; columns for Georgia, Caleb, and Isaac with job tiles.",
           blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
         }
       }

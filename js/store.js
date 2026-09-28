@@ -134,7 +134,7 @@
     "pack-days": {
       id: "pack-days",
       kind: "pack",
-      name: "Day word pack",
+      name: "Day Word Pack",
       href: "pack-days.html",
       price: 12,
       tileCount: 7,

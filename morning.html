@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Morning — FamilyBoard</title>
+  <meta name="description" content="Thin magnetic morning routine board. Title at the top; people as columns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,500&family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="wrap product product-photo" data-sku="morning-board">
+    <div>
+      <div id="hero-stage" class="board-stage photo-stage mount-magnetic size-a4" role="region" aria-label="Morning board on light wood.">
+        <figure id="board-hero" class="hero-photo-frame board-a4 mount-magnetic">
+          <img src="images/morning-hero.png" width="1280" height="720" alt="Thin white magnetic morning board on light wood. Title morning at the top; columns for Georgia, Caleb, and Isaac with job tiles. No fridge.">
+        </figure>
+      </div>
+      <p id="hero-caption">3 people · A4 · Magnetic</p>
+    </div>
+    <aside class="buy-panel">
+      <p class="kicker">Board</p>
+      <h1>Morning</h1>
+      <p class="muted">Title at the top. One column per person — stack the morning job tiles underneath.</p>
+      <fieldset id="people-field">
+        <legend>People</legend>
+        <div id="opt-people" class="opts" role="group" aria-label="People columns"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Size</legend>
+        <div id="opt-size" class="opts" role="group" aria-label="Size"></div>
+      </fieldset>
+      <fieldset>
+        <legend>Mount</legend>
+        <div id="opt-mount" class="opts" role="group" aria-label="Mount"></div>
+      </fieldset>
+
+      <div class="price-row">
+        <span id="config-now" class="muted">3 people · A4 · Magnetic</span>
+        <strong id="price-now">$81</strong>
+      </div>
+      <button class="btn" id="add-board" type="button">Add to cart</button>
+      <p class="fine muted">Preview prices. Cart can hold this board plus any pack. Pay is simulated.</p>
+    </aside>
+  </main>
+  <footer id="site-footer" class="wrap"></footer>
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/photo-board.js"></script>
+</body>
+</html>

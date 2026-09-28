@@ -23,7 +23,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 ## What you can click
 
 - **Home** — Boards for families lede (fridge or wall; Magnetic / Stick / Nonstick), then Boards, Packs, and Extras. Board and pack cards use locked product photos on light wood.
-- **Chores board** — Magnets-style weekly board **photos** as the hero (light wood). Line count 3–7 swaps matching photos. Site copy uses Sun–Sat; the line-count photos themselves still show lowercase day tiles (no new Chores photo assets in this pass).
+- **Chores board** — Magnets-style weekly board **photos** as the hero (light wood). Line count 3–7 swaps matching photos. Site copy uses Sun–Sat; the line-count photos themselves still show lowercase day words (no new Chores photo assets in this pass).
 - **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns.
 - **Weekly** — days as rows, people as columns. Site copy uses Sun–Sat; `weekly-hero.png` still has lowercase days baked in (no new Weekly photo in this pass).
 - **Meal Plan** — A5 only. Centered title Meal Plan; printed Mon–Sun; one write-in column (not a multi-column meal grid).
@@ -37,4 +37,4 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Pen & Pen Holder** — magnetic holder plus erasable marker.
 - **Cart** holds a board plus packs. **Pay** completes the order.
 
-Name tiles match chore and day tiles (white, black text). Empty cells on the mockups are intentional.
+Name tiles match chore tiles and day words (white, black text). Empty cells on the mockups are intentional.

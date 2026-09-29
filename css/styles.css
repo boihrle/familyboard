@@ -24,16 +24,6 @@ html, body {
   padding: 0;
 }
 
-html {
-  scroll-padding-top: 5.5rem;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
 body {
   font-family: var(--font);
   color: var(--ink);
@@ -691,6 +681,10 @@ input[type="text"] {
   scroll-margin-top: 5.5rem;
 }
 
+#extras {
+  min-height: calc(100svh - 5.5rem);
+}
+
 .product-chores,
 .product-photo {
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
@@ -1001,9 +995,6 @@ input[type="text"] {
   .product-photo {
     grid-template-columns: 1fr;
   }
-  html {
-    scroll-padding-top: 10.5rem;
-  }
   .nav {
     flex: 1 1 100%;
     width: 100%;
@@ -1025,6 +1016,9 @@ input[type="text"] {
   #packs,
   #extras {
     scroll-margin-top: 10.5rem;
+  }
+  #extras {
+    min-height: calc(100svh - 10.5rem);
   }
   .hero-stage { min-height: 420px; }
   .lifestyle-lede {

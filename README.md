@@ -22,7 +22,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 
 ## What you can click
 
-- **Home** — Boards for families lede (fridge or wall; Magnetic / Stick / Nonstick), then Boards, Packs, and Extras. Board and pack cards use locked product photos on light wood.
+- **Home** — Plain-text jump links Boards / Packs / Extras, then catalogue cards. Board and pack cards use locked product photos on light wood.
 - **Chores** — Magnets-style weekly board **photos** as the hero (light wood). Line count 3–7 swaps matching photos. Site copy uses Sun–Sat; the line-count photos themselves still show lowercase day words (no new Chores photo assets in this pass).
 - **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns.
 - **Weekly** — days as rows, people as columns. Site copy uses Sun–Sat; `weekly-hero.png` still has lowercase days baked in (no new Weekly photo in this pass).

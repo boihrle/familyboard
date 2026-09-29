@@ -14,6 +14,11 @@
 <body>
   <div id="site-header"></div>
   <main class="wrap">
+    <nav class="catalogue-jumps" aria-label="Catalogue sections">
+      <a href="#boards">Boards</a>
+      <a href="#packs">Packs</a>
+      <a href="#extras">Extras</a>
+    </nav>
     <section class="home-intro" aria-label="Boards for families">
       <div class="lifestyle-lede">
         <div class="lifestyle-copy">
@@ -23,7 +28,8 @@
       </div>
     </section>
 
-    <h2 id="boards" class="section-title">Boards</h2>
+    <section id="boards" class="catalogue-section">
+    <h2 class="section-title">Boards</h2>
     <div class="grid">
       <a class="card" href="chores.html">
         <div class="thumb thumb-board" aria-hidden="true">
@@ -74,8 +80,10 @@
         <p class="price">From $49</p>
       </a>
     </div>
+    </section>
 
-    <h2 id="packs">Packs</h2>
+    <section id="packs" class="catalogue-section">
+    <h2 class="section-title">Packs</h2>
     <div class="grid">
       <a class="card" href="pack-chores.html">
         <div class="thumb thumb-board" aria-hidden="true">
@@ -112,8 +120,10 @@
         <p class="price">$12</p>
       </a>
     </div>
+    </section>
 
-    <h2 id="extras">Extras</h2>
+    <section id="extras" class="catalogue-section">
+    <h2 class="section-title">Extras</h2>
     <div class="grid">
       <a class="card" href="pen-holder.html">
         <div class="thumb thumb-board" aria-hidden="true">
@@ -124,6 +134,7 @@
         <p class="price">$14</p>
       </a>
     </div>
+    </section>
   </main>
   <footer id="site-footer" class="wrap"></footer>
   <script src="js/store.js"></script>

@@ -125,8 +125,35 @@ a {
   font-size: 0.75rem;
 }
 
+.catalogue-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  padding: 16px 0 8px;
+}
+
+.catalogue-jumps a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--cream);
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.catalogue-jumps a:hover,
+.catalogue-jumps a:focus-visible {
+  border-color: var(--sage);
+  color: var(--sage);
+}
+
 .home-intro {
-  padding: 20px 0 4px;
+  padding: 12px 0 4px;
   min-width: 0;
 }
 
@@ -651,7 +678,11 @@ input[type="text"] {
 #boards,
 #packs,
 #extras {
-  scroll-margin-top: 72px;
+  scroll-margin-top: 5.5rem;
+}
+
+#extras {
+  min-height: calc(100svh - 5.5rem);
 }
 
 .product-chores,
@@ -972,6 +1003,22 @@ input[type="text"] {
     margin-left: 0;
     gap: 6px 10px;
     font-size: 0.88rem;
+  }
+  .catalogue-jumps {
+    gap: 8px;
+    padding-top: 12px;
+  }
+  .catalogue-jumps a {
+    flex: 1 1 auto;
+    min-width: 5.5rem;
+  }
+  #boards,
+  #packs,
+  #extras {
+    scroll-margin-top: 10.5rem;
+  }
+  #extras {
+    min-height: calc(100svh - 10.5rem);
   }
   .hero-stage { min-height: 420px; }
   .lifestyle-lede {

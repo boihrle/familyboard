@@ -25,9 +25,9 @@
         '<a class="brand" href="index.html">FamilyBoard</a>' +
         '<nav class="nav" aria-label="Primary">' +
         '<a href="' + sectionHref(file, "boards") + '">Boards</a>' +
-        '<span aria-hidden="true">/</span>' +
+        '<span aria-hidden="true">|</span>' +
         '<a href="' + sectionHref(file, "packs") + '">Packs</a>' +
-        '<span aria-hidden="true">/</span>' +
+        '<span aria-hidden="true">|</span>' +
         '<a href="' + sectionHref(file, "extras") + '">Extras</a>' +
         "</nav>" +
         '<a class="cart-link" href="cart.html">Cart <span data-cart-count hidden>0</span></a>' +

@@ -1,31 +1,17 @@
 (function () {
   var FB = window.FamilyBoard;
 
-  var PACK_LINKS = [
-    { href: "pack-chores.html", label: "Chores Word Pack" },
-    { href: "pack-days.html", label: "Day Word Pack" },
-    { href: "pack-custom.html", label: "Custom Words" },
-    { href: "pack-emoji.html", label: "Emoji Pack" },
-    { href: "pack-sticker.html", label: "Sticker Pack" },
-    { href: "pen-holder.html", label: "Pen & Pen Holder" }
-  ];
-
   function currentFile() {
     var parts = window.location.pathname.split("/");
     return parts[parts.length - 1] || "index.html";
   }
 
-  function navLink(href, label, file) {
-    var active = file === href || (href === "index.html" && file === "");
-    return (
-      '<a href="' +
-      href +
-      '"' +
-      (active ? ' aria-current="page"' : "") +
-      ">" +
-      label +
-      "</a>"
-    );
+  function isHome(file) {
+    return file === "index.html" || file === "";
+  }
+
+  function sectionHref(file, id) {
+    return (isHome(file) ? "#" : "index.html#") + id;
   }
 
   function renderChrome() {
@@ -38,15 +24,13 @@
         '<div class="bar">' +
         '<a class="brand" href="index.html">FamilyBoard</a>' +
         '<nav class="nav" aria-label="Primary">' +
-        navLink("index.html#boards", "Boards", file === "index.html" ? "index.html#boards" : file) +
-        navLink("chores.html", "Chores", file) +
-        navLink("routines.html", "Routines", file) +
-        '<span class="nav-split" aria-hidden="true">Packs</span>' +
-        PACK_LINKS.map(function (link) {
-          return navLink(link.href, link.label, file);
-        }).join("") +
-        '<a class="cart-link" href="cart.html">Cart <span data-cart-count hidden>0</span></a>' +
+        '<a href="' + sectionHref(file, "boards") + '">Boards</a>' +
+        '<span aria-hidden="true">/</span>' +
+        '<a href="' + sectionHref(file, "packs") + '">Packs</a>' +
+        '<span aria-hidden="true">/</span>' +
+        '<a href="' + sectionHref(file, "extras") + '">Extras</a>' +
         "</nav>" +
+        '<a class="cart-link" href="cart.html">Cart <span data-cart-count hidden>0</span></a>' +
         "</div>";
     }
 

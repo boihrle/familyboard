@@ -81,7 +81,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.15em 0.45em;
+  gap: 0;
   margin-left: 0;
   min-width: 0;
   max-width: 100%;
@@ -107,9 +107,14 @@ a {
   text-decoration: underline;
 }
 
-.nav span {
+.nav-sep {
+  font-family: var(--font);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.05rem;
+  letter-spacing: 0;
   color: var(--muted);
-  font-weight: 500;
+  white-space: pre;
 }
 
 .cart-link {

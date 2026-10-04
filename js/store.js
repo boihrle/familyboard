@@ -43,7 +43,7 @@
     "Wash Dishes"
   ];
 
-  const EMOJIS = ["🐱", "🐼"];
+  const EMOJIS = ["⭐", "❤️", "🎉", "✅", "🌈", "🐶", "🌞", "🏆", "🌸", "⚽"];
 
   const PRODUCTS = {
     "chores-board": {
@@ -160,7 +160,7 @@
       name: "Emoji Pack",
       href: "pack-emoji.html",
       price: 10,
-      tileCount: 2,
+      tileCount: 10,
       magnetic: true
     },
     "pack-sticker": {

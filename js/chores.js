@@ -95,7 +95,7 @@
       },
       "size"
     );
-    document.getElementById("price-now").textContent = FB.money(FB.boardPrice(state.size));
+    document.getElementById("price-now").textContent = FB.money(FB.boardPrice("chores-board"));
     document.getElementById("config-now").textContent =
       state.lines + " name rows · " + state.size;
   }
@@ -122,7 +122,7 @@
         kind: "board",
         lines: state.lines,
         size: state.size,
-        price: FB.boardPrice(state.size)
+        price: FB.boardPrice("chores-board")
       });
       window.FBSite.toast(FB.PRODUCTS["chores-board"].name + " added to cart");
     });

@@ -129,7 +129,7 @@
           return s;
         }, "size");
       }
-      if (priceNow) priceNow.textContent = FB.money(FB.boardPrice(state.size));
+      if (priceNow) priceNow.textContent = FB.money(FB.boardPrice(sku));
       if (configNow) configNow.textContent = configText();
     }
 
@@ -166,7 +166,7 @@
           name: displayName(),
           kind: "board",
           size: state.size,
-          price: FB.boardPrice(state.size)
+          price: FB.boardPrice(sku)
         };
         if (state.people) item.people = state.people;
         if (state.daypart) item.daypart = state.daypart;

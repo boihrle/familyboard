@@ -14,7 +14,7 @@
 
   function photoAlt(lines) {
     return (
-      "White ferrous weekly chores board on light wood. Magnetic day words SUN through SAT; name tiles and chore tiles in capital letters."
+      "White ferrous weekly chores board on light wood. Magnetic day words Sun through Sat; name tiles and chore tiles in title case."
     );
   }
 

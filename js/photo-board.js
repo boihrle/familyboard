@@ -92,7 +92,7 @@
       }
       if (titleEl) titleEl.textContent = displayName();
       if (blurbEl && current && current.blurb) blurbEl.textContent = current.blurb;
-      if (current) document.title = current.title + " — FamilyBoard";
+      if (current) document.title = current.title + " — FamilyBoards";
       if (stage) {
         stage.className =
           "board-stage photo-stage mount-" + state.mount + " size-" + state.size.toLowerCase();

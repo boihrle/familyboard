@@ -64,7 +64,7 @@
       header.innerHTML =
         '<div class="bar">' +
         '<div class="bar-brand">' +
-        '<a class="brand" href="index.html">FamilyBoard</a>' +
+        '<a class="brand" href="index.html">FamilyBoards</a>' +
         '<button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-menu">' +
         '<svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true" focusable="false">' +
         '<path d="M1 1h20M1 8h20M1 15h20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +

@@ -1,6 +1,6 @@
-# FamilyBoard
+# FamilyBoards
 
-FamilyBoard shop: thin magnetic boards and packs. Static site on GitHub Pages.
+FamilyBoards shop: thin magnetic boards and packs. Static site on GitHub Pages.
 
 Do not add Stripe keys to this repo.
 
@@ -22,17 +22,17 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 
 ## What you can click
 
-- **Home** — Sticky header is FamilyBoard on its own line with a hamburger and Cart. The menu is Boards, Packs, Extras, FAQs, Our Story. Catalogue cards follow. Board and pack cards use locked product photos on light wood.
+- **Home** — Sticky header is FamilyBoards on its own line with a hamburger and Cart. The menu is Boards, Packs, Extras, FAQs, Our Story. Catalogue cards follow. Board and pack cards use locked product photos on light wood.
 - **FAQs** — heading only.
 - **Our Story** — heading plus the locked family copy.
-- **Chores** — Magnets-style weekly board **photos** as the hero (light wood). Line count 3–7 swaps matching photos. Site copy uses Sun–Sat; the line-count photos themselves still show lowercase day words (no new Chores photo assets in this pass).
-- **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns.
-- **Weekly** — days as rows, people as columns. Site copy uses Sun–Sat; `weekly-hero.png` still has lowercase days baked in (no new Weekly photo in this pass).
-- **Meal Plan** — A5 only. Centered title Meal Plan; printed Mon–Sun; one write-in column (not a multi-column meal grid).
-- **Shopping List** — A5 only. Header plus empty write-in lines (like House Rules).
-- **House Rules** — A5 only. Title House Rules (H and R); empty write-in lines only.
+- **Chores** — Magnets-style weekly board **photos** as the hero (light wood). Line count 3–7 swaps matching photos. Day labels on the board are SUN–SAT.
+- **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns. On-board titles are MORNING, AFTERNOON, NIGHT.
+- **Weekly** — days as rows, people as columns. Day labels on the board are SUN–SAT.
+- **Meal Plan** — A5 only. Centered title MEAL PLAN; printed MON–SUN; one write-in column (not a multi-column meal grid).
+- **Shopping List** — A5 only. Header SHOPPING LIST plus empty write-in lines (like House Rules).
+- **House Rules** — A5 only. Title HOUSE RULES; empty write-in lines only.
 - **Chores Word Pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.)
-- **Day Word Pack** — `Sun`–`Sat`.
+- **Day Word Pack** — `SUN`–`SAT`.
 - **Custom Words** — you type the words; fewer tiles and a higher price.
 - **Emoji Pack** — magnetic.
 - **Sticker Pack** — non-magnetic.

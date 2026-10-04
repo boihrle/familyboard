@@ -10,19 +10,11 @@
 
   const DAY_WORDS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   const CHORES_WORDS = [
-    "SET TABLE",
-    "DISHWASHER",
-    "FOLD WASHING",
-    "DISHES",
-    "DRY DISHES",
-    "SWEEP FLOOR",
-    "MOW LAWNS",
-    "MAKE DINNER",
-    "RUBBISH",
-    "RECYCLING",
-    "PUT OUT BINS",
-    "VACUUM",
-    "MOP FLOOR"
+    "MOP FLOOR",
+    "CLEAN ROOM",
+    "CLEAR TABLE",
+    "PUT AWAY WASHING",
+    "WASHING"
   ];
   const JOBS_WORDS = [
     "TIDY ROOM",
@@ -128,7 +120,7 @@
       name: "Chores Word Pack",
       href: "pack-chores.html",
       price: 18,
-      tileCount: 13,
+      tileCount: 5,
       magnetic: true
     },
     "pack-days": {
@@ -171,7 +163,7 @@
       name: "Sticker Pack",
       href: "pack-sticker.html",
       price: 12,
-      tileCount: 13,
+      tileCount: 5,
       magnetic: false
     }
   };

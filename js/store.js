@@ -50,13 +50,15 @@
       id: "chores-board",
       kind: "board",
       name: "Chores",
-      href: "chores.html"
+      href: "chores.html",
+      price: 29
     },
     "routines-board": {
       id: "routines-board",
       kind: "board",
       name: "Routines",
       href: "routines.html",
+      price: 29,
       people: true,
       dayparts: {
         morning: {
@@ -85,6 +87,7 @@
       name: "Weekly",
       href: "weekly.html",
       photo: "images/weekly-hero.png",
+      price: 29,
       people: true
     },
     "meal-plan-board": {
@@ -93,6 +96,7 @@
       name: "Meal Plan",
       href: "meal-plan.html",
       photo: "images/meal-plan-hero.svg",
+      price: 19,
       people: false,
       sizes: ["A5"]
     },
@@ -102,6 +106,7 @@
       name: "Shopping List",
       href: "shopping-list.html",
       photo: "images/shopping-list-hero.png",
+      price: 19,
       people: false,
       sizes: ["A5"]
     },
@@ -111,6 +116,7 @@
       name: "House Rules",
       href: "house-rules.html",
       photo: "images/house-rules-hero.png",
+      price: 19,
       people: false,
       sizes: ["A5"]
     },
@@ -119,7 +125,7 @@
       kind: "pack",
       name: "Chores Word Pack",
       href: "pack-chores.html",
-      price: 18,
+      price: 12,
       tileCount: 5,
       magnetic: true
     },
@@ -128,7 +134,7 @@
       kind: "pack",
       name: "Day Word Pack",
       href: "pack-days.html",
-      price: 12,
+      price: 8,
       tileCount: 7,
       magnetic: true
     },
@@ -137,14 +143,14 @@
       kind: "extra",
       name: "Pen & Pen Holder",
       href: "pen-holder.html",
-      price: 14
+      price: 12
     },
     "pack-custom": {
       id: "pack-custom",
       kind: "pack",
       name: "Custom Words",
       href: "pack-custom.html",
-      price: 34,
+      price: 12,
       maxTiles: 8,
       magnetic: true
     },
@@ -153,7 +159,7 @@
       kind: "pack",
       name: "Emoji Pack",
       href: "pack-emoji.html",
-      price: 15,
+      price: 10,
       tileCount: 2,
       magnetic: true
     },
@@ -162,19 +168,19 @@
       kind: "pack",
       name: "Sticker Pack",
       href: "pack-sticker.html",
-      price: 12,
+      price: 8,
       tileCount: 5,
       magnetic: false
     }
   };
 
-  const SIZE_PRICE = { A5: 61, A4: 81 };
   const LINE_COUNTS = [3, 4, 5, 6, 7];
   const PEOPLE_COUNTS = [2, 3, 4, 5];
   const SIZES = ["A4", "A5"];
 
-  function boardPrice(size) {
-    return SIZE_PRICE[size];
+  function boardPrice(sku) {
+    var product = PRODUCTS[sku];
+    return product && product.price != null ? product.price : 29;
   }
 
   function money(n) {

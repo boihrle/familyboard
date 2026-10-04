@@ -10,6 +10,18 @@
 
   const DAY_WORDS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const CHORES_WORDS = [
+    "Set Table",
+    "Dishwasher",
+    "Fold Washing",
+    "Dishes",
+    "Dry Dishes",
+    "Sweep Floor",
+    "Mow Lawns",
+    "Make Dinner",
+    "Rubbish",
+    "Recycling",
+    "Put Out Bins",
+    "Vacuum",
     "Mop Floor",
     "Clean Room",
     "Clear Table",
@@ -64,7 +76,7 @@
         morning: {
           title: "Morning",
           photo: "images/morning-hero.png",
-          alt: "Thin white magnetic Morning board on light wood. Title Morning at the top; name columns and job tiles in title case.",
+          alt: "Thin white magnetic Morning board on light wood. Title Morning at the top; empty name tiles and job tiles in title case.",
           blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
@@ -126,7 +138,7 @@
       name: "Chores Word Pack",
       href: "pack-chores.html",
       price: 12,
-      tileCount: 5,
+      tileCount: 17,
       magnetic: true
     },
     "pack-days": {

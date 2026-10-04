@@ -169,7 +169,6 @@
       name: "Sticker Pack",
       href: "pack-sticker.html",
       price: 8,
-      tileCount: 5,
       magnetic: false
     }
   };

@@ -8,47 +8,47 @@
 (function (global) {
   const CART_KEY = "familyboard-cart-v1";
 
-  const DAY_WORDS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const DAY_WORDS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
   const CHORES_WORDS = [
-    "set table",
-    "dishwasher",
-    "fold washing",
-    "dishes",
-    "dry dishes",
-    "sweep floor",
-    "mow lawns",
-    "make dinner",
-    "rubbish",
-    "recycling",
-    "put out bins",
-    "vacuum",
-    "mop floor"
+    "SET TABLE",
+    "DISHWASHER",
+    "FOLD WASHING",
+    "DISHES",
+    "DRY DISHES",
+    "SWEEP FLOOR",
+    "MOW LAWNS",
+    "MAKE DINNER",
+    "RUBBISH",
+    "RECYCLING",
+    "PUT OUT BINS",
+    "VACUUM",
+    "MOP FLOOR"
   ];
   const JOBS_WORDS = [
-    "tidy room",
-    "homework",
-    "walk dog",
-    "unpack bag",
-    "lunch box",
-    "make bed",
-    "brush hair",
-    "put away washing",
-    "load dishwasher",
-    "set table",
-    "feed pets",
-    "water plants",
-    "sweep floor",
-    "wipe bench",
-    "put away toys",
-    "pack bag",
-    "fold clothes",
-    "hang coat",
-    "recycle",
-    "clean windows",
-    "help cook",
-    "empty bin",
-    "put away groceries",
-    "wash dishes"
+    "TIDY ROOM",
+    "HOMEWORK",
+    "WALK DOG",
+    "UNPACK BAG",
+    "LUNCH BOX",
+    "MAKE BED",
+    "BRUSH HAIR",
+    "PUT AWAY WASHING",
+    "LOAD DISHWASHER",
+    "SET TABLE",
+    "FEED PETS",
+    "WATER PLANTS",
+    "SWEEP FLOOR",
+    "WIPE BENCH",
+    "PUT AWAY TOYS",
+    "PACK BAG",
+    "FOLD CLOTHES",
+    "HANG COAT",
+    "RECYCLE",
+    "CLEAN WINDOWS",
+    "HELP COOK",
+    "EMPTY BIN",
+    "PUT AWAY GROCERIES",
+    "WASH DISHES"
   ];
 
   const EMOJIS = ["⭐", "❤️", "🎉", "✅", "🌈", "🐶", "🌞", "🎵", "🏆", "🌸", "⚽", "📚"];
@@ -70,20 +70,20 @@
         morning: {
           title: "Morning",
           photo: "images/morning-hero.png",
-          alt: "Thin white magnetic Morning board on light wood. Title Morning at the top; columns for Georgia, Caleb, and Isaac with job tiles.",
-          blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
+          alt: "Thin white magnetic Morning board on light wood. Title MORNING at the top; name columns and job tiles in capital letters.",
+          blurb: "Title MORNING at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
           title: "Afternoon",
           photo: "images/afternoon-hero.png",
-          alt: "Thin white magnetic Afternoon board on light wood. Title Afternoon at the top; columns for Georgia, Caleb, and Isaac with job tiles.",
-          blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
+          alt: "Thin white magnetic Afternoon board on light wood. Title AFTERNOON at the top; name columns and job tiles in capital letters.",
+          blurb: "Title AFTERNOON at the top. One column per person — stack the job tiles underneath."
         },
         night: {
           title: "Night",
           photo: "images/night-hero.png",
-          alt: "Thin white magnetic Night board on light wood. Title Night at the top; columns for Georgia, Caleb, and Isaac with job tiles.",
-          blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
+          alt: "Thin white magnetic Night board on light wood. Title NIGHT at the top; name columns and job tiles in capital letters.",
+          blurb: "Title NIGHT at the top. One column per person — stack the job tiles underneath."
         }
       }
     },

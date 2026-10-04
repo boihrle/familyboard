@@ -9,6 +9,7 @@
     var meta = document.getElementById("word-meta");
     var addBtn = document.getElementById("add-custom");
     var field = document.getElementById("word-input");
+    if (!list || !meta || !addBtn || !field) return;
 
     list.innerHTML = words
       .map(function (word, index) {
@@ -27,16 +28,18 @@
       })
       .join("");
 
-    var slots = "";
-    for (var i = 0; i < MAX; i += 1) {
-      slots +=
-        '<span class="mag-tile tile-name' +
-        (words[i] ? "" : " is-empty") +
-        '">' +
-        (words[i] || "") +
-        "</span>";
+    if (preview) {
+      var slots = "";
+      for (var i = 0; i < MAX; i += 1) {
+        slots +=
+          '<span class="mag-tile tile-name' +
+          (words[i] ? "" : " is-empty") +
+          '">' +
+          (words[i] || "") +
+          "</span>";
+      }
+      preview.innerHTML = slots;
     }
-    preview.innerHTML = slots;
 
     meta.textContent = words.length + " of " + MAX + " tiles";
     field.disabled = words.length >= MAX;

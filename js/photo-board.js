@@ -50,7 +50,6 @@
     var peopleField = document.getElementById("people-field");
     var optPeople = document.getElementById("opt-people");
     var optSize = document.getElementById("opt-size");
-    var optMount = document.getElementById("opt-mount");
     var stage = document.getElementById("hero-stage");
     var board = document.getElementById("board-hero");
     var caption = document.getElementById("hero-caption");
@@ -74,7 +73,6 @@
       if (current) parts.push(current.title);
       if (state.people) parts.push(state.people + " people");
       parts.push(state.size);
-      parts.push(FB.mountLabel(state.mount));
       return parts.join(" · ");
     }
 
@@ -131,17 +129,7 @@
           return s;
         }, "size");
       }
-      if (optMount) {
-        optMount.innerHTML = optionButtons(
-          FB.MOUNTS,
-          state.mount,
-          function (m) {
-            return FB.mountLabel(m);
-          },
-          "mount"
-        );
-      }
-      if (priceNow) priceNow.textContent = FB.money(FB.boardPrice(state.size, state.mount));
+      if (priceNow) priceNow.textContent = FB.money(FB.boardPrice(state.size));
       if (configNow) configNow.textContent = configText();
     }
 
@@ -169,9 +157,6 @@
     bindGroup("opt-size", "data-size", function (value) {
       state.size = value;
     });
-    bindGroup("opt-mount", "data-mount", function (value) {
-      state.mount = value;
-    });
 
     var add = document.getElementById("add-board");
     if (add) {
@@ -181,8 +166,7 @@
           name: displayName(),
           kind: "board",
           size: state.size,
-          mount: state.mount,
-          price: FB.boardPrice(state.size, state.mount)
+          price: FB.boardPrice(state.size)
         };
         if (state.people) item.people = state.people;
         if (state.daypart) item.daypart = state.daypart;

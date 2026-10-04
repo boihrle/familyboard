@@ -8,47 +8,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito+Sans:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=2.44">
+  <link rel="stylesheet" href="css/styles.css?v=2.45">
 </head>
 <body>
   <div id="site-header"></div>
-  <main class="wrap product">
-    <div class="hero-stage mount-stick">
-      <div class="board mount-stick">
-        <div class="board-head">Sticker sheet</div>
-        <div class="magnet-tray" id="sticker-tray"></div>
-        <div class="board-foot">Non-magnetic · peel and place</div>
+  <main class="wrap product product-photo">
+    <div>
+      <div class="board-stage photo-stage" role="region" aria-label="Sticker Pack on light wood.">
+        <figure class="hero-photo-frame">
+          <img src="images/sticker-pack-hero.jpg" width="1280" height="720" alt="A random mix of cute animal cartoon graffiti stickers on light wood.">
+        </figure>
       </div>
     </div>
     <aside class="buy-panel">
       <p class="kicker">Pack</p>
       <h1>Sticker Pack</h1>
-      <p class="muted">Flat, non-magnetic stickers — same chore words as the Chores Word Pack, without the magnet back. Use on paper charts.</p>
+      <p class="muted">Random stickers to customise the board. Not word stickers and not chore-word tiles.</p>
       <div class="price-row">
-        <span class="muted">5 stickers · non-magnetic</span>
+        <span class="muted">Stickers</span>
         <strong>$8</strong>
       </div>
-      <button class="btn" id="add-pack" type="button">Add to cart</button>
+      <button class="btn" id="add-pack" type="button" data-sku="pack-sticker">Add to cart</button>
     </aside>
   </main>
   <footer id="site-footer" class="wrap"></footer>
   <script src="js/store.js"></script>
-  <script src="js/site.js?v=2.44"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("sticker-tray").innerHTML = FamilyBoard.CHORES_WORDS.map(function (word) {
-        return '<span class="mag-tile flat">' + word + "</span>";
-      }).join("");
-      document.getElementById("add-pack").addEventListener("click", function () {
-        FamilyBoard.addItem({
-          productId: "pack-sticker",
-          name: FamilyBoard.PRODUCTS["pack-sticker"].name,
-          kind: "pack",
-          price: FamilyBoard.PRODUCTS["pack-sticker"].price
-        });
-        FBSite.toast(FamilyBoard.PRODUCTS["pack-sticker"].name + " added to cart");
-      });
-    });
-  </script>
+  <script src="js/site.js?v=2.45"></script>
+  <script src="js/photo-pack.js"></script>
 </body>
 </html>

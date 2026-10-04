@@ -74,8 +74,6 @@
         state.lines +
         " name rows · " +
         state.size +
-        " · " +
-        FB.mountLabel(state.mount) +
         " — days, names, and chores are magnetic tiles";
     }
   }
@@ -97,17 +95,9 @@
       },
       "size"
     );
-    document.getElementById("opt-mount").innerHTML = optionButtons(
-      FB.MOUNTS,
-      state.mount,
-      function (m) {
-        return FB.mountLabel(m);
-      },
-      "mount"
-    );
-    document.getElementById("price-now").textContent = FB.money(FB.boardPrice(state.size, state.mount));
+    document.getElementById("price-now").textContent = FB.money(FB.boardPrice(state.size));
     document.getElementById("config-now").textContent =
-      state.lines + " name rows · " + state.size + " · " + FB.mountLabel(state.mount);
+      state.lines + " name rows · " + state.size;
   }
 
   function bind() {
@@ -125,13 +115,6 @@
       renderOptions();
       renderBoard();
     });
-    document.getElementById("opt-mount").addEventListener("click", function (event) {
-      var btn = event.target.closest("[data-mount]");
-      if (!btn) return;
-      state.mount = btn.getAttribute("data-mount");
-      renderOptions();
-      renderBoard();
-    });
     document.getElementById("add-board").addEventListener("click", function () {
       FB.addItem({
         productId: "chores-board",
@@ -139,8 +122,7 @@
         kind: "board",
         lines: state.lines,
         size: state.size,
-        mount: state.mount,
-        price: FB.boardPrice(state.size, state.mount)
+        price: FB.boardPrice(state.size)
       });
       window.FBSite.toast(FB.PRODUCTS["chores-board"].name + " added to cart");
     });

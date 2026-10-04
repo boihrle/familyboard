@@ -176,15 +176,13 @@
     }
   };
 
-  const SIZE_PRICE = { A5: 49, A4: 69 };
-  const MOUNT_PRICE = { magnetic: 12, stick: 6, nonstick: 0 };
+  const SIZE_PRICE = { A5: 61, A4: 81 };
   const LINE_COUNTS = [3, 4, 5, 6, 7];
   const PEOPLE_COUNTS = [2, 3, 4, 5];
   const SIZES = ["A4", "A5"];
-  const MOUNTS = ["magnetic", "stick", "nonstick"];
 
-  function boardPrice(size, mount) {
-    return SIZE_PRICE[size] + MOUNT_PRICE[mount];
+  function boardPrice(size) {
+    return SIZE_PRICE[size];
   }
 
   function money(n) {
@@ -246,15 +244,9 @@
     });
   }
 
-  function mountLabel(mount) {
-    if (mount === "magnetic") return "Magnetic";
-    if (mount === "stick") return "Stick";
-    return "Nonstick";
-  }
-
   function itemLabel(item) {
     if (item.productId === "chores-board") {
-      return "Chores · " + item.lines + " lines · " + item.size + " · " + mountLabel(item.mount);
+      return "Chores · " + item.lines + " lines · " + item.size;
     }
     if (item.kind === "board") {
       var parts = [item.name];
@@ -267,7 +259,6 @@
       }
       if (item.people) parts.push(item.people + " people");
       if (item.size) parts.push(item.size);
-      if (item.mount) parts.push(mountLabel(item.mount));
       return parts.join(" · ");
     }
     if (item.productId === "pack-custom" && item.words && item.words.length) {
@@ -302,7 +293,6 @@
     LINE_COUNTS: LINE_COUNTS,
     PEOPLE_COUNTS: PEOPLE_COUNTS,
     SIZES: SIZES,
-    MOUNTS: MOUNTS,
     boardPrice: boardPrice,
     money: money,
     readCart: readCart,
@@ -312,7 +302,6 @@
     cartCount: cartCount,
     cartTotal: cartTotal,
     updateCartCount: updateCartCount,
-    mountLabel: mountLabel,
     itemLabel: itemLabel,
     payPreview: payPreview
   };

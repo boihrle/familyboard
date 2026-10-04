@@ -150,11 +150,25 @@
       tileCount: 7,
       magnetic: true
     },
-    "pen-holder": {
-      id: "pen-holder",
+    "black-pen-pack": {
+      id: "black-pen-pack",
       kind: "extra",
-      name: "Pen & Pen Holder",
-      href: "pen-holder.html",
+      name: "Black Pen 5 Pack",
+      href: "black-pen-pack.html",
+      price: 12
+    },
+    "coloured-pen-pack": {
+      id: "coloured-pen-pack",
+      kind: "extra",
+      name: "Coloured Pen 5 Pack",
+      href: "coloured-pen-pack.html",
+      price: 12
+    },
+    "fridge-holder": {
+      id: "fridge-holder",
+      kind: "extra",
+      name: "Fridge Holder",
+      href: "fridge-holder.html",
       price: 12
     },
     "pack-custom": {

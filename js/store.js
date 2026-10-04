@@ -8,39 +8,39 @@
 (function (global) {
   const CART_KEY = "familyboard-cart-v1";
 
-  const DAY_WORDS = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+  const DAY_WORDS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const CHORES_WORDS = [
-    "MOP FLOOR",
-    "CLEAN ROOM",
-    "CLEAR TABLE",
-    "PUT AWAY WASHING",
-    "WASHING"
+    "Mop Floor",
+    "Clean Room",
+    "Clear Table",
+    "Put Away Washing",
+    "Washing"
   ];
   const JOBS_WORDS = [
-    "TIDY ROOM",
-    "HOMEWORK",
-    "WALK DOG",
-    "UNPACK BAG",
-    "LUNCH BOX",
-    "MAKE BED",
-    "BRUSH HAIR",
-    "PUT AWAY WASHING",
-    "LOAD DISHWASHER",
-    "SET TABLE",
-    "FEED PETS",
-    "WATER PLANTS",
-    "SWEEP FLOOR",
-    "WIPE BENCH",
-    "PUT AWAY TOYS",
-    "PACK BAG",
-    "FOLD CLOTHES",
-    "HANG COAT",
-    "RECYCLE",
-    "CLEAN WINDOWS",
-    "HELP COOK",
-    "EMPTY BIN",
-    "PUT AWAY GROCERIES",
-    "WASH DISHES"
+    "Tidy Room",
+    "Homework",
+    "Walk Dog",
+    "Unpack Bag",
+    "Lunch Box",
+    "Make Bed",
+    "Brush Hair",
+    "Put Away Washing",
+    "Load Dishwasher",
+    "Set Table",
+    "Feed Pets",
+    "Water Plants",
+    "Sweep Floor",
+    "Wipe Bench",
+    "Put Away Toys",
+    "Pack Bag",
+    "Fold Clothes",
+    "Hang Coat",
+    "Recycle",
+    "Clean Windows",
+    "Help Cook",
+    "Empty Bin",
+    "Put Away Groceries",
+    "Wash Dishes"
   ];
 
   const EMOJIS = ["🐱", "🐼"];
@@ -64,20 +64,20 @@
         morning: {
           title: "Morning",
           photo: "images/morning-hero.png",
-          alt: "Thin white magnetic Morning board on light wood. Title MORNING at the top; name columns and job tiles in capital letters.",
-          blurb: "Title MORNING at the top. One column per person — stack the job tiles underneath."
+          alt: "Thin white magnetic Morning board on light wood. Title Morning at the top; name columns and job tiles in title case.",
+          blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
           title: "Afternoon",
           photo: "images/afternoon-hero.png",
-          alt: "Thin white magnetic Afternoon board on light wood. Title AFTERNOON at the top; name columns and job tiles in capital letters.",
-          blurb: "Title AFTERNOON at the top. One column per person — stack the job tiles underneath."
+          alt: "Thin white magnetic Afternoon board on light wood. Title Afternoon at the top; name columns and job tiles in title case.",
+          blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
         },
         night: {
           title: "Night",
           photo: "images/night-hero.png",
-          alt: "Thin white magnetic Night board on light wood. Title NIGHT at the top; name columns and job tiles in capital letters.",
-          blurb: "Title NIGHT at the top. One column per person — stack the job tiles underneath."
+          alt: "Thin white magnetic Night board on light wood. Title Night at the top; name columns and job tiles in title case.",
+          blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
         }
       }
     },
@@ -95,7 +95,7 @@
       kind: "board",
       name: "Meal Plan",
       href: "meal-plan.html",
-      photo: "images/meal-plan-hero.svg",
+      photo: "images/meal-plan-hero.png",
       price: 19,
       people: false,
       sizes: ["A5"]

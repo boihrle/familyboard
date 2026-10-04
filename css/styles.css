@@ -56,6 +56,7 @@ a {
   border-bottom: 1px solid var(--line);
   min-width: 0;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .bar {
@@ -65,15 +66,16 @@ a {
   flex-direction: column;
   align-items: stretch;
   gap: 0;
-  padding: 8px 0 4px;
+  padding: 8px 0;
   min-width: 0;
   max-width: 100%;
 }
 
 .bar-brand {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   min-width: 0;
   max-width: 100%;
 }
@@ -84,50 +86,76 @@ a {
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.2;
+  white-space: nowrap;
+  min-width: 0;
+  flex: 0 1 auto;
 }
 
-.nav {
-  display: flex;
-  flex-wrap: nowrap;
+.menu-toggle {
+  appearance: none;
+  flex: 0 0 auto;
+  margin-left: auto;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--ink);
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+  background: rgba(28, 36, 28, 0.08);
+}
+
+.menu-toggle[aria-expanded="true"] {
+  background: rgba(28, 36, 28, 0.1);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   gap: 0;
-  margin-left: 0;
   min-width: 0;
   max-width: 100%;
+  padding: 4px 0 8px;
   font-family: var(--display);
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: -0.03em;
 }
 
-.nav > * {
-  flex: 0 0 auto;
+.menu[hidden] {
+  display: none;
 }
 
-.nav a {
-  display: inline-flex;
+.menu a {
+  display: flex;
   align-items: center;
   min-height: 44px;
+  padding: 0 2px;
 }
 
-.nav a:hover,
-.nav a:focus-visible {
+.menu a:hover,
+.menu a:focus-visible {
   color: var(--sage);
   text-decoration: underline;
 }
 
-.nav-sep {
-  font-family: var(--font);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.05rem;
-  letter-spacing: 0;
-  color: var(--muted);
-  white-space: pre;
+.menu a[aria-current="page"] {
+  color: var(--sage);
 }
 
 .cart-link {
-  margin-left: auto;
+  flex: 0 0 auto;
   background: var(--ink);
   color: var(--cream);
   border-radius: 999px;
@@ -640,11 +668,16 @@ input[type="text"] {
 #boards,
 #packs,
 #extras {
-  scroll-margin-top: 6.5rem;
+  scroll-margin-top: 4.5rem;
 }
 
 #extras {
-  min-height: calc(100svh - 6.5rem);
+  min-height: calc(100svh - 4.5rem);
+}
+
+.prose-page {
+  padding: 36px 0 64px;
+  max-width: 42ch;
 }
 
 .product-chores,
@@ -957,16 +990,19 @@ input[type="text"] {
   .product-photo {
     grid-template-columns: 1fr;
   }
-  .nav {
+  .brand {
+    font-size: 1.28rem;
+  }
+  .menu {
     font-size: 1.15rem;
   }
   #boards,
   #packs,
   #extras {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: 4.75rem;
   }
   #extras {
-    min-height: calc(100svh - 7rem);
+    min-height: calc(100svh - 4.75rem);
   }
   .hero-stage { min-height: 420px; }
   .ferrous-board {

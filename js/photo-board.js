@@ -88,6 +88,11 @@
         img.src = current.photo;
         img.alt = current.alt;
       }
+      if (product.photosByPeople && img && state.people) {
+        img.src = product.photosByPeople[state.people] || product.photo;
+        img.alt =
+          "Thin white magnetic weekly sheet on light wood, same width as the Routines picture. Sun–Sat day tiles as rows; thin name tiles Georgia, Caleb, and Isaac across the top, with blank tiles on extra columns; empty cells for writing in with the pen.";
+      }
       if (titleEl) titleEl.textContent = displayName();
       if (blurbEl && current && current.blurb) blurbEl.textContent = current.blurb;
       if (current) document.title = current.title + " — FamilyBoards";
@@ -109,8 +114,10 @@
           "daypart"
         );
       }
+      if (peopleField) {
+        peopleField.hidden = !product.people;
+      }
       if (product.people && peopleField && optPeople) {
-        peopleField.hidden = false;
         optPeople.innerHTML = optionButtons(
           FB.PEOPLE_COUNTS,
           state.people,

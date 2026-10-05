@@ -29,7 +29,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns. On-board titles are MORNING, AFTERNOON, NIGHT.
 - **Weekly** — days as rows, people as columns. Day labels on the board are SUN–SAT.
 - **Meal Plan** — A5 only. Centered title MEAL PLAN; printed MON–SUN; one write-in column (not a multi-column meal grid).
-- **Shopping List** — A5 only. Header SHOPPING LIST plus empty write-in lines (like House Rules).
+- **Shopping** — A5 only. Header Shopping plus empty write-in lines (like House Rules).
 - **House Rules** — A5 only. Title HOUSE RULES; empty write-in lines only.
 - **Chores Word Pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.)
 - **Day Word Pack** — Mon–Sun.

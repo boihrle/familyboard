@@ -980,6 +980,11 @@ input[type="text"] {
   object-position: center;
 }
 
+.thumb-board.thumb-pen img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .week-cell:nth-last-child(-n + 8) {
   border-bottom: 0;
 }

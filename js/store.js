@@ -161,14 +161,14 @@
       kind: "extra",
       name: "Black Pen 5 Pack",
       href: "black-pen-pack.html",
-      price: 12
+      price: 1
     },
     "coloured-pen-pack": {
       id: "coloured-pen-pack",
       kind: "extra",
-      name: "Coloured Pen 5 Pack",
+      name: "Coloured Pen 8 Pack",
       href: "coloured-pen-pack.html",
-      price: 12
+      price: 5
     },
     "fridge-holder": {
       id: "fridge-holder",

@@ -78,6 +78,7 @@
         '<a href="' + sectionHref(file, "extras") + '">Extras</a>' +
         pageHref(file, "faqs.html") + "FAQs</a>" +
         pageHref(file, "our-story.html") + "Our Story</a>" +
+        pageHref(file, "contact.html") + "Contact Us</a>" +
         "</nav>" +
         "</div>";
       bindMenu(header);

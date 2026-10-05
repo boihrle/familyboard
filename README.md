@@ -32,12 +32,12 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Meal Plan** — A5 only. Centered title MEAL PLAN; printed MON–SUN; one write-in column (not a multi-column meal grid).
 - **Shopping** — A5 only. Header Shopping plus empty write-in lines (like House Rules).
 - **House Rules** — A5 only. Title HOUSE RULES; empty write-in lines only.
-- **Chores Word Pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.)
+- **Chores Word Pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.) $15.
 - **Day Word Pack** — Mon–Sun.
-- **Custom Words** — you type the words; fewer tiles and a higher price.
+- **Custom Words** — choose any 16 words, such as names; thin word tiles. $15.
 - **Emoji Pack** — magnetic.
 - **Sticker Pack** — non-magnetic.
-- **Black Pen 5 Pack** ($1), **Coloured Pen 8 Pack** ($5), and **Fridge Holder** ($12) — extras.
+- **Black Pen** — 1 pen $1 or 5 pens $3 (home card $1). **Coloured Pen 8 Pack** $5. **Fridge Holder** $5.
 - **Cart** holds a board plus packs. **Pay** completes the order.
 
 Name tiles match chore tiles and day words (white, black text). Empty cells on the mockups are intentional.

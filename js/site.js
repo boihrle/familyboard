@@ -85,6 +85,7 @@
 
     if (footer) {
       footer.innerHTML = "";
+      footer.hidden = true;
     }
 
     FB.updateCartCount();

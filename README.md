@@ -23,7 +23,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 ## What you can click
 
 - **Home** — Sticky header is FamilyBoards on its own line with a hamburger and Cart. The menu is Boards, Packs, Extras, FAQs, Our Story. Catalogue cards follow. Board and pack cards use locked product photos on light wood.
-- **FAQs** — heading only.
+- **FAQs** — five Q&As: boards and word packs, fridge, writing, pens, and kids’ names.
 - **Our Story** — heading plus the locked family copy.
 - **Chores** — Magnets-style weekly board **photos** as the hero (light wood). Line count 3–7 swaps matching photos. Day labels on the board are Mon–Sun.
 - **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns. On-board titles are MORNING, AFTERNOON, NIGHT.

@@ -143,7 +143,7 @@
       kind: "pack",
       name: "Chores Word Pack",
       href: "pack-chores.html",
-      price: 12,
+      price: 15,
       tileCount: 17,
       magnetic: true
     },
@@ -159,9 +159,13 @@
     "black-pen-pack": {
       id: "black-pen-pack",
       kind: "extra",
-      name: "Black Pen 5 Pack",
+      name: "Black Pen",
       href: "black-pen-pack.html",
-      price: 1
+      price: 1,
+      qtyOptions: [
+        { qty: 1, price: 1, label: "1 pen" },
+        { qty: 5, price: 3, label: "5 pens" }
+      ]
     },
     "coloured-pen-pack": {
       id: "coloured-pen-pack",
@@ -175,15 +179,15 @@
       kind: "extra",
       name: "Fridge Holder",
       href: "fridge-holder.html",
-      price: 12
+      price: 5
     },
     "pack-custom": {
       id: "pack-custom",
       kind: "pack",
       name: "Custom Words",
       href: "pack-custom.html",
-      price: 12,
-      maxTiles: 8,
+      price: 15,
+      maxTiles: 16,
       magnetic: true
     },
     "pack-emoji": {

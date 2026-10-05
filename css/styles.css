@@ -680,6 +680,16 @@ input[type="text"] {
   max-width: 42ch;
 }
 
+.faq h2 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  margin: 1.7em 0 0.4em;
+}
+
+.faq p {
+  margin: 0;
+}
+
 .product-chores,
 .product-photo {
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);

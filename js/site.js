@@ -84,10 +84,7 @@
     }
 
     if (footer) {
-      footer.innerHTML =
-        '<div class="footer-inner">' +
-        '<p class="fine">Thin magnetic sheets on light wood. Mount on the fridge or a wall. Name magnets match word magnets in size; empty cells are expected.</p>' +
-        "</div>";
+      footer.innerHTML = "";
     }
 
     FB.updateCartCount();

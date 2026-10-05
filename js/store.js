@@ -71,7 +71,7 @@
       name: "Routines",
       href: "routines.html",
       price: 29,
-      people: true,
+      people: false,
       dayparts: {
         morning: {
           title: "Morning",
@@ -99,6 +99,12 @@
       name: "Weekly",
       href: "weekly.html",
       photo: "images/weekly-hero.png",
+      photosByPeople: {
+        2: "images/weekly-hero-2.png",
+        3: "images/weekly-hero.png",
+        4: "images/weekly-hero-4.png",
+        5: "images/weekly-hero-5.png"
+      },
       price: 29,
       people: true
     },
@@ -115,7 +121,7 @@
     "shopping-list-board": {
       id: "shopping-list-board",
       kind: "board",
-      name: "Shopping List",
+      name: "Shopping",
       href: "shopping-list.html",
       photo: "images/shopping-list-hero.png",
       price: 19,

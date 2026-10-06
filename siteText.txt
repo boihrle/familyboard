@@ -408,6 +408,121 @@ contact@familyboards.co.nz
 --- contact picture alt text ---
 FamilyBoards Chores board on light wood, with name rows and weekly chore tiles.
 
+=== shipping-returns.html — Shipping & Returns ===
+
+--- Section 1 — heading ---
+Shipping
+
+--- Section 1 — text ---
+We ship within New Zealand only.
+We send orders by NZ Post.
+Delivery cost: TBC.
+Delivery time: TBC.
+We'll send you tracking where it's available.
+
+--- Section 2 — heading ---
+Change of Mind Returns
+
+--- Section 2 — text ---
+Changed your mind? You can return an item within TBC of delivery.
+Items must be unused and in their original condition.
+You pay the return postage, unless the item is faulty.
+To start a return, email contact@familyboards.co.nz with your order number.
+
+--- Section 3 — heading ---
+Custom Words
+
+--- Section 3 — text ---
+Custom Words are printed just for you.
+We can't take them back for change of mind.
+If they arrive faulty, see below.
+
+--- Section 4 — heading ---
+Faulty or Damaged Items
+
+--- Section 4 — text ---
+If something arrives faulty or damaged, email contact@familyboards.co.nz.
+Include your order number and a photo.
+We'll repair, replace or refund it.
+
+--- Section 5 — heading ---
+Your Rights
+
+--- Section 5 — text ---
+Nothing on this page affects your rights under the Consumer Guarantees Act 1993.
+
+--- Section 6 — heading ---
+Contact Us
+
+--- Section 6 — text ---
+Questions? Email contact@familyboards.co.nz.
+
+=== privacy.html — Privacy ===
+
+--- last updated ---
+Last updated: 6 October 2026.
+
+--- Section 1 — heading ---
+About This Policy
+
+--- Section 1 — text ---
+This policy explains how FamilyBoards handles your personal information under the Privacy Act 2020.
+
+--- Section 2 — heading ---
+What We Collect
+
+--- Section 2 — text ---
+When you order, we collect:
+- your name
+- your delivery address
+- your email address
+- any custom words you choose
+
+--- Section 3 — heading ---
+How We Use It
+
+--- Section 3 — text ---
+We use your information only to make, send and support your order, and to reply to you.
+We give NZ Post your name and delivery address so they can deliver your order.
+We don't sell your information.
+
+--- Section 4 — heading ---
+Payments
+
+--- Section 4 — text ---
+Payments will be handled by Stripe.
+We never see or store your card details.
+
+--- Section 5 — heading ---
+How Long We Keep It
+
+--- Section 5 — text ---
+We keep your information only as long as we need it.
+How long: TBC.
+
+--- Section 6 — heading ---
+See or Correct Your Information
+
+--- Section 6 — text ---
+You can ask to see or correct the information we hold about you.
+Email contact@familyboards.co.nz.
+
+--- Section 7 — heading ---
+Cookies and Your Browser
+
+--- Section 7 — text ---
+We don't use tracking or advertising cookies.
+Our site saves your cart in your browser (local storage), so it's still there when you come back.
+When you place an order, we keep it in your browser for that tab only, so we can show your order confirmation.
+Both stay on your device. You can clear them at any time by clearing your browser data.
+Our site loads its fonts from Google Fonts, so Google may see your IP address. This doesn't set cookies.
+
+--- Section 8 — heading ---
+Contact Us
+
+--- Section 8 — text ---
+Questions about your privacy? Email contact@familyboards.co.nz.
+
 === cart.html — Cart ===
 
 --- description ---

@@ -79,6 +79,8 @@
         pageHref(file, "faqs.html") + "FAQs</a>" +
         pageHref(file, "our-story.html") + "Our Story</a>" +
         pageHref(file, "contact.html") + "Contact Us</a>" +
+        pageHref(file, "shipping-returns.html") + "Shipping &amp; Returns</a>" +
+        pageHref(file, "privacy.html") + "Privacy</a>" +
         "</nav>" +
         "</div>";
       bindMenu(header);

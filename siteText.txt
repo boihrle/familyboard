@@ -1,0 +1,430 @@
+FamilyBoards site text
+======================
+Edit the text under each --- line. Keep every === and --- line so we can put your words back on the site.
+Product names and big page titles are not listed here (you asked to skip headings), except FAQ questions, which are included so you can rewrite them.
+Send this file back when you are done.
+
+=== HOME — catalogue card descriptions ===
+
+--- Home page — meta description ---
+FamilyBoards thin magnetic sheets, boards, and magnet packs — for the fridge or a wall.
+
+--- Chores — card description ---
+3–7 name rows on a weekly grid. A4 or A5.
+
+--- Chores — card price ---
+$29
+
+--- Routines — card description ---
+One board: Morning, Afternoon, or Night. Title at the top; people as columns.
+
+--- Routines — card price ---
+$29
+
+--- Weekly — card description ---
+Days as rows, people as columns. Empty cells for writing in with the pen.
+
+--- Weekly — card price ---
+$29
+
+--- Meal Plan — card description ---
+A5. Centered title Meal Plan. One write-in column. Printed Mon–Sun.
+
+--- Meal Plan — card price ---
+$19
+
+--- Shopping — card description ---
+A5. Header plus empty write-in lines. Fill them in with the pen.
+
+--- Shopping — card price ---
+$19
+
+--- House Rules — card description ---
+A5. Header plus empty write-in lines. No pre-filled rules.
+
+--- House Rules — card price ---
+$19
+
+--- Chores Word Pack — card description ---
+Chore tiles only. Day Word Pack is separate. Magnetic.
+
+--- Chores Word Pack — card price ---
+$15
+
+--- Day Word Pack — card description ---
+Mon–Sun magnetic day words.
+
+--- Day Word Pack — card price ---
+$8
+
+--- Custom Words — card description ---
+Choose any 16 words, such as names, and we'll make them as thin word tiles.
+
+--- Custom Words — card price ---
+$15
+
+--- Emoji Pack — card description ---
+Magnetic emoji tiles.
+
+--- Emoji Pack — card price ---
+$10
+
+--- Sticker Pack — card description ---
+Random stickers to customise the board.
+
+--- Sticker Pack — card price ---
+$8
+
+--- Black Pen — card description ---
+Mini dry-erase pens. White barrel, black cap.
+
+--- Black Pen — card price ---
+$1
+
+--- Coloured Pen 8 Pack — card description ---
+Eight mini dry-erase pens. White barrel, coloured caps.
+
+--- Coloured Pen 8 Pack — card price ---
+$5
+
+--- Fridge Holder — card description ---
+The holder that sticks on the fridge. No pens.
+
+--- Fridge Holder — card price ---
+$5
+
+--- Fridge Holder — card picture alt text ---
+Tall narrow black matte magnetic pen holder with a tall front wall, small U-cutout and rounded back corners, empty, on old wood.
+
+=== chores.html — Chores ===
+
+--- meta description ---
+Weekly Chores: magnetic day words, full names, 3–7 rows. Hero photo updates as you click.
+
+--- picture alt text ---
+White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; thin name tiles Georgia, Caleb, and Isaac on the left; thin title-case chore tiles from the 17-word pack sitting in the day cells.
+
+--- description ---
+One row per person on a weekly grid. Day labels are magnetic tiles (Mon–Sun), not printed. Full first-name tiles sit on the left; chore tiles go in the cells. Empty cells are fine.
+
+--- option group label ---
+Line count
+
+--- option group label ---
+Size
+
+--- fine print ---
+Cart can hold this board plus any pack.
+
+
+=== routines.html — Routines ===
+
+--- meta description ---
+Thin magnetic routine board. Choose Morning, Afternoon, or Night. Title at the top; people as columns.
+
+--- picture alt text ---
+Thin white magnetic Morning board on light wood. Title Morning at the top; empty name tiles and job tiles in title case.
+
+--- description ---
+Title Morning at the top. One column per person — stack the job tiles underneath.
+
+--- option group label ---
+Board
+
+--- option group label ---
+Size
+
+--- fine print ---
+Cart can hold this board plus any pack.
+
+
+=== weekly.html — Weekly ===
+
+--- meta description ---
+Thin magnetic weekly planner: days as rows, people as columns.
+
+--- picture alt text ---
+Thin white magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; thin name tiles Georgia, Caleb, and Isaac across the top; empty cells for writing in with the pen.
+
+--- picture alt text (after choosing People) ---
+Thin white magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; thin name tiles Georgia, Caleb, and Isaac across the top, with blank tiles on extra columns; empty cells for writing in with the pen.
+
+--- description ---
+Days as rows (Mon–Sun tiles), people as columns. Name tiles along the top. Empty cells for writing in with the pen.
+
+--- option group label ---
+People
+
+--- option group label ---
+Size
+
+--- fine print ---
+Cart can hold this board plus any pack.
+
+
+=== meal-plan.html — Meal Plan ===
+
+--- meta description ---
+Thin magnetic Meal Plan sheet: A5, printed Mon–Sun and one write-in column.
+
+--- picture alt text ---
+Thin white magnetic Meal Plan sheet on light wood. Centered title Meal Plan. Printed Mon through Sun and one write-in column.
+
+--- description ---
+A5. Centered title Meal Plan. Printed Mon–Sun down the left. One write-in column — not a lunch/dinner grid and not lunch/dinner magnets.
+
+--- fine print ---
+Cart can hold this board plus any pack.
+
+
+=== shopping-list.html — Shopping ===
+
+--- meta description ---
+Thin magnetic Shopping sheet: header plus empty pen write-in lines.
+
+--- picture alt text ---
+Thin white magnetic shopping sheet on light wood. Shopping title and empty write-in lines only.
+
+--- description ---
+A5. Header plus empty write-in lines — like House Rules. Fill them in with the pen. No zone labels.
+
+--- fine print ---
+Cart can hold this board plus any pack.
+
+
+=== house-rules.html — House Rules ===
+
+--- meta description ---
+Thin magnetic House Rules sheet: title plus empty write-in lines.
+
+--- picture alt text ---
+Thin white magnetic House Rules sheet on light wood. House Rules title and empty write-in lines only.
+
+--- description ---
+A5. House Rules title plus empty write-in lines. Fill them in with the pen — no pre-printed rules.
+
+--- fine print ---
+Cart can hold this board plus any pack.
+
+
+=== pack-chores.html — Chores Word Pack ===
+
+--- meta description ---
+Magnetic Chores Word Pack. Day Word Pack is separate.
+
+--- description ---
+The old chore words plus Clean Room, Clear Table, Put Away Washing, and Washing. Day Word Pack is separate. Same magnet size as names on the boards.
+
+--- price label ---
+17 tiles · magnetic
+
+--- picture alt text ---
+Seventeen white magnetic chore word tiles on light wood, the old set plus Clean Room, Clear Table, Put Away Washing, and Washing, in title case.
+
+
+=== pack-days.html — Day Word Pack ===
+
+--- meta description ---
+Magnetic Day Word Pack. Mon through Sun.
+
+--- description ---
+Mon Tue Wed Thu Fri Sat Sun. Use with Weekly, Chores, or any grid that needs days as words rather than printed labels.
+
+--- price label ---
+7 tiles · magnetic
+
+--- picture alt text ---
+Seven white magnetic day words on light wood: Mon, Tue, Wed, Thu, Fri, Sat, Sun.
+
+
+=== pack-custom.html — Custom Words ===
+
+--- description ---
+Choose any 16 words, such as names, and we'll make them as thin word tiles.
+
+--- description ---
+0 of 16 tiles
+
+--- word box placeholder ---
+Add a name or word
+
+--- word too long message ---
+Keep each word to 14 characters
+
+--- price label ---
+Up to 16 tiles · magnetic
+
+--- picture alt text ---
+Three white magnetic tiles on light wood, one word each: Your, Name, Here.
+
+
+=== pack-emoji.html — Emoji Pack ===
+
+--- description ---
+Magnetic emoji tiles. They snap onto the board like names and chores.
+
+--- price label ---
+10 tiles · magnetic
+
+--- picture alt text ---
+Ten white magnetic emoji tiles on light wood: star, heart, party popper, check, rainbow, dog, sun, trophy, blossom, and soccer ball.
+
+
+=== pack-sticker.html — Sticker Pack ===
+
+--- description ---
+Random stickers to customise the board. Not word stickers and not chore-word tiles.
+
+--- price label ---
+Stickers
+
+--- picture alt text ---
+A random mix of cute animal cartoon graffiti stickers on light wood.
+
+
+=== black-pen-pack.html — Black Pen ===
+
+--- meta description ---
+Mini dry-erase pens. White barrel, black cap, fine black tip. No holder.
+
+--- description ---
+Mini dry-erase pens. White barrel, black cap, fine black tip. No holder.
+
+--- option group label ---
+Pens
+
+--- picture alt text ---
+Slim mini dry-erase pens standing on light wood: white barrel, black cap at the top, black end at the bottom, fine black tip. No holder and no logo on the pens.
+
+
+=== coloured-pen-pack.html — Coloured Pen 8 Pack ===
+
+--- meta description ---
+Eight mini dry-erase pens. White barrel, coloured caps: purple, red, orange, yellow, green, pink, blue, and black. No holder.
+
+--- description ---
+Eight mini dry-erase pens. White barrel, coloured caps: purple, red, orange, yellow, green, pink, blue, and black. No holder.
+
+--- price label ---
+Eight pens
+
+--- picture alt text ---
+Eight slim mini dry-erase pens standing on light wood: white barrels with purple, red, orange, yellow, green, pink, blue, and black caps and matching coloured ends. No holder and no logo on the pens.
+
+
+=== fridge-holder.html — Fridge Holder ===
+
+--- meta description ---
+Magnetic fridge holder that sticks on the fridge. Holder only, no pens.
+
+--- description ---
+The holder that sticks on the fridge. Holder only, no pens.
+
+--- price label ---
+One holder
+
+--- picture alt text ---
+Tall narrow black matte magnetic pen holder, empty, on old wood. Tall front wall with a small centred U-cutout and rounded back-panel corners.
+
+
+=== Routines — daypart blurbs (from catalogue data) ===
+
+--- Morning — description ---
+Title Morning at the top. One column per person — stack the job tiles underneath.
+
+--- Afternoon — description ---
+Title Afternoon at the top. One column per person — stack the job tiles underneath.
+
+--- Afternoon — picture alt text ---
+Thin white magnetic Afternoon board on light wood. Title Afternoon at the top; name columns and job tiles in title case.
+
+--- Night — description ---
+Title Night at the top. One column per person — stack the job tiles underneath.
+
+--- Night — picture alt text ---
+Thin white magnetic Night board on light wood. Title Night at the top; name columns and job tiles in title case.
+
+=== Black Pen — pack size options ===
+
+--- option 1 ---
+1 pen — $1
+
+--- option 2 ---
+5 pens — $3
+
+=== Word lists (printed on packs / boards) ===
+
+--- Chores Word Pack words ---
+Set Table, Dishwasher, Fold Washing, Dishes, Dry Dishes, Sweep Floor, Mow Lawns, Make Dinner, Rubbish, Recycling, Put Out Bins, Vacuum, Mop Floor, Clean Room, Clear Table, Put Away Washing, Washing
+
+--- Day Word Pack words ---
+Mon, Tue, Wed, Thu, Fri, Sat, Sun
+
+--- Routines job words (if shown) ---
+Tidy Room, Homework, Walk Dog, Unpack Bag, Lunch Box, Make Bed, Brush Hair, Put Away Washing, Load Dishwasher, Set Table, Feed Pets, Water Plants, Sweep Floor, Wipe Bench, Put Away Toys, Pack Bag, Fold Clothes, Hang Coat, Recycle, Clean Windows, Help Cook, Empty Bin, Put Away Groceries, Wash Dishes
+
+=== faqs.html — FAQs ===
+
+--- FAQ 1 — question ---
+Do the boards come with the words?
+
+--- FAQ 1 — answer ---
+No. Boards come blank, and the word magnets are sold separately as packs: Chores Word Pack, Day Word Pack, Custom Words, and Emoji Pack.
+
+--- FAQ 2 — question ---
+Will it stick to my fridge?
+
+--- FAQ 2 — answer ---
+Yes. The boards are magnetic and sit straight on a fridge or any steel surface.
+
+--- FAQ 3 — question ---
+Can I write on the boards?
+
+--- FAQ 3 — answer ---
+Yes. You can write on any of our boards with a dry-erase pen, use the word tiles, or mix both.
+
+--- FAQ 4 — question ---
+Which pens should I use?
+
+--- FAQ 4 — answer ---
+Use our Black Pen or Coloured Pen 8 Pack. They're mini dry-erase pens that wipe clean.
+
+--- FAQ 5 — question ---
+Can I put my kids' names on it?
+
+--- FAQ 5 — answer ---
+Yes. Custom Words lets you choose 16 words, such as names, and we print them as word tiles.
+
+=== our-story.html — Our Story ===
+
+--- story ---
+We're a family of five. We wanted a simple board for chores, so there was no fighting over who does what. Dad had the idea and built this site. The three kids run the business: printing, shipping, and postage.
+
+=== contact.html — Contact Us ===
+
+--- email ---
+contact@familyboards.co.nz
+
+--- contact picture alt text ---
+FamilyBoards Chores board on light wood, with name rows and weekly chore tiles.
+
+=== cart.html — Cart ===
+
+--- description ---
+One cart for any mix of boards and packs.
+
+--- empty cart message ---
+Cart is empty. Start with Chores.
+
+=== success.html — Order placed ===
+
+--- description ---
+Thanks — your FamilyBoards order is in.
+
+--- no order message ---
+No order in this tab. Add something to the cart first.
+
+=== 404.html — Page not found ===
+
+--- description ---
+That page is not in the shop. Try home for boards, packs, and extras.

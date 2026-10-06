@@ -8,7 +8,7 @@
 (function (global) {
   const CART_KEY = "familyboard-cart-v1";
 
-  const DAY_WORDS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const DAY_WORDS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const CHORES_WORDS = [
     "Set Table",
     "Dishwasher",
@@ -98,12 +98,12 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png",
+      photo: "images/weekly-hero.png?v=2.67",
       photosByPeople: {
-        2: "images/weekly-hero-2.png",
-        3: "images/weekly-hero.png",
-        4: "images/weekly-hero-4.png",
-        5: "images/weekly-hero-5.png"
+        2: "images/weekly-hero-2.png?v=2.67",
+        3: "images/weekly-hero.png?v=2.67",
+        4: "images/weekly-hero-4.png?v=2.67",
+        5: "images/weekly-hero-5.png?v=2.67"
       },
       price: 29,
       people: true

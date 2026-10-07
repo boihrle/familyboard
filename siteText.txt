@@ -416,15 +416,15 @@ Shipping
 --- Section 1 — text ---
 We ship within New Zealand only.
 We send orders by NZ Post.
-Delivery cost: TBC.
-Delivery time: TBC.
+Delivery cost is calculated at checkout and follows NZ Post rates by weight.
+We dispatch Monday to Friday from Auckland. Orders placed before midday go out the same day; later orders go the next working day. North Island deliveries are usually overnight; South Island usually 2–3 days.
 We'll send you tracking where it's available.
 
 --- Section 2 — heading ---
 Change of Mind Returns
 
 --- Section 2 — text ---
-Changed your mind? You can return an item within TBC of delivery.
+Changed your mind? Contact us within 7 days of purchase to arrange a return, and send the item back within 14 days of purchase.
 Items must be unused and in their original condition.
 You pay the return postage, unless the item is faulty.
 To start a return, email contact@familyboards.co.nz with your order number.
@@ -458,9 +458,6 @@ Contact Us
 Questions? Email contact@familyboards.co.nz.
 
 === privacy.html — Privacy ===
-
---- last updated ---
-Last updated: 6 October 2026.
 
 --- Section 1 — heading ---
 About This Policy
@@ -497,8 +494,8 @@ We never see or store your card details.
 How Long We Keep It
 
 --- Section 5 — text ---
-We keep your information only as long as we need it.
-How long: TBC.
+We keep order details only as long as we need them for your order and any follow-up.
+You can email us any time to ask us to delete them.
 
 --- Section 6 — heading ---
 See or Correct Your Information

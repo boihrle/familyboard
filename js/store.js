@@ -98,12 +98,12 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png?v=2.71",
+      photo: "images/weekly-hero.png?v=2.72",
       photosByPeople: {
-        2: "images/weekly-hero-2.png?v=2.71",
-        3: "images/weekly-hero.png?v=2.71",
-        4: "images/weekly-hero-4.png?v=2.71",
-        5: "images/weekly-hero-5.png?v=2.71"
+        2: "images/weekly-hero-2.png?v=2.72",
+        3: "images/weekly-hero.png?v=2.72",
+        4: "images/weekly-hero-4.png?v=2.72",
+        5: "images/weekly-hero-5.png?v=2.72"
       },
       price: 29,
       people: true

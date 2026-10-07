@@ -63,15 +63,17 @@
       kind: "board",
       name: "Chores",
       href: "chores.html",
-      price: 29
+      price: 15,
+      sizes: ["A4"]
     },
     "routines-board": {
       id: "routines-board",
       kind: "board",
       name: "Routines",
       href: "routines.html",
-      price: 29,
+      price: 15,
       people: false,
+      sizes: ["A4"],
       dayparts: {
         morning: {
           title: "Morning",
@@ -98,15 +100,16 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png?v=2.73",
+      photo: "images/weekly-hero.png?v=2.74",
       photosByPeople: {
-        2: "images/weekly-hero-2.png?v=2.73",
-        3: "images/weekly-hero.png?v=2.73",
-        4: "images/weekly-hero-4.png?v=2.73",
-        5: "images/weekly-hero-5.png?v=2.73"
+        2: "images/weekly-hero-2.png?v=2.74",
+        3: "images/weekly-hero.png?v=2.74",
+        4: "images/weekly-hero-4.png?v=2.74",
+        5: "images/weekly-hero-5.png?v=2.74"
       },
-      price: 29,
-      people: true
+      price: 15,
+      people: true,
+      sizes: ["A4"]
     },
     "meal-plan-board": {
       id: "meal-plan-board",
@@ -114,7 +117,7 @@
       name: "Meal Plan",
       href: "meal-plan.html",
       photo: "images/meal-plan-hero.png",
-      price: 19,
+      price: 10,
       people: false,
       sizes: ["A5"]
     },
@@ -124,7 +127,7 @@
       name: "Shopping",
       href: "shopping-list.html",
       photo: "images/shopping-list-hero.png",
-      price: 19,
+      price: 10,
       people: false,
       sizes: ["A5"]
     },
@@ -134,7 +137,7 @@
       name: "House Rules",
       href: "house-rules.html",
       photo: "images/house-rules-hero.png",
-      price: 19,
+      price: 10,
       people: false,
       sizes: ["A5"]
     },
@@ -143,7 +146,7 @@
       kind: "pack",
       name: "Chores Word Pack",
       href: "pack-chores.html",
-      price: 15,
+      price: 10,
       tileCount: 17,
       magnetic: true
     },
@@ -152,7 +155,7 @@
       kind: "pack",
       name: "Day Word Pack",
       href: "pack-days.html",
-      price: 8,
+      price: 5,
       tileCount: 7,
       magnetic: true
     },

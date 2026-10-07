@@ -87,14 +87,18 @@
       },
       "lines"
     );
-    document.getElementById("opt-size").innerHTML = optionButtons(
-      FB.SIZES,
-      state.size,
-      function (s) {
+    var product = FB.PRODUCTS["chores-board"];
+    var sizes = product.sizes && product.sizes.length ? product.sizes : FB.SIZES;
+    var optSize = document.getElementById("opt-size");
+    var sizeField = optSize && optSize.closest("fieldset");
+    if (sizes.length < 2) {
+      if (sizeField) sizeField.hidden = true;
+    } else if (optSize) {
+      if (sizeField) sizeField.hidden = false;
+      optSize.innerHTML = optionButtons(sizes, state.size, function (s) {
         return s;
-      },
-      "size"
-    );
+      }, "size");
+    }
     document.getElementById("price-now").textContent = FB.money(FB.boardPrice("chores-board"));
     document.getElementById("config-now").textContent =
       state.lines + " name rows · " + state.size;

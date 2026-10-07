@@ -76,19 +76,19 @@
         morning: {
           title: "Morning",
           photo: "images/morning-hero.png",
-          alt: "Thin white magnetic Morning board on light wood. Title Morning at the top; empty name tiles and job tiles in title case.",
+          alt: "White magnetic Morning board on light wood. Title Morning at the top; empty name tiles and job tiles in title case.",
           blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
           title: "Afternoon",
           photo: "images/afternoon-hero.png",
-          alt: "Thin white magnetic Afternoon board on light wood. Title Afternoon at the top; name columns and job tiles in title case.",
+          alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name columns and job tiles in title case.",
           blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
         },
         night: {
           title: "Night",
           photo: "images/night-hero.png",
-          alt: "Thin white magnetic Night board on light wood. Title Night at the top; name columns and job tiles in title case.",
+          alt: "White magnetic Night board on light wood. Title Night at the top; name columns and job tiles in title case.",
           blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
         }
       }
@@ -98,12 +98,12 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png?v=2.72",
+      photo: "images/weekly-hero.png?v=2.73",
       photosByPeople: {
-        2: "images/weekly-hero-2.png?v=2.72",
-        3: "images/weekly-hero.png?v=2.72",
-        4: "images/weekly-hero-4.png?v=2.72",
-        5: "images/weekly-hero-5.png?v=2.72"
+        2: "images/weekly-hero-2.png?v=2.73",
+        3: "images/weekly-hero.png?v=2.73",
+        4: "images/weekly-hero-4.png?v=2.73",
+        5: "images/weekly-hero-5.png?v=2.73"
       },
       price: 29,
       people: true
@@ -162,10 +162,7 @@
       name: "Black Pen",
       href: "black-pen-pack.html",
       price: 1,
-      qtyOptions: [
-        { qty: 1, price: 1, label: "1 pen" },
-        { qty: 5, price: 3, label: "5 pens" }
-      ]
+      cartLabel: "Black Pen (3 pens)"
     },
     "coloured-pen-pack": {
       id: "coloured-pen-pack",

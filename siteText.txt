@@ -79,7 +79,7 @@ $8
 Mini dry-erase pens. Black.
 
 --- Black Pen — card price ---
-$1
+$1 for 3 pens
 
 --- Coloured Pen 8 Pack — card description ---
 Mini dry-erase pens. Coloured.
@@ -346,11 +346,8 @@ White magnetic Night board on light wood. Title Night at the top; name columns a
 
 === Black Pen — pack size options ===
 
---- option 1 ---
-1 pen — $1
-
---- option 2 ---
-5 pens — $3
+--- offer ---
+3 pens — $1
 
 === Word lists (printed on packs / boards) ===
 

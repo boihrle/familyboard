@@ -14,7 +14,7 @@
 
   function photoAlt(lines) {
     return (
-      "White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; thin name tiles Georgia, Caleb, and Isaac on the left; thin title-case chore tiles from the 17-word pack sitting in the day cells."
+      "White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; name tiles on the left; title-case chore tiles from the 17-word pack sitting in the day cells."
     );
   }
 

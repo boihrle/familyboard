@@ -45,6 +45,7 @@
     }
 
     function cartName() {
+      if (product.cartLabel) return product.cartLabel;
       var opt = currentOption();
       if (!qtyOptions) return product.name;
       return product.name + " (" + opt.label + ")";

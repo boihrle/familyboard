@@ -7,10 +7,10 @@ Send this file back when you are done.
 === HOME — catalogue card descriptions ===
 
 --- Home page — meta description ---
-FamilyBoards thin magnetic sheets, boards, and magnet packs — for the fridge or a wall.
+FamilyBoards magnetic sheets, boards, and magnet packs — for the fridge or wall.
 
 --- Chores — card description ---
-3–7 name rows on a weekly grid. A4 or A5.
+Name rows on a weekly grid. A4 or A5.
 
 --- Chores — card price ---
 $29
@@ -58,7 +58,7 @@ Mon–Sun magnetic day words.
 $8
 
 --- Custom Words — card description ---
-Choose any 16 words, such as names, and we'll make them as thin word tiles.
+Choose any 16 words, such as names, and we'll make them as word tiles.
 
 --- Custom Words — card price ---
 $15
@@ -76,19 +76,19 @@ Random stickers to customise the board.
 $8
 
 --- Black Pen — card description ---
-Mini dry-erase pens. White barrel, black cap.
+Mini dry-erase pens. Black.
 
 --- Black Pen — card price ---
 $1
 
 --- Coloured Pen 8 Pack — card description ---
-Eight mini dry-erase pens. White barrel, coloured caps.
+Mini dry-erase pens. Coloured.
 
 --- Coloured Pen 8 Pack — card price ---
 $5
 
 --- Fridge Holder — card description ---
-The holder that sticks on the fridge. No pens.
+Magnetic Pen holder for the fridge. Pens sold seperately.
 
 --- Fridge Holder — card price ---
 $5
@@ -99,10 +99,10 @@ Tall narrow black matte magnetic pen holder with a tall front wall, small U-cuto
 === chores.html — Chores ===
 
 --- meta description ---
-Weekly Chores: magnetic day words, full names, 3–7 rows. Hero photo updates as you click.
+Weekly Chores: magnetic day words, full names. Hero photo updates as you click.
 
 --- picture alt text ---
-White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; thin name tiles Georgia, Caleb, and Isaac on the left; thin title-case chore tiles from the 17-word pack sitting in the day cells.
+White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; name tiles on the left; title-case chore tiles from the 17-word pack sitting in the day cells.
 
 --- description ---
 One row per person on a weekly grid. Day labels are magnetic tiles (Mon–Sun), not printed. Full first-name tiles sit on the left; chore tiles go in the cells. Empty cells are fine.
@@ -120,10 +120,10 @@ Cart can hold this board plus any pack.
 === routines.html — Routines ===
 
 --- meta description ---
-Thin magnetic routine board. Choose Morning, Afternoon, or Night. Title at the top; people as columns.
+Magnetic routine board. Choose Morning, Afternoon, or Night. Title at the top; people as columns.
 
 --- picture alt text ---
-Thin white magnetic Morning board on light wood. Title Morning at the top; empty name tiles and job tiles in title case.
+White magnetic Morning board on light wood. Title Morning at the top; empty name tiles and job tiles in title case.
 
 --- description ---
 Title Morning at the top. One column per person — stack the job tiles underneath.
@@ -141,13 +141,13 @@ Cart can hold this board plus any pack.
 === weekly.html — Weekly ===
 
 --- meta description ---
-Thin magnetic weekly planner: days as rows, people as columns.
+Magnetic weekly planner: days as rows, people as columns.
 
 --- picture alt text ---
-Thin white magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; thin name tiles Georgia, Caleb, and Isaac across the top; empty cells for writing in with the pen.
+White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top; empty cells for writing in with the pen.
 
 --- picture alt text (after choosing People) ---
-Thin white magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; thin name tiles Georgia, Caleb, and Isaac across the top, with blank tiles on extra columns; empty cells for writing in with the pen.
+White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top, with blank tiles on extra columns; empty cells for writing in with the pen.
 
 --- description ---
 Days as rows (Mon–Sun tiles), people as columns. Name tiles along the top. Empty cells for writing in with the pen.
@@ -165,10 +165,10 @@ Cart can hold this board plus any pack.
 === meal-plan.html — Meal Plan ===
 
 --- meta description ---
-Thin magnetic Meal Plan sheet: A5, printed Mon–Sun and one write-in column.
+Magnetic Meal Plan sheet: A5, printed Mon–Sun and one write-in column.
 
 --- picture alt text ---
-Thin white magnetic Meal Plan sheet on light wood. Centered title Meal Plan. Printed Mon through Sun and one write-in column.
+White magnetic Meal Plan sheet on light wood. Centered title Meal Plan. Printed Mon through Sun and one write-in column.
 
 --- description ---
 A5. Centered title Meal Plan. Printed Mon–Sun down the left. One write-in column — not a lunch/dinner grid and not lunch/dinner magnets.
@@ -180,10 +180,10 @@ Cart can hold this board plus any pack.
 === shopping-list.html — Shopping ===
 
 --- meta description ---
-Thin magnetic Shopping sheet: header plus empty pen write-in lines.
+Magnetic Shopping sheet: header plus empty pen write-in lines.
 
 --- picture alt text ---
-Thin white magnetic shopping sheet on light wood. Shopping title and empty write-in lines only.
+White magnetic shopping sheet on light wood. Shopping title and empty write-in lines only.
 
 --- description ---
 A5. Header plus empty write-in lines — like House Rules. Fill them in with the pen. No zone labels.
@@ -195,10 +195,10 @@ Cart can hold this board plus any pack.
 === house-rules.html — House Rules ===
 
 --- meta description ---
-Thin magnetic House Rules sheet: title plus empty write-in lines.
+Magnetic House Rules sheet: title plus empty write-in lines.
 
 --- picture alt text ---
-Thin white magnetic House Rules sheet on light wood. House Rules title and empty write-in lines only.
+White magnetic House Rules sheet on light wood. House Rules title and empty write-in lines only.
 
 --- description ---
 A5. House Rules title plus empty write-in lines. Fill them in with the pen — no pre-printed rules.
@@ -240,7 +240,7 @@ Seven white magnetic day words on light wood: Mon, Tue, Wed, Thu, Fri, Sat, Sun.
 === pack-custom.html — Custom Words ===
 
 --- description ---
-Choose any 16 words, such as names, and we'll make them as thin word tiles.
+Choose any 16 words, such as names, and we'll make them as word tiles.
 
 --- description ---
 0 of 16 tiles
@@ -336,13 +336,13 @@ Title Morning at the top. One column per person — stack the job tiles undernea
 Title Afternoon at the top. One column per person — stack the job tiles underneath.
 
 --- Afternoon — picture alt text ---
-Thin white magnetic Afternoon board on light wood. Title Afternoon at the top; name columns and job tiles in title case.
+White magnetic Afternoon board on light wood. Title Afternoon at the top; name columns and job tiles in title case.
 
 --- Night — description ---
 Title Night at the top. One column per person — stack the job tiles underneath.
 
 --- Night — picture alt text ---
-Thin white magnetic Night board on light wood. Title Night at the top; name columns and job tiles in title case.
+White magnetic Night board on light wood. Title Night at the top; name columns and job tiles in title case.
 
 === Black Pen — pack size options ===
 
@@ -417,14 +417,14 @@ Shipping
 We ship within New Zealand only.
 We send orders by NZ Post.
 Delivery cost is calculated at checkout and follows NZ Post rates by weight.
-We dispatch Monday to Friday from Auckland. Orders placed before midday go out the same day; later orders go the next working day. North Island deliveries are usually overnight; South Island usually 2–3 days.
+We dispatch Monday to Friday from Auckland.
 We'll send you tracking where it's available.
 
 --- Section 2 — heading ---
 Change of Mind Returns
 
 --- Section 2 — text ---
-Changed your mind? Contact us within 7 days of purchase to arrange a return, and send the item back within 14 days of purchase.
+Changed your mind? Contact us within 8 days of purchase to arrange a return, and send the item back within 14 days of purchase.
 Items must be unused and in their original condition.
 You pay the return postage, unless the item is faulty.
 To start a return, email contact@familyboards.co.nz with your order number.
@@ -463,7 +463,7 @@ Questions? Email contact@familyboards.co.nz.
 About This Policy
 
 --- Section 1 — text ---
-This policy explains how FamilyBoards handles your personal information under the Privacy Act 2020.
+This policy explains how FamilyBoards handles your personal information under the Privacy Act.
 
 --- Section 2 — heading ---
 What We Collect

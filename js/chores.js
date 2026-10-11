@@ -1,11 +1,11 @@
 (function () {
   var FB = window.FamilyBoard;
   var PHOTO_BY_LINES = {
-    3: "images/chores-hero-photo.png?v=2.76",
-    4: "images/chores-hero-photo-4-lines.png?v=2.76",
-    5: "images/chores-hero-photo-5-lines.png?v=2.76",
-    6: "images/chores-hero-photo-6-lines.png?v=2.76",
-    7: "images/chores-hero-photo-7-lines.png?v=2.76"
+    3: "images/chores-hero-photo.png?v=2.77",
+    4: "images/chores-hero-photo-4-lines.png?v=2.77",
+    5: "images/chores-hero-photo-5-lines.png?v=2.77",
+    6: "images/chores-hero-photo-6-lines.png?v=2.77",
+    7: "images/chores-hero-photo-7-lines.png?v=2.77"
   };
 
   function photoSrc(lines) {

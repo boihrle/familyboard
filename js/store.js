@@ -78,19 +78,19 @@
         morning: {
           title: "Morning",
           photo: "images/morning-hero.png?v=2.76",
-          alt: "White magnetic Morning board on light wood. Title Morning at the top; name tiles and job tiles in title case.",
+          alt: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
           title: "Afternoon",
           photo: "images/afternoon-hero.png?v=2.76",
-          alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles and job tiles in title case.",
+          alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
         },
         night: {
           title: "Night",
           photo: "images/night-hero.png?v=2.76",
-          alt: "White magnetic Night board on light wood. Title Night at the top; name tiles and job tiles in title case.",
+          alt: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
         }
       }

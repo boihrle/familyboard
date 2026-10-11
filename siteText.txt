@@ -102,7 +102,7 @@ Tall narrow black matte magnetic pen holder with a tall front wall, small U-cuto
 Weekly Chores: magnetic day words, full names. Hero photo updates as you click.
 
 --- picture alt text ---
-White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; name tiles on the left; title-case chore tiles from the 17-word pack sitting in the day cells.
+White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; name tiles Mia, Leo, Ava and Sam on the left; title-case chore tiles from the 17-word pack sitting in the day cells.
 
 --- description ---
 One row per person on a weekly grid. Day labels are magnetic tiles (Mon–Sun), not printed. Full first-name tiles sit on the left; chore tiles go in the cells. Empty cells are fine.
@@ -123,7 +123,7 @@ Cart can hold this board plus any pack.
 Magnetic routine board. Choose Morning, Afternoon, or Night. Title at the top; people as columns.
 
 --- picture alt text ---
-White magnetic Morning board on light wood. Title Morning at the top; name tiles and job tiles in title case.
+White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.
 
 --- description ---
 Title Morning at the top. One column per person — stack the job tiles underneath.
@@ -144,10 +144,16 @@ Cart can hold this board plus any pack.
 Magnetic weekly planner: days as rows, people as columns.
 
 --- picture alt text ---
-White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top; empty cells for writing in with the pen.
+White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles Mia, Leo and Ava across the top; empty cells for writing in with the pen.
 
---- picture alt text (after choosing People) ---
-White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top; empty cells for writing in with the pen.
+--- picture alt text (2 people) ---
+White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles Mia and Leo across the top; empty cells for writing in with the pen.
+
+--- picture alt text (4 people) ---
+White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles Mia, Leo, Ava and Sam across the top; empty cells for writing in with the pen.
+
+--- picture alt text (5 people) ---
+White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles Mia, Leo, Ava, Sam and Zoe across the top; empty cells for writing in with the pen.
 
 --- description ---
 Days as rows (Mon–Sun tiles), people as columns. Name tiles along the top. Empty cells for writing in with the pen.
@@ -336,13 +342,13 @@ Title Morning at the top. One column per person — stack the job tiles undernea
 Title Afternoon at the top. One column per person — stack the job tiles underneath.
 
 --- Afternoon — picture alt text ---
-White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles and job tiles in title case.
+White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.
 
 --- Night — description ---
 Title Night at the top. One column per person — stack the job tiles underneath.
 
 --- Night — picture alt text ---
-White magnetic Night board on light wood. Title Night at the top; name tiles and job tiles in title case.
+White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.
 
 === Black Pen — pack size options ===
 

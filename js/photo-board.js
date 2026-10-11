@@ -90,8 +90,15 @@
       }
       if (product.photosByPeople && img && state.people) {
         img.src = product.photosByPeople[state.people] || product.photo;
+        var names = ["Mia", "Leo", "Ava", "Sam", "Zoe"].slice(0, state.people);
+        var named =
+          names.length === 2
+            ? names[0] + " and " + names[1]
+            : names.slice(0, -1).join(", ") + " and " + names[names.length - 1];
         img.alt =
-          "White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top; empty cells for writing in with the pen.";
+          "White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles " +
+          named +
+          " across the top; empty cells for writing in with the pen.";
       }
       if (titleEl) titleEl.textContent = displayName();
       if (blurbEl && current && current.blurb) blurbEl.textContent = current.blurb;

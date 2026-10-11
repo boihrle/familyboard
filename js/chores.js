@@ -1,25 +1,36 @@
 (function () {
   var FB = window.FamilyBoard;
   var PHOTO_BY_LINES = {
-    3: "images/chores-hero-photo.png",
-    4: "images/chores-hero-photo-4-lines.png",
-    5: "images/chores-hero-photo-5-lines.png",
-    6: "images/chores-hero-photo-6-lines.png",
-    7: "images/chores-hero-photo-7-lines.png"
+    3: "images/chores-hero-photo.png?v=2.76",
+    4: "images/chores-hero-photo-4-lines.png?v=2.76",
+    5: "images/chores-hero-photo-5-lines.png?v=2.76",
+    6: "images/chores-hero-photo-6-lines.png?v=2.76",
+    7: "images/chores-hero-photo-7-lines.png?v=2.76"
   };
 
   function photoSrc(lines) {
-    return PHOTO_BY_LINES[lines] || PHOTO_BY_LINES[3];
+    return PHOTO_BY_LINES[lines] || PHOTO_BY_LINES[4];
+  }
+
+  var NAMES = ["Mia", "Leo", "Ava", "Sam", "Zoe", "Max", "Ruby"];
+
+  function nameList(n) {
+    var names = NAMES.slice(0, n);
+    if (names.length <= 1) return names.join("");
+    if (names.length === 2) return names[0] + " and " + names[1];
+    return names.slice(0, -1).join(", ") + " and " + names[names.length - 1];
   }
 
   function photoAlt(lines) {
     return (
-      "White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; name tiles on the left; title-case chore tiles from the 17-word pack sitting in the day cells."
+      "White ferrous weekly chores board on light wood, same width as the Routines picture. Magnetic day words Mon through Sun; name tiles " +
+      nameList(lines) +
+      " on the left; title-case chore tiles from the 17-word pack sitting in the day cells."
     );
   }
 
   var state = {
-    lines: 3,
+    lines: 4,
     size: "A4",
     mount: "magnetic"
   };

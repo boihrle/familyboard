@@ -123,7 +123,7 @@ Cart can hold this board plus any pack.
 Magnetic routine board. Choose Morning, Afternoon, or Night. Title at the top; people as columns.
 
 --- picture alt text ---
-White magnetic Morning board on light wood. Title Morning at the top; empty name tiles and job tiles in title case.
+White magnetic Morning board on light wood. Title Morning at the top; name tiles and job tiles in title case.
 
 --- description ---
 Title Morning at the top. One column per person — stack the job tiles underneath.
@@ -147,7 +147,7 @@ Magnetic weekly planner: days as rows, people as columns.
 White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top; empty cells for writing in with the pen.
 
 --- picture alt text (after choosing People) ---
-White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top, with blank tiles on extra columns; empty cells for writing in with the pen.
+White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top; empty cells for writing in with the pen.
 
 --- description ---
 Days as rows (Mon–Sun tiles), people as columns. Name tiles along the top. Empty cells for writing in with the pen.
@@ -336,13 +336,13 @@ Title Morning at the top. One column per person — stack the job tiles undernea
 Title Afternoon at the top. One column per person — stack the job tiles underneath.
 
 --- Afternoon — picture alt text ---
-White magnetic Afternoon board on light wood. Title Afternoon at the top; name columns and job tiles in title case.
+White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles and job tiles in title case.
 
 --- Night — description ---
 Title Night at the top. One column per person — stack the job tiles underneath.
 
 --- Night — picture alt text ---
-White magnetic Night board on light wood. Title Night at the top; name columns and job tiles in title case.
+White magnetic Night board on light wood. Title Night at the top; name tiles and job tiles in title case.
 
 === Black Pen — pack size options ===
 

@@ -77,20 +77,20 @@
       dayparts: {
         morning: {
           title: "Morning",
-          photo: "images/morning-hero.png",
-          alt: "White magnetic Morning board on light wood. Title Morning at the top; empty name tiles and job tiles in title case.",
+          photo: "images/morning-hero.png?v=2.76",
+          alt: "White magnetic Morning board on light wood. Title Morning at the top; name tiles and job tiles in title case.",
           blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
           title: "Afternoon",
-          photo: "images/afternoon-hero.png",
-          alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name columns and job tiles in title case.",
+          photo: "images/afternoon-hero.png?v=2.76",
+          alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles and job tiles in title case.",
           blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
         },
         night: {
           title: "Night",
-          photo: "images/night-hero.png",
-          alt: "White magnetic Night board on light wood. Title Night at the top; name columns and job tiles in title case.",
+          photo: "images/night-hero.png?v=2.76",
+          alt: "White magnetic Night board on light wood. Title Night at the top; name tiles and job tiles in title case.",
           blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
         }
       }
@@ -100,12 +100,12 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png?v=2.75",
+      photo: "images/weekly-hero.png?v=2.76",
       photosByPeople: {
-        2: "images/weekly-hero-2.png?v=2.75",
-        3: "images/weekly-hero.png?v=2.75",
-        4: "images/weekly-hero-4.png?v=2.75",
-        5: "images/weekly-hero-5.png?v=2.75"
+        2: "images/weekly-hero-2.png?v=2.76",
+        3: "images/weekly-hero.png?v=2.76",
+        4: "images/weekly-hero-4.png?v=2.76",
+        5: "images/weekly-hero-5.png?v=2.76"
       },
       price: 15,
       people: true,

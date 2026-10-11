@@ -91,9 +91,7 @@
       if (product.photosByPeople && img && state.people) {
         img.src = product.photosByPeople[state.people] || product.photo;
         img.alt =
-          state.people === 3
-            ? "White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top; empty cells for writing in with the pen."
-            : "White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top, with blank tiles on extra columns; empty cells for writing in with the pen.";
+          "White magnetic weekly sheet on light wood, same width as the Routines picture. Mon–Sun day tiles as rows; name tiles across the top; empty cells for writing in with the pen.";
       }
       if (titleEl) titleEl.textContent = displayName();
       if (blurbEl && current && current.blurb) blurbEl.textContent = current.blurb;

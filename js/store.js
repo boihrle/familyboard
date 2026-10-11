@@ -77,19 +77,19 @@
       dayparts: {
         morning: {
           title: "Morning",
-          photo: "images/morning-hero.png?v=2.77",
+          photo: "images/morning-hero.png?v=2.78",
           alt: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
           title: "Afternoon",
-          photo: "images/afternoon-hero.png?v=2.77",
+          photo: "images/afternoon-hero.png?v=2.78",
           alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
         },
         night: {
           title: "Night",
-          photo: "images/night-hero.png?v=2.77",
+          photo: "images/night-hero.png?v=2.78",
           alt: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
         }
@@ -100,12 +100,12 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png?v=2.77",
+      photo: "images/weekly-hero.png?v=2.78",
       photosByPeople: {
-        2: "images/weekly-hero-2.png?v=2.77",
-        3: "images/weekly-hero.png?v=2.77",
-        4: "images/weekly-hero-4.png?v=2.77",
-        5: "images/weekly-hero-5.png?v=2.77"
+        2: "images/weekly-hero-2.png?v=2.78",
+        3: "images/weekly-hero.png?v=2.78",
+        4: "images/weekly-hero-4.png?v=2.78",
+        5: "images/weekly-hero-5.png?v=2.78"
       },
       price: 15,
       people: true,

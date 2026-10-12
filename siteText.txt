@@ -16,7 +16,7 @@ Name rows on a weekly grid. A4.
 $15
 
 --- Routines — card description ---
-One board: Morning, Afternoon, or Night. Title at the top; people as columns.
+One board: Morning, Afternoon, Night, or Blank. Title at the top; people as columns.
 
 --- Routines — card price ---
 $15
@@ -63,18 +63,6 @@ Choose any 16 words, such as names, and we'll make them as word tiles.
 --- Custom Words — card price ---
 $15
 
---- Emoji Pack — card description ---
-Magnetic emoji tiles.
-
---- Emoji Pack — card price ---
-$10
-
---- Sticker Pack — card description ---
-Random stickers to customise the board.
-
---- Sticker Pack — card price ---
-$8
-
 --- Black Pen — card description ---
 Mini dry-erase pens. Black.
 
@@ -96,7 +84,16 @@ $5
 --- Fridge Holder — card picture alt text ---
 Tall narrow black matte magnetic pen holder with a tall front wall, small U-cutout and rounded back corners, empty, on old wood.
 
+--- Stickers — card description ---
+Random stickers to customise the board.
+
+--- Stickers — card price ---
+$8
+
 === chores.html — Chores ===
+
+--- bold ---
+Word tiles sold separately.
 
 --- meta description ---
 Weekly Chores: magnetic day words, full names. Hero photo updates as you click.
@@ -113,14 +110,14 @@ Line count
 --- option group label ---
 Size
 
---- fine print ---
-Cart can hold this board plus any pack.
-
 
 === routines.html — Routines ===
 
+--- bold ---
+Word tiles sold separately.
+
 --- meta description ---
-Magnetic routine board. Choose Morning, Afternoon, or Night. Title at the top; people as columns.
+Magnetic routine board. Choose Morning, Afternoon, Night, or Blank. Title at the top; people as columns.
 
 --- picture alt text ---
 White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.
@@ -132,13 +129,25 @@ Title Morning at the top. One column per person — stack the job tiles undernea
 Board
 
 --- option group label ---
+People
+
+--- option group label ---
 Size
 
---- fine print ---
-Cart can hold this board plus any pack.
+--- picture alt text (2 people) ---
+White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia and Leo above the two columns; job tiles in title case.
+
+--- picture alt text (4 people) ---
+White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo, Ava and Sam above the four columns; job tiles in title case.
+
+--- picture alt text (5 people) ---
+White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo, Ava, Sam and Zoe above the five columns; job tiles in title case.
 
 
 === weekly.html — Weekly ===
+
+--- bold ---
+Word tiles sold separately.
 
 --- meta description ---
 Magnetic weekly planner: days as rows, people as columns.
@@ -164,11 +173,11 @@ People
 --- option group label ---
 Size
 
---- fine print ---
-Cart can hold this board plus any pack.
-
 
 === meal-plan.html — Meal Plan ===
+
+--- bold ---
+Word tiles sold separately.
 
 --- meta description ---
 Magnetic Meal Plan sheet: A5, printed Mon–Sun and one write-in column.
@@ -179,11 +188,11 @@ White magnetic Meal Plan sheet on light wood. Centered title Meal Plan. Printed 
 --- description ---
 A5. Centered title Meal Plan. Printed Mon–Sun down the left. One write-in column — not a lunch/dinner grid and not lunch/dinner magnets.
 
---- fine print ---
-Cart can hold this board plus any pack.
-
 
 === shopping-list.html — Shopping ===
+
+--- bold ---
+Word tiles sold separately.
 
 --- meta description ---
 Magnetic Shopping sheet: header plus empty pen write-in lines.
@@ -194,11 +203,11 @@ White magnetic shopping sheet on light wood. Shopping title and empty write-in l
 --- description ---
 A5. Header plus empty write-in lines — like House Rules. Fill them in with the pen. No zone labels.
 
---- fine print ---
-Cart can hold this board plus any pack.
-
 
 === house-rules.html — House Rules ===
+
+--- bold ---
+Word tiles sold separately.
 
 --- meta description ---
 Magnetic House Rules sheet: title plus empty write-in lines.
@@ -208,9 +217,6 @@ White magnetic House Rules sheet on light wood. House Rules title and empty writ
 
 --- description ---
 A5. House Rules title plus empty write-in lines. Fill them in with the pen — no pre-printed rules.
-
---- fine print ---
-Cart can hold this board plus any pack.
 
 
 === pack-chores.html — Chores Word Pack ===
@@ -264,30 +270,6 @@ Up to 16 tiles · magnetic
 Three white magnetic tiles on light wood, one word each: Your, Name, Here.
 
 
-=== pack-emoji.html — Emoji Pack ===
-
---- description ---
-Magnetic emoji tiles. They snap onto the board like names and chores.
-
---- price label ---
-10 tiles · magnetic
-
---- picture alt text ---
-Ten white magnetic emoji tiles on light wood: star, heart, party popper, check, rainbow, dog, sun, trophy, blossom, and soccer ball.
-
-
-=== pack-sticker.html — Sticker Pack ===
-
---- description ---
-Random stickers to customise the board. Not word stickers and not chore-word tiles.
-
---- price label ---
-Stickers
-
---- picture alt text ---
-A random mix of cute animal cartoon graffiti stickers on light wood.
-
-
 === black-pen-pack.html — Black Pen ===
 
 --- meta description ---
@@ -333,6 +315,18 @@ One holder
 Tall narrow black matte magnetic pen holder, empty, on old wood. Tall front wall with a small centred U-cutout and rounded back-panel corners.
 
 
+=== pack-sticker.html — Stickers ===
+
+--- description ---
+Random stickers to customise the board. Not word stickers and not chore-word tiles.
+
+--- price label ---
+Stickers
+
+--- picture alt text ---
+A random mix of cute animal cartoon graffiti stickers on light wood.
+
+
 === Routines — daypart blurbs (from catalogue data) ===
 
 --- Morning — description ---
@@ -344,11 +338,44 @@ Title Afternoon at the top. One column per person — stack the job tiles undern
 --- Afternoon — picture alt text ---
 White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.
 
+--- Afternoon — picture alt text (2 people) ---
+White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia and Leo above the two columns; job tiles in title case.
+
+--- Afternoon — picture alt text (4 people) ---
+White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo, Ava and Sam above the four columns; job tiles in title case.
+
+--- Afternoon — picture alt text (5 people) ---
+White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo, Ava, Sam and Zoe above the five columns; job tiles in title case.
+
 --- Night — description ---
 Title Night at the top. One column per person — stack the job tiles underneath.
 
 --- Night — picture alt text ---
 White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.
+
+--- Night — picture alt text (2 people) ---
+White magnetic Night board on light wood. Title Night at the top; name tiles Mia and Leo above the two columns; job tiles in title case.
+
+--- Night — picture alt text (4 people) ---
+White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo, Ava and Sam above the four columns; job tiles in title case.
+
+--- Night — picture alt text (5 people) ---
+White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo, Ava, Sam and Zoe above the five columns; job tiles in title case.
+
+--- Blank — description ---
+No title. Name tiles along the top. Empty rows for writing in with the pen.
+
+--- Blank — picture alt text ---
+White magnetic routine board on light wood. No title; name tiles Mia, Leo and Ava above the three columns; printed grid lines and empty task rows.
+
+--- Blank — picture alt text (2 people) ---
+White magnetic routine board on light wood. No title; name tiles Mia and Leo above the two columns; printed grid lines and empty task rows.
+
+--- Blank — picture alt text (4 people) ---
+White magnetic routine board on light wood. No title; name tiles Mia, Leo, Ava and Sam above the four columns; printed grid lines and empty task rows.
+
+--- Blank — picture alt text (5 people) ---
+White magnetic routine board on light wood. No title; name tiles Mia, Leo, Ava, Sam and Zoe above the five columns; printed grid lines and empty task rows.
 
 === Black Pen — pack size options ===
 
@@ -372,7 +399,7 @@ Tidy Room, Homework, Walk Dog, Unpack Bag, Lunch Box, Make Bed, Brush Hair, Put 
 Do the boards come with the words?
 
 --- FAQ 1 — answer ---
-No. Boards come blank, and the word magnets are sold separately as packs: Chores Word Pack, Day Word Pack, Custom Words, and Emoji Pack.
+No. Boards come blank, and the word magnets are sold separately as packs: Chores Word Pack, Day Word Pack, and Custom Words.
 
 --- FAQ 2 — question ---
 Will it stick to my fridge?

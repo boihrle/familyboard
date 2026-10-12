@@ -55,8 +55,6 @@
     "Wash Dishes"
   ];
 
-  const EMOJIS = ["⭐", "❤️", "🎉", "✅", "🌈", "🐶", "🌞", "🏆", "🌸", "⚽"];
-
   const PRODUCTS = {
     "chores-board": {
       id: "chores-board",
@@ -72,26 +70,80 @@
       name: "Routines",
       href: "routines.html",
       price: 15,
-      people: false,
+      people: true,
       sizes: ["A4"],
       dayparts: {
         morning: {
           title: "Morning",
-          photo: "images/morning-hero.png?v=2.81",
+          photo: "images/morning-hero.png?v=2.82",
+          photosByPeople: {
+            2: "images/morning-hero-2.png?v=2.82",
+            3: "images/morning-hero.png?v=2.82",
+            4: "images/morning-hero-4.png?v=2.82",
+            5: "images/morning-hero-5.png?v=2.82"
+          },
           alt: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
+          altsByPeople: {
+            2: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia and Leo above the two columns; job tiles in title case.",
+            3: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
+            4: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo, Ava and Sam above the four columns; job tiles in title case.",
+            5: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo, Ava, Sam and Zoe above the five columns; job tiles in title case."
+          },
           blurb: "Title Morning at the top. One column per person — stack the job tiles underneath."
         },
         afternoon: {
           title: "Afternoon",
-          photo: "images/afternoon-hero.png?v=2.81",
+          photo: "images/afternoon-hero.png?v=2.82",
+          photosByPeople: {
+            2: "images/afternoon-hero-2.png?v=2.82",
+            3: "images/afternoon-hero.png?v=2.82",
+            4: "images/afternoon-hero-4.png?v=2.82",
+            5: "images/afternoon-hero-5.png?v=2.82"
+          },
           alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
+          altsByPeople: {
+            2: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia and Leo above the two columns; job tiles in title case.",
+            3: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
+            4: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo, Ava and Sam above the four columns; job tiles in title case.",
+            5: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo, Ava, Sam and Zoe above the five columns; job tiles in title case."
+          },
           blurb: "Title Afternoon at the top. One column per person — stack the job tiles underneath."
         },
         night: {
           title: "Night",
-          photo: "images/night-hero.png?v=2.81",
+          photo: "images/night-hero.png?v=2.82",
+          photosByPeople: {
+            2: "images/night-hero-2.png?v=2.82",
+            3: "images/night-hero.png?v=2.82",
+            4: "images/night-hero-4.png?v=2.82",
+            5: "images/night-hero-5.png?v=2.82"
+          },
           alt: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
+          altsByPeople: {
+            2: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia and Leo above the two columns; job tiles in title case.",
+            3: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
+            4: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo, Ava and Sam above the four columns; job tiles in title case.",
+            5: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo, Ava, Sam and Zoe above the five columns; job tiles in title case."
+          },
           blurb: "Title Night at the top. One column per person — stack the job tiles underneath."
+        },
+        blank: {
+          title: "Blank",
+          photo: "images/blank-hero.png?v=2.82",
+          photosByPeople: {
+            2: "images/blank-hero-2.png?v=2.82",
+            3: "images/blank-hero.png?v=2.82",
+            4: "images/blank-hero-4.png?v=2.82",
+            5: "images/blank-hero-5.png?v=2.82"
+          },
+          alt: "White magnetic routine board on light wood. No title; name tiles Mia, Leo and Ava above the three columns; printed grid lines and empty task rows.",
+          altsByPeople: {
+            2: "White magnetic routine board on light wood. No title; name tiles Mia and Leo above the two columns; printed grid lines and empty task rows.",
+            3: "White magnetic routine board on light wood. No title; name tiles Mia, Leo and Ava above the three columns; printed grid lines and empty task rows.",
+            4: "White magnetic routine board on light wood. No title; name tiles Mia, Leo, Ava and Sam above the four columns; printed grid lines and empty task rows.",
+            5: "White magnetic routine board on light wood. No title; name tiles Mia, Leo, Ava, Sam and Zoe above the five columns; printed grid lines and empty task rows."
+          },
+          blurb: "No title. Name tiles along the top. Empty rows for writing in with the pen."
         }
       }
     },
@@ -100,12 +152,12 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png?v=2.81",
+      photo: "images/weekly-hero.png?v=2.82",
       photosByPeople: {
-        2: "images/weekly-hero-2.png?v=2.81",
-        3: "images/weekly-hero.png?v=2.81",
-        4: "images/weekly-hero-4.png?v=2.81",
-        5: "images/weekly-hero-5.png?v=2.81"
+        2: "images/weekly-hero-2.png?v=2.82",
+        3: "images/weekly-hero.png?v=2.82",
+        4: "images/weekly-hero-4.png?v=2.82",
+        5: "images/weekly-hero-5.png?v=2.82"
       },
       price: 15,
       people: true,
@@ -181,6 +233,14 @@
       href: "fridge-holder.html",
       price: 5
     },
+    "pack-sticker": {
+      id: "pack-sticker",
+      kind: "extra",
+      name: "Stickers",
+      href: "pack-sticker.html",
+      price: 8,
+      magnetic: false
+    },
     "pack-custom": {
       id: "pack-custom",
       kind: "pack",
@@ -189,23 +249,6 @@
       price: 15,
       maxTiles: 16,
       magnetic: true
-    },
-    "pack-emoji": {
-      id: "pack-emoji",
-      kind: "pack",
-      name: "Emoji Pack",
-      href: "pack-emoji.html",
-      price: 10,
-      tileCount: 10,
-      magnetic: true
-    },
-    "pack-sticker": {
-      id: "pack-sticker",
-      kind: "pack",
-      name: "Sticker Pack",
-      href: "pack-sticker.html",
-      price: 8,
-      magnetic: false
     }
   };
 
@@ -226,19 +269,45 @@
     return "fb-" + Math.random().toString(36).slice(2, 9);
   }
 
+  function knownProduct(item) {
+    return !!(item && item.productId && PRODUCTS[item.productId]);
+  }
+
   function readCart() {
     try {
       const raw = localStorage.getItem(CART_KEY);
-      return raw ? JSON.parse(raw) : [];
+      var items = raw ? JSON.parse(raw) : [];
+      if (!Array.isArray(items)) return [];
+      var kept = [];
+      var changed = false;
+      items.forEach(function (item) {
+        if (!knownProduct(item)) {
+          changed = true;
+          return;
+        }
+        var product = PRODUCTS[item.productId];
+        if (!product.cartLabel && item.name !== product.name) {
+          item = Object.assign({}, item, { name: product.name });
+          changed = true;
+        }
+        kept.push(item);
+      });
+      if (changed) {
+        try {
+          localStorage.setItem(CART_KEY, JSON.stringify(kept));
+        } catch (err) {}
+      }
+      return kept;
     } catch (err) {
       return [];
     }
   }
 
   function writeCart(items) {
-    localStorage.setItem(CART_KEY, JSON.stringify(items));
+    var kept = (items || []).filter(knownProduct);
+    localStorage.setItem(CART_KEY, JSON.stringify(kept));
     updateCartCount();
-    return items;
+    return kept;
   }
 
   function addItem(item) {
@@ -259,13 +328,17 @@
 
   function cartCount() {
     return readCart().reduce(function (sum, item) {
+      if (!knownProduct(item)) return sum;
       return sum + (item.qty || 1);
     }, 0);
   }
 
   function cartTotal() {
     return readCart().reduce(function (sum, item) {
-      return sum + item.price * (item.qty || 1);
+      if (!knownProduct(item)) return sum;
+      var n = Number(item.price);
+      if (!isFinite(n)) n = 0;
+      return sum + n * (item.qty || 1);
     }, 0);
   }
 
@@ -278,6 +351,7 @@
   }
 
   function itemLabel(item) {
+    if (!item) return "";
     if (item.productId === "chores-board") {
       return "Chores · " + item.lines + " lines · " + item.size;
     }
@@ -297,6 +371,8 @@
     if (item.productId === "pack-custom" && item.words && item.words.length) {
       return item.name + " · " + item.words.join(", ");
     }
+    var product = PRODUCTS[item.productId];
+    if (product && product.name && !product.cartLabel) return product.name;
     return item.name;
   }
 
@@ -322,7 +398,6 @@
     DAY_WORDS: DAY_WORDS,
     CHORES_WORDS: CHORES_WORDS,
     JOBS_WORDS: JOBS_WORDS,
-    EMOJIS: EMOJIS,
     LINE_COUNTS: LINE_COUNTS,
     PEOPLE_COUNTS: PEOPLE_COUNTS,
     SIZES: SIZES,

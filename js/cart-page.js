@@ -26,7 +26,7 @@
           '<article class="cart-row">' +
           "<div>" +
           "<h3>" +
-          item.name +
+          (item.name || "") +
           "</h3>" +
           '<p class="muted">' +
           FB.itemLabel(item) +

@@ -29,6 +29,20 @@
     return (window.location.hash || "").replace("#", "");
   }
 
+  function photoFor(current, people) {
+    if (people && current.photosByPeople && current.photosByPeople[people]) {
+      return current.photosByPeople[people];
+    }
+    return current.photo;
+  }
+
+  function altFor(current, people) {
+    if (people && current.altsByPeople && current.altsByPeople[people]) {
+      return current.altsByPeople[people];
+    }
+    return current.alt;
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var main = document.querySelector("main[data-sku]");
     if (!main) return;
@@ -39,9 +53,12 @@
     var dayparts = product.dayparts;
     var requested = queryPart();
     var sizes = product.sizes && product.sizes.length ? product.sizes : FB.SIZES;
+    var requestedPeople = Number(new URLSearchParams(window.location.search).get("people"));
     var state = {
       daypart: dayparts && dayparts[requested] ? requested : dayparts ? "morning" : null,
-      people: product.people ? 3 : null,
+      people: product.people
+        ? (FB.PEOPLE_COUNTS.indexOf(requestedPeople) >= 0 ? requestedPeople : 3)
+        : null,
       size: sizes.length === 1 ? sizes[0] : sizes.indexOf("A4") >= 0 ? "A4" : sizes[0],
       mount: "magnetic"
     };
@@ -56,7 +73,7 @@
     var configNow = document.getElementById("config-now");
     var priceNow = document.getElementById("price-now");
     var titleEl = document.querySelector(".buy-panel h1");
-    var blurbEl = document.querySelector(".buy-panel p.muted");
+    var blurbEl = document.getElementById("board-blurb");
 
     function part() {
       return dayparts && state.daypart ? dayparts[state.daypart] : null;
@@ -85,10 +102,10 @@
       var current = part();
       var img = board.querySelector("img");
       if (current && img) {
-        img.src = current.photo;
-        img.alt = current.alt;
+        img.src = photoFor(current, state.people);
+        img.alt = altFor(current, state.people);
       }
-      if (product.photosByPeople && img && state.people) {
+      if (!current && product.photosByPeople && img && state.people) {
         img.src = product.photosByPeople[state.people] || product.photo;
         var names = ["Mia", "Leo", "Ava", "Sam", "Zoe"].slice(0, state.people);
         var named =
@@ -159,14 +176,21 @@
       });
     }
 
+    function syncUrl() {
+      if (!(window.history && window.history.replaceState)) return;
+      if (!state.daypart) return;
+      var q = "routines.html?part=" + state.daypart;
+      if (state.people) q += "&people=" + state.people;
+      window.history.replaceState(null, "", q);
+    }
+
     bindGroup("opt-daypart", "data-daypart", function (value) {
       state.daypart = value;
-      if (window.history && window.history.replaceState) {
-        window.history.replaceState(null, "", "routines.html?part=" + value);
-      }
+      syncUrl();
     });
     bindGroup("opt-people", "data-people", function (value) {
       state.people = Number(value);
+      syncUrl();
     });
     bindGroup("opt-size", "data-size", function (value) {
       state.size = value;

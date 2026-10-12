@@ -27,7 +27,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Our Story** — heading plus the locked family copy.
 - **Contact Us** — small Chores photo and the email contact@familyboards.co.nz.
 - **Chores** — Magnets-style weekly board **photos** as the hero (light wood). Line count 3–7 swaps matching photos. Day labels on the board are Mon–Sun.
-- **Routines** — one board: option Morning | Afternoon | Night swaps title + hero. People as columns. On-board titles are MORNING, AFTERNOON, NIGHT.
+- **Routines** — one board: option Morning | Afternoon | Night | Blank swaps title + hero. People picker 2–5. On-board titles are Morning, Afternoon, Night; Blank has no title.
 - **Weekly** — days as rows, people as columns. Day labels on the board are SUN–SAT.
 - **Meal Plan** — A5 only. Centered title MEAL PLAN; printed MON–SUN; one write-in column (not a multi-column meal grid).
 - **Shopping** — A5 only. Header Shopping plus empty write-in lines (like House Rules).
@@ -35,9 +35,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Chores Word Pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.) $15.
 - **Day Word Pack** — Mon–Sun.
 - **Custom Words** — choose any 16 words, such as names; thin word tiles. $15.
-- **Emoji Pack** — magnetic.
-- **Sticker Pack** — non-magnetic.
-- **Black Pen** — 1 pen $1 or 5 pens $3 (home card $1). **Coloured Pen 8 Pack** $5. **Fridge Holder** $5.
+- **Black Pen** — 1 pen $1 or 5 pens $3 (home card $1). **Coloured Pen 8 Pack** $5. **Fridge Holder** $5. **Stickers** $8 (non-magnetic).
 - **Cart** holds a board plus packs. **Pay** completes the order.
 
 Name tiles match chore tiles and day words (white, black text). Empty cells on the mockups are intentional.

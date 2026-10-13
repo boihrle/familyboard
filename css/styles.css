@@ -666,9 +666,16 @@ input[type="text"] {
 .section-title { padding-top: 20px; }
 
 #boards,
+#words,
 #packs,
 #extras {
   scroll-margin-top: 4.5rem;
+}
+
+.anchor-alias {
+  display: block;
+  height: 0;
+  overflow: hidden;
 }
 
 #extras {
@@ -1037,6 +1044,7 @@ input[type="text"] {
     font-size: 1.15rem;
   }
   #boards,
+  #words,
   #packs,
   #extras {
     scroll-margin-top: 4.75rem;

@@ -74,7 +74,7 @@
         "</div>" +
         '<nav id="site-menu" class="menu" aria-label="Primary" hidden>' +
         '<a href="' + sectionHref(file, "boards") + '">Boards</a>' +
-        '<a href="' + sectionHref(file, "packs") + '">Packs</a>' +
+        '<a href="' + sectionHref(file, "words") + '">Words</a>' +
         '<a href="' + sectionHref(file, "extras") + '">Extras</a>' +
         pageHref(file, "faqs.html") + "FAQs</a>" +
         pageHref(file, "our-story.html") + "Our Story</a>" +
@@ -110,7 +110,21 @@
     }, 2600);
   }
 
+  function aliasPacksHash() {
+    if ((location.hash || "").toLowerCase() !== "#packs") return;
+    var target = document.getElementById("words");
+    if (!target) return;
+    if (history.replaceState) {
+      history.replaceState(null, "", "#words");
+    }
+    target.scrollIntoView();
+  }
+
   window.FBSite = { renderChrome: renderChrome, toast: toast, currentFile: currentFile };
 
-  document.addEventListener("DOMContentLoaded", renderChrome);
+  document.addEventListener("DOMContentLoaded", function () {
+    renderChrome();
+    aliasPacksHash();
+  });
+  window.addEventListener("hashchange", aliasPacksHash);
 })();

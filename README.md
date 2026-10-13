@@ -22,7 +22,7 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 
 ## What you can click
 
-- **Home** — Sticky header is FamilyBoards on its own line with a hamburger and Cart. The menu is Boards, Packs, Extras, FAQs, Our Story, Contact Us. Catalogue cards follow. Board and pack cards use locked product photos on light wood.
+- **Home** — Sticky header is FamilyBoards on its own line with a hamburger and Cart. The menu is Boards, Words, Extras, FAQs, Our Story, Contact Us. Catalogue cards follow. Board and pack cards use locked product photos on light wood.
 - **FAQs** — five Q&As: boards and word packs, fridge, writing, pens, and kids’ names.
 - **Our Story** — heading plus the locked family copy.
 - **Contact Us** — small Chores photo and the email contact@familyboards.co.nz.

@@ -569,4 +569,4 @@ No order in this tab. Add something to the cart first.
 === 404.html — Page not found ===
 
 --- description ---
-That page is not in the shop. Try home for boards, packs, and extras.
+That page is not in the shop. Try home for boards, words, and extras.

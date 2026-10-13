@@ -1,7 +1,7 @@
 (function () {
   var FB = window.FamilyBoard;
   var MAX = FB.PRODUCTS["pack-custom"].maxTiles;
-  var words = ["Mia", "Leo"];
+  var words = [];
 
   function render() {
     var list = document.getElementById("word-list");
@@ -45,6 +45,8 @@
     field.disabled = words.length >= MAX;
     document.getElementById("word-add").disabled = words.length >= MAX;
     addBtn.disabled = words.length === 0;
+    var hint = document.getElementById("custom-cart-hint");
+    if (hint) hint.hidden = words.length > 0;
   }
 
   function addWord() {

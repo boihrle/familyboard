@@ -10,6 +10,7 @@
 
     if (!items.length) {
       list.innerHTML = "";
+      empty.textContent = "Cart is empty";
       empty.hidden = false;
       summary.hidden = true;
       if (pay) pay.disabled = true;

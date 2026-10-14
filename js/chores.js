@@ -1,11 +1,11 @@
 (function () {
   var FB = window.FamilyBoard;
   var PHOTO_BY_LINES = {
-    3: "images/chores-hero-photo.png?v=2.85",
-    4: "images/chores-hero-photo-4-lines.png?v=2.85",
-    5: "images/chores-hero-photo-5-lines.png?v=2.85",
-    6: "images/chores-hero-photo-6-lines.png?v=2.85",
-    7: "images/chores-hero-photo-7-lines.png?v=2.85"
+    3: "images/chores-hero-photo.png?v=2.86",
+    4: "images/chores-hero-photo-4-lines.png?v=2.86",
+    5: "images/chores-hero-photo-5-lines.png?v=2.86",
+    6: "images/chores-hero-photo-6-lines.png?v=2.86",
+    7: "images/chores-hero-photo-7-lines.png?v=2.86"
   };
 
   function photoSrc(lines) {
@@ -34,6 +34,16 @@
     size: "A4",
     mount: "magnetic"
   };
+
+  function applyCartParams() {
+    var params = new URLSearchParams(window.location.search);
+    var lines = Number(params.get("lines"));
+    if (FB.LINE_COUNTS.indexOf(lines) >= 0) state.lines = lines;
+    var size = params.get("size");
+    var product = FB.PRODUCTS["chores-board"];
+    var sizes = product.sizes && product.sizes.length ? product.sizes : FB.SIZES;
+    if (size && sizes.indexOf(size) >= 0) state.size = size;
+  }
 
   function optionButtons(values, selected, renderLabel, dataKey) {
     return values
@@ -122,6 +132,7 @@
       state.lines = Number(btn.getAttribute("data-lines"));
       renderOptions();
       renderBoard();
+      syncUrl();
     });
     document.getElementById("opt-size").addEventListener("click", function (event) {
       var btn = event.target.closest("[data-size]");
@@ -129,6 +140,7 @@
       state.size = btn.getAttribute("data-size");
       renderOptions();
       renderBoard();
+      syncUrl();
     });
     document.getElementById("add-board").addEventListener("click", function () {
       FB.addItem({
@@ -143,9 +155,20 @@
     });
   }
 
+  function syncUrl() {
+    if (!(window.history && window.history.replaceState)) return;
+    window.history.replaceState(
+      null,
+      "",
+      "chores.html?lines=" + state.lines + "&size=" + encodeURIComponent(state.size)
+    );
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
+    applyCartParams();
     renderOptions();
     renderBoard();
     bind();
+    syncUrl();
   });
 })();

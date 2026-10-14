@@ -53,13 +53,22 @@
     var dayparts = product.dayparts;
     var requested = queryPart();
     var sizes = product.sizes && product.sizes.length ? product.sizes : FB.SIZES;
-    var requestedPeople = Number(new URLSearchParams(window.location.search).get("people"));
+    var params = new URLSearchParams(window.location.search);
+    var requestedPeople = Number(params.get("people"));
+    var requestedSize = params.get("size");
     var state = {
       daypart: dayparts && dayparts[requested] ? requested : dayparts ? "morning" : null,
       people: product.people
         ? (FB.PEOPLE_COUNTS.indexOf(requestedPeople) >= 0 ? requestedPeople : 3)
         : null,
-      size: sizes.length === 1 ? sizes[0] : sizes.indexOf("A4") >= 0 ? "A4" : sizes[0],
+      size:
+        requestedSize && sizes.indexOf(requestedSize) >= 0
+          ? requestedSize
+          : sizes.length === 1
+            ? sizes[0]
+            : sizes.indexOf("A4") >= 0
+              ? "A4"
+              : sizes[0],
       mount: "magnetic"
     };
 
@@ -178,10 +187,15 @@
 
     function syncUrl() {
       if (!(window.history && window.history.replaceState)) return;
-      if (!state.daypart) return;
-      var q = "routines.html?part=" + state.daypart;
-      if (state.people) q += "&people=" + state.people;
-      window.history.replaceState(null, "", q);
+      var bits = [];
+      if (state.daypart) bits.push("part=" + encodeURIComponent(state.daypart));
+      if (state.people) bits.push("people=" + encodeURIComponent(state.people));
+      if (state.size) bits.push("size=" + encodeURIComponent(state.size));
+      window.history.replaceState(
+        null,
+        "",
+        product.href + (bits.length ? "?" + bits.join("&") : "")
+      );
     }
 
     bindGroup("opt-daypart", "data-daypart", function (value) {
@@ -194,6 +208,7 @@
     });
     bindGroup("opt-size", "data-size", function (value) {
       state.size = value;
+      syncUrl();
     });
 
     var add = document.getElementById("add-board");
@@ -215,5 +230,6 @@
 
     renderOptions();
     renderBoard();
+    syncUrl();
   });
 })();

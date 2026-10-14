@@ -282,7 +282,7 @@ Mini dry-erase pens. White barrel, black cap with an eraser. No holder.
 Pens
 
 --- picture alt text ---
-Three slim whiteboard markers lying on old wood: white barrels, black writing caps, and a matching black felt eraser on the top end of each pen. No holder and no logo on the pens.
+Three slim whiteboard markers lying on old wood: white barrels, black writing caps, and a matching black felt eraser at the other end of each pen. No holder and no logo on the pens.
 
 
 === coloured-pen-pack.html — Coloured Pen 8 Pack ===
@@ -297,7 +297,7 @@ Eight mini dry-erase pens. White barrel, coloured caps: pink, red, orange, yello
 Eight pens
 
 --- picture alt text ---
-Eight slim whiteboard markers lying on old wood: white barrels with pink, red, orange, yellow, green, blue, purple and black writing caps, each with a matching coloured felt eraser on the top end. No holder and no logo on the pens.
+Eight slim whiteboard markers lying on old wood: white barrels with pink, red, orange, yellow, green, blue, purple and black writing caps, each with a matching coloured felt eraser at the other end. No holder and no logo on the pens.
 
 
 === fridge-holder.html — Fridge Holder ===
@@ -552,11 +552,11 @@ Questions about your privacy? Email contact@familyboards.co.nz.
 
 === cart.html — Cart ===
 
---- description ---
-One cart for any mix of boards and packs.
-
 --- empty cart message ---
 Cart is empty. Start with Chores.
+
+--- checkout button ---
+Checkout
 
 === success.html — Order placed ===
 

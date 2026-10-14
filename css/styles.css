@@ -601,6 +601,22 @@ input[type="text"] {
   box-shadow: var(--shadow);
 }
 
+.cart-item-link {
+  color: inherit;
+  text-decoration: none;
+  min-width: 0;
+  flex: 1;
+}
+
+.cart-item-link h3 {
+  margin: 0 0 4px;
+}
+
+.cart-item-link:hover h3,
+.cart-item-link:focus-visible h3 {
+  text-decoration: underline;
+}
+
 .cart-side {
   display: flex;
   flex-direction: column;
@@ -614,6 +630,11 @@ input[type="text"] {
   align-items: center;
   gap: 16px;
   padding: 18px 0 48px;
+}
+
+#cart-summary[hidden],
+#cart-empty[hidden] {
+  display: none;
 }
 
 .success {

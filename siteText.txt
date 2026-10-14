@@ -46,15 +46,15 @@ A5. Header plus empty write-in lines. No pre-filled rules.
 $10
 
 --- Chores Word Pack — card description ---
-Chore tiles only. Day Word Pack is separate. Magnetic.
+Chore tiles only. Days Word Pack is separate. Magnetic.
 
 --- Chores Word Pack — card price ---
 $10
 
---- Day Word Pack — card description ---
+--- Days Word Pack — card description ---
 Mon–Sun magnetic day words.
 
---- Day Word Pack — card price ---
+--- Days Word Pack — card price ---
 $5
 
 --- Custom Words — card description ---
@@ -222,10 +222,10 @@ A5. House Rules title plus empty write-in lines. Fill them in with the pen — n
 === pack-chores.html — Chores Word Pack ===
 
 --- meta description ---
-Magnetic Chores Word Pack. Day Word Pack is separate.
+Magnetic Chores Word Pack. Days Word Pack is separate.
 
 --- description ---
-The old chore words plus Clean Room, Clear Table, Put Away Washing, and Washing. Day Word Pack is separate. Same magnet size as names on the boards.
+The old chore words plus Clean Room, Clear Table, Put Away Washing, and Washing. Days Word Pack is separate. Same magnet size as names on the boards.
 
 --- price label ---
 17 tiles · magnetic
@@ -234,10 +234,10 @@ The old chore words plus Clean Room, Clear Table, Put Away Washing, and Washing.
 Seventeen white magnetic chore word tiles on light wood, the old set plus Clean Room, Clear Table, Put Away Washing, and Washing, in title case.
 
 
-=== pack-days.html — Day Word Pack ===
+=== pack-days.html — Days Word Pack ===
 
 --- meta description ---
-Magnetic Day Word Pack. Mon through Sun.
+Magnetic Days Word Pack. Mon through Sun.
 
 --- description ---
 Mon Tue Wed Thu Fri Sat Sun. Use with Weekly, Chores, or any grid that needs days as words rather than printed labels.
@@ -246,7 +246,7 @@ Mon Tue Wed Thu Fri Sat Sun. Use with Weekly, Chores, or any grid that needs day
 7 tiles · magnetic
 
 --- picture alt text ---
-Seven white magnetic day words on light wood: Mon, Tue, Wed, Thu, Fri, Sat, Sun.
+Days Word Pack: seven white magnetic day words on light wood: Mon, Tue, Wed, Thu, Fri, Sat, Sun.
 
 
 === pack-custom.html — Custom Words ===
@@ -387,7 +387,7 @@ White magnetic routine board on light wood. No title; name tiles Mia, Leo, Ava, 
 --- Chores Word Pack words ---
 Set Table, Dishwasher, Fold Washing, Dishes, Dry Dishes, Sweep Floor, Mow Lawns, Make Dinner, Rubbish, Recycling, Put Out Bins, Vacuum, Mop Floor, Clean Room, Clear Table, Put Away Washing, Washing
 
---- Day Word Pack words ---
+--- Days Word Pack words ---
 Mon, Tue, Wed, Thu, Fri, Sat, Sun
 
 --- Routines job words (if shown) ---
@@ -399,7 +399,7 @@ Tidy Room, Homework, Walk Dog, Unpack Bag, Lunch Box, Make Bed, Brush Hair, Put 
 Do the boards come with the words?
 
 --- FAQ 1 — answer ---
-No. Boards come blank, and the word magnets are sold separately as packs: Chores Word Pack, Day Word Pack, and Custom Words.
+No. Boards come blank, and the word magnets are sold separately as packs: Chores Word Pack, Days Word Pack, and Custom Words.
 
 --- FAQ 2 — question ---
 Will it stick to my fridge?

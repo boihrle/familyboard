@@ -32,8 +32,8 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Meal Plan** — A5 only. Centered title MEAL PLAN; printed MON–SUN; one write-in column (not a multi-column meal grid).
 - **Shopping** — A5 only. Header Shopping plus empty write-in lines (like House Rules).
 - **House Rules** — A5 only. Title HOUSE RULES; empty write-in lines only.
-- **Chores Word Pack** — chore tiles only. Day Word Pack is separate. (Jobs pack redirects here.) $15.
-- **Day Word Pack** — Mon–Sun.
+- **Chores Word Pack** — chore tiles only. Days Word Pack is separate. (Jobs pack redirects here.) $15.
+- **Days Word Pack** — Mon–Sun.
 - **Custom Words** — choose any 16 words, such as names; thin word tiles. $15.
 - **Black Pen** — 1 pen $1 or 5 pens $3 (home card $1). **Coloured Pen 8 Pack** $5. **Fridge Holder** $5. **Stickers** $8 (non-magnetic).
 - **Cart** holds a board plus packs. **Checkout** completes the order.

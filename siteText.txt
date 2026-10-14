@@ -552,9 +552,6 @@ Questions about your privacy? Email contact@familyboards.co.nz.
 
 === cart.html — Cart ===
 
---- description ---
-One cart for any mix of boards and packs.
-
 --- empty cart message ---
 Cart is empty. Start with Chores.
 

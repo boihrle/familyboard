@@ -553,7 +553,7 @@ Questions about your privacy? Email contact@familyboards.co.nz.
 === cart.html — Cart ===
 
 --- empty cart message ---
-Cart is empty. Start with Chores.
+Cart is empty
 
 --- checkout button ---
 Checkout

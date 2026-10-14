@@ -36,6 +36,6 @@ Then open [http://localhost:4173/](http://localhost:4173/).
 - **Day Word Pack** — Mon–Sun.
 - **Custom Words** — choose any 16 words, such as names; thin word tiles. $15.
 - **Black Pen** — 1 pen $1 or 5 pens $3 (home card $1). **Coloured Pen 8 Pack** $5. **Fridge Holder** $5. **Stickers** $8 (non-magnetic).
-- **Cart** holds a board plus packs. **Pay** completes the order.
+- **Cart** holds a board plus packs. **Checkout** completes the order.
 
 Name tiles match chore tiles and day words (white, black text). Empty cells on the mockups are intentional.

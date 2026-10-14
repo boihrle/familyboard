@@ -127,4 +127,14 @@
     aliasPacksHash();
   });
   window.addEventListener("hashchange", aliasPacksHash);
+  window.addEventListener("pageshow", function () {
+    if (!document.querySelector(".cart-link") && document.getElementById("site-header")) {
+      renderChrome();
+    } else {
+      FB.updateCartCount();
+    }
+  });
+  window.addEventListener("familyboard-cart-change", function () {
+    FB.updateCartCount();
+  });
 })();

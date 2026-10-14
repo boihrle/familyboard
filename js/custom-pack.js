@@ -3,6 +3,19 @@
   var MAX = FB.PRODUCTS["pack-custom"].maxTiles;
   var words = [];
 
+  function wordsFromQuery() {
+    var params = new URLSearchParams(window.location.search);
+    var raw = params.get("words");
+    if (!raw) return [];
+    return raw
+      .split(",")
+      .map(function (word) {
+        return word.replace(/\s+/g, " ").trim();
+      })
+      .filter(Boolean)
+      .slice(0, MAX);
+  }
+
   function render() {
     var list = document.getElementById("word-list");
     var preview = document.getElementById("custom-preview");
@@ -65,6 +78,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    words = wordsFromQuery();
     render();
     document.getElementById("word-form").addEventListener("submit", function (event) {
       event.preventDefault();

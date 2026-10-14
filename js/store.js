@@ -7,6 +7,7 @@
  */
 (function (global) {
   const CART_KEY = "familyboard-cart-v1";
+  const LEGACY_CART_KEYS = ["familyboard-cart", "familyboard-cart-v0"];
 
   const DAY_WORDS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const CHORES_WORDS = [
@@ -75,12 +76,12 @@
       dayparts: {
         morning: {
           title: "Morning",
-          photo: "images/morning-hero.png?v=2.85",
+          photo: "images/morning-hero.png?v=2.86",
           photosByPeople: {
-            2: "images/morning-hero-2.png?v=2.85",
-            3: "images/morning-hero.png?v=2.85",
-            4: "images/morning-hero-4.png?v=2.85",
-            5: "images/morning-hero-5.png?v=2.85"
+            2: "images/morning-hero-2.png?v=2.86",
+            3: "images/morning-hero.png?v=2.86",
+            4: "images/morning-hero-4.png?v=2.86",
+            5: "images/morning-hero-5.png?v=2.86"
           },
           alt: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           altsByPeople: {
@@ -93,12 +94,12 @@
         },
         afternoon: {
           title: "Afternoon",
-          photo: "images/afternoon-hero.png?v=2.85",
+          photo: "images/afternoon-hero.png?v=2.86",
           photosByPeople: {
-            2: "images/afternoon-hero-2.png?v=2.85",
-            3: "images/afternoon-hero.png?v=2.85",
-            4: "images/afternoon-hero-4.png?v=2.85",
-            5: "images/afternoon-hero-5.png?v=2.85"
+            2: "images/afternoon-hero-2.png?v=2.86",
+            3: "images/afternoon-hero.png?v=2.86",
+            4: "images/afternoon-hero-4.png?v=2.86",
+            5: "images/afternoon-hero-5.png?v=2.86"
           },
           alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           altsByPeople: {
@@ -111,12 +112,12 @@
         },
         night: {
           title: "Night",
-          photo: "images/night-hero.png?v=2.85",
+          photo: "images/night-hero.png?v=2.86",
           photosByPeople: {
-            2: "images/night-hero-2.png?v=2.85",
-            3: "images/night-hero.png?v=2.85",
-            4: "images/night-hero-4.png?v=2.85",
-            5: "images/night-hero-5.png?v=2.85"
+            2: "images/night-hero-2.png?v=2.86",
+            3: "images/night-hero.png?v=2.86",
+            4: "images/night-hero-4.png?v=2.86",
+            5: "images/night-hero-5.png?v=2.86"
           },
           alt: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           altsByPeople: {
@@ -129,12 +130,12 @@
         },
         blank: {
           title: "Blank",
-          photo: "images/blank-hero.png?v=2.85",
+          photo: "images/blank-hero.png?v=2.86",
           photosByPeople: {
-            2: "images/blank-hero-2.png?v=2.85",
-            3: "images/blank-hero.png?v=2.85",
-            4: "images/blank-hero-4.png?v=2.85",
-            5: "images/blank-hero-5.png?v=2.85"
+            2: "images/blank-hero-2.png?v=2.86",
+            3: "images/blank-hero.png?v=2.86",
+            4: "images/blank-hero-4.png?v=2.86",
+            5: "images/blank-hero-5.png?v=2.86"
           },
           alt: "White magnetic routine board on light wood. No title; name tiles Mia, Leo and Ava above the three columns; printed grid lines and empty task rows.",
           altsByPeople: {
@@ -152,12 +153,12 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png?v=2.85",
+      photo: "images/weekly-hero.png?v=2.86",
       photosByPeople: {
-        2: "images/weekly-hero-2.png?v=2.85",
-        3: "images/weekly-hero.png?v=2.85",
-        4: "images/weekly-hero-4.png?v=2.85",
-        5: "images/weekly-hero-5.png?v=2.85"
+        2: "images/weekly-hero-2.png?v=2.86",
+        3: "images/weekly-hero.png?v=2.86",
+        4: "images/weekly-hero-4.png?v=2.86",
+        5: "images/weekly-hero-5.png?v=2.86"
       },
       price: 15,
       people: true,
@@ -273,40 +274,98 @@
     return !!(item && item.productId && PRODUCTS[item.productId]);
   }
 
+  function isEmojiPack(item) {
+    if (!item) return true;
+    if (item.productId === "pack-emoji") return true;
+    return /emoji pack/i.test(String(item.name || ""));
+  }
+
+  function migrateItem(item) {
+    if (!item || isEmojiPack(item)) return null;
+    var next = Object.assign({}, item);
+    if (
+      next.productId === "pack-sticker" ||
+      /sticker pack/i.test(String(next.name || ""))
+    ) {
+      next.productId = "pack-sticker";
+      next.name = PRODUCTS["pack-sticker"].name;
+      next.kind = "extra";
+    }
+    if (!knownProduct(next)) return null;
+    var product = PRODUCTS[next.productId];
+    if (!next.cartId) next.cartId = uid();
+    if (!next.qty || next.qty < 1) next.qty = 1;
+    if (!product.cartLabel && next.name !== product.name) next.name = product.name;
+    return next;
+  }
+
+  function parseCartRaw(raw) {
+    if (!raw) return [];
+    try {
+      var parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (err) {
+      return [];
+    }
+  }
+
+  function writeRaw(items) {
+    var kept = (items || []).filter(knownProduct);
+    try {
+      localStorage.setItem(CART_KEY, JSON.stringify(kept));
+      LEGACY_CART_KEYS.forEach(function (key) {
+        try {
+          localStorage.removeItem(key);
+        } catch (err) {}
+      });
+    } catch (err) {}
+    return kept;
+  }
+
   function readCart() {
     try {
-      const raw = localStorage.getItem(CART_KEY);
-      var items = raw ? JSON.parse(raw) : [];
-      if (!Array.isArray(items)) return [];
+      var incoming = parseCartRaw(localStorage.getItem(CART_KEY));
+      var usedLegacy = false;
+      LEGACY_CART_KEYS.forEach(function (key) {
+        var extra = parseCartRaw(localStorage.getItem(key));
+        if (!extra.length) return;
+        usedLegacy = true;
+        incoming = incoming.concat(extra);
+      });
       var kept = [];
-      var changed = false;
-      items.forEach(function (item) {
-        if (!knownProduct(item)) {
+      var seen = {};
+      var changed = usedLegacy;
+      incoming.forEach(function (item) {
+        var next = migrateItem(item);
+        if (!next) {
           changed = true;
           return;
         }
-        var product = PRODUCTS[item.productId];
-        if (!product.cartLabel && item.name !== product.name) {
-          item = Object.assign({}, item, { name: product.name });
+        if (JSON.stringify(next) !== JSON.stringify(item)) changed = true;
+        if (seen[next.cartId]) {
+          next = Object.assign({}, next, { cartId: uid() });
           changed = true;
         }
-        kept.push(item);
+        seen[next.cartId] = true;
+        kept.push(next);
       });
-      if (changed) {
-        try {
-          localStorage.setItem(CART_KEY, JSON.stringify(kept));
-        } catch (err) {}
-      }
+      if (changed) writeRaw(kept);
       return kept;
     } catch (err) {
       return [];
     }
   }
 
-  function writeCart(items) {
-    var kept = (items || []).filter(knownProduct);
-    localStorage.setItem(CART_KEY, JSON.stringify(kept));
+  function notifyCart() {
     updateCartCount();
+    try {
+      window.dispatchEvent(new CustomEvent("familyboard-cart-change"));
+    } catch (err) {}
+  }
+
+  function writeCart(items) {
+    var kept = writeRaw(items);
+    notifyCart();
     return kept;
   }
 
@@ -317,13 +376,43 @@
   }
 
   function removeItem(cartId) {
-    return writeCart(readCart().filter(function (item) {
-      return item.cartId !== cartId;
-    }));
+    var items = readCart();
+    var id = String(cartId == null ? "" : cartId);
+    var idx = -1;
+    for (var i = 0; i < items.length; i += 1) {
+      if (String(items[i].cartId) === id) {
+        idx = i;
+        break;
+      }
+    }
+    if (idx < 0) return items;
+    var current = items[idx];
+    if ((current.qty || 1) > 1) {
+      items[idx] = Object.assign({}, current, { qty: (current.qty || 1) - 1 });
+    } else {
+      items.splice(idx, 1);
+    }
+    return writeCart(items);
   }
 
   function clearCart() {
     return writeCart([]);
+  }
+
+  function itemHref(item) {
+    var product = item && PRODUCTS[item.productId];
+    if (!product) return "index.html";
+    var params = [];
+    if (item.lines) params.push("lines=" + encodeURIComponent(item.lines));
+    if (item.daypart) params.push("part=" + encodeURIComponent(item.daypart));
+    if (item.people) params.push("people=" + encodeURIComponent(item.people));
+    if (item.size && product.kind === "board") {
+      params.push("size=" + encodeURIComponent(item.size));
+    }
+    if (item.productId === "pack-custom" && item.words && item.words.length) {
+      params.push("words=" + encodeURIComponent(item.words.join(",")));
+    }
+    return params.length ? product.href + "?" + params.join("&") : product.href;
   }
 
   function cartCount() {
@@ -411,6 +500,19 @@
     cartTotal: cartTotal,
     updateCartCount: updateCartCount,
     itemLabel: itemLabel,
-    payPreview: payPreview
+    itemHref: itemHref,
+    payPreview: payPreview,
+    CART_KEY: CART_KEY
   };
+
+  window.addEventListener("storage", function (event) {
+    if (event.key && event.key !== CART_KEY && LEGACY_CART_KEYS.indexOf(event.key) < 0) {
+      return;
+    }
+    notifyCart();
+  });
+
+  window.addEventListener("pageshow", function () {
+    updateCartCount();
+  });
 })(window);

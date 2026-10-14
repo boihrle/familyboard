@@ -76,12 +76,12 @@
       dayparts: {
         morning: {
           title: "Morning",
-          photo: "images/morning-hero.png?v=2.86",
+          photo: "images/morning-hero.png?v=2.87",
           photosByPeople: {
-            2: "images/morning-hero-2.png?v=2.86",
-            3: "images/morning-hero.png?v=2.86",
-            4: "images/morning-hero-4.png?v=2.86",
-            5: "images/morning-hero-5.png?v=2.86"
+            2: "images/morning-hero-2.png?v=2.87",
+            3: "images/morning-hero.png?v=2.87",
+            4: "images/morning-hero-4.png?v=2.87",
+            5: "images/morning-hero-5.png?v=2.87"
           },
           alt: "White magnetic Morning board on light wood. Title Morning at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           altsByPeople: {
@@ -94,12 +94,12 @@
         },
         afternoon: {
           title: "Afternoon",
-          photo: "images/afternoon-hero.png?v=2.86",
+          photo: "images/afternoon-hero.png?v=2.87",
           photosByPeople: {
-            2: "images/afternoon-hero-2.png?v=2.86",
-            3: "images/afternoon-hero.png?v=2.86",
-            4: "images/afternoon-hero-4.png?v=2.86",
-            5: "images/afternoon-hero-5.png?v=2.86"
+            2: "images/afternoon-hero-2.png?v=2.87",
+            3: "images/afternoon-hero.png?v=2.87",
+            4: "images/afternoon-hero-4.png?v=2.87",
+            5: "images/afternoon-hero-5.png?v=2.87"
           },
           alt: "White magnetic Afternoon board on light wood. Title Afternoon at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           altsByPeople: {
@@ -112,12 +112,12 @@
         },
         night: {
           title: "Night",
-          photo: "images/night-hero.png?v=2.86",
+          photo: "images/night-hero.png?v=2.87",
           photosByPeople: {
-            2: "images/night-hero-2.png?v=2.86",
-            3: "images/night-hero.png?v=2.86",
-            4: "images/night-hero-4.png?v=2.86",
-            5: "images/night-hero-5.png?v=2.86"
+            2: "images/night-hero-2.png?v=2.87",
+            3: "images/night-hero.png?v=2.87",
+            4: "images/night-hero-4.png?v=2.87",
+            5: "images/night-hero-5.png?v=2.87"
           },
           alt: "White magnetic Night board on light wood. Title Night at the top; name tiles Mia, Leo and Ava above the three columns; job tiles in title case.",
           altsByPeople: {
@@ -130,12 +130,12 @@
         },
         blank: {
           title: "Blank",
-          photo: "images/blank-hero.png?v=2.86",
+          photo: "images/blank-hero.png?v=2.87",
           photosByPeople: {
-            2: "images/blank-hero-2.png?v=2.86",
-            3: "images/blank-hero.png?v=2.86",
-            4: "images/blank-hero-4.png?v=2.86",
-            5: "images/blank-hero-5.png?v=2.86"
+            2: "images/blank-hero-2.png?v=2.87",
+            3: "images/blank-hero.png?v=2.87",
+            4: "images/blank-hero-4.png?v=2.87",
+            5: "images/blank-hero-5.png?v=2.87"
           },
           alt: "White magnetic routine board on light wood. No title; name tiles Mia, Leo and Ava above the three columns; printed grid lines and empty task rows.",
           altsByPeople: {
@@ -153,12 +153,12 @@
       kind: "board",
       name: "Weekly",
       href: "weekly.html",
-      photo: "images/weekly-hero.png?v=2.86",
+      photo: "images/weekly-hero.png?v=2.87",
       photosByPeople: {
-        2: "images/weekly-hero-2.png?v=2.86",
-        3: "images/weekly-hero.png?v=2.86",
-        4: "images/weekly-hero-4.png?v=2.86",
-        5: "images/weekly-hero-5.png?v=2.86"
+        2: "images/weekly-hero-2.png?v=2.87",
+        3: "images/weekly-hero.png?v=2.87",
+        4: "images/weekly-hero-4.png?v=2.87",
+        5: "images/weekly-hero-5.png?v=2.87"
       },
       price: 15,
       people: true,
